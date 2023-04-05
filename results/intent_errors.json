@@ -1,0 +1,18 @@
+[
+  {
+    "text": "you're not wrong",
+    "intent": "smalltalk_agent_right",
+    "intent_prediction": {
+      "name": "smalltalk_dialog_wrong",
+      "confidence": 0.48055586218833923
+    }
+  },
+  {
+    "text": "so nice of you",
+    "intent": "smalltalk_appraisal_thank_you",
+    "intent_prediction": {
+      "name": "smalltalk_appraisal_good",
+      "confidence": 0.6112929582595825
+    }
+  }
+]

@@ -2,29 +2,190 @@ version: "3.1"
 
 stories:
 
-- story: happy path
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_great
-  - action: utter_happy
 
-- story: sad path 1
+- story: agent
   steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
-  - intent: affirm
-  - action: utter_happy
+  - intent: smalltalk_agent_acquaintance
+  - action: utter_smalltalk_agent_acquaintance
+  - intent: smalltalk_agent_age
+  - action: utter_smalltalk_agent_age
+  - intent: smalltalk_agent_annoying
+  - action: utter_smalltalk_agent_annoying
+  - intent: smalltalk_agent_answer_my_question
+  - action: utter_smalltalk_agent_answer_my_question
+  - intent: smalltalk_agent_bad
+  - action: utter_smalltalk_agent_bad
+  - intent: smalltalk_agent_be_clever
+  - action: utter_smalltalk_agent_be_clever
+  - intent: smalltalk_agent_beautiful
+  - action: utter_smalltalk_agent_beautiful
+  - intent: smalltalk_agent_birth_date
+  - action: utter_smalltalk_agent_birth_date
+  - intent: smalltalk_agent_boring
+  - action: utter_smalltalk_agent_boring
+  - intent: smalltalk_agent_boss
+  - action: utter_smalltalk_agent_boss
+  - intent: smalltalk_agent_busy
+  - action: utter_smalltalk_agent_busy
+  - intent: smalltalk_agent_chatbot
+  - action: utter_smalltalk_agent_chatbot
+  - intent: smalltalk_agent_clever
+  - action: utter_smalltalk_agent_clever
+  - intent: smalltalk_agent_crazy
+  - action: utter_smalltalk_agent_crazy
+  - intent: smalltalk_agent_fired
+  - action: utter_smalltalk_agent_fired
+  - intent: smalltalk_agent_funny
+  - action: utter_smalltalk_agent_funny
+  - intent: smalltalk_agent_good
+  - action: utter_smalltalk_agent_good
+  - intent: smalltalk_agent_happy
+  - action: utter_smalltalk_agent_happy
+  - intent: smalltalk_agent_hungry
+  - action: utter_smalltalk_agent_hungry
+  - intent: smalltalk_agent_marry_user
+  - action: utter_smalltalk_agent_marry_user
+  - intent: smalltalk_agent_my_friend
+  - action: utter_smalltalk_agent_my_friend
+  - intent: smalltalk_agent_occupation
+  - action: utter_smalltalk_agent_occupation
+  - intent: smalltalk_agent_origin
+  - action: utter_smalltalk_agent_origin
+  - intent: smalltalk_agent_ready
+  - action: utter_smalltalk_agent_ready
+  - intent: smalltalk_agent_real
+  - action: utter_smalltalk_agent_real
+  - intent: smalltalk_agent_residence
+  - action: utter_smalltalk_agent_residence
+  - intent: smalltalk_agent_right
+  - action: utter_smalltalk_agent_right
+  - intent: smalltalk_agent_sure
+  - action: utter_smalltalk_agent_sure
+  - intent: smalltalk_agent_talk_to_me
+  - action: utter_smalltalk_agent_talk_to_me
+  - intent: smalltalk_agent_there
+  - action: utter_smalltalk_agent_there
 
-- story: sad path 2
+- story: confirmation
   steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
-  - intent: deny
-  - action: utter_goodbye
+  - intent: smalltalk_confirmation_yes
+  - action: utter_smalltalk_confirmation_yes
+  - intent: smalltalk_confirmation_cancel
+  - action: utter_smalltalk_confirmation_cancel
+  - intent: smalltalk_confirmation_no
+  - action: utter_smalltalk_confirmation_no
+ 
+- story: appraisal
+  steps:
+  - intent: smalltalk_appraisal_bad
+  - action: utter_smalltalk_appraisal_bad
+  - intent: smalltalk_appraisal_good
+  - action: utter_smalltalk_appraisal_good
+  - intent: smalltalk_appraisal_no_problem
+  - action: utter_smalltalk_appraisal_no_problem
+  - intent: smalltalk_appraisal_thank_you
+  - action: utter_smalltalk_appraisal_thank_you
+  - intent: smalltalk_appraisal_welcome
+  - action: utter_smalltalk_appraisal_welcome
+  - intent: smalltalk_appraisal_well_done
+  - action: utter_smalltalk_appraisal_well_done
+
+- story: dialog
+  steps:
+  - intent: smalltalk_dialog_hold_on
+  - action: utter_smalltalk_dialog_hold_on
+  - intent: smalltalk_dialog_hug
+  - action: utter_smalltalk_dialog_hug
+  - intent: smalltalk_dialog_i_do_not_care
+  - action: utter_smalltalk_dialog_i_do_not_care
+  - intent: smalltalk_dialog_sorry
+  - action: utter_smalltalk_dialog_sorry
+  - intent: smalltalk_dialog_what_do_you_mean
+  - action: utter_smalltalk_dialog_what_do_you_mean
+  - intent: smalltalk_dialog_wrong
+  - action: utter_smalltalk_dialog_wrong
+- story: emotions
+  steps:  
+  - intent: smalltalk_emotions_ha_ha
+  - action: utter_smalltalk_emotions_ha_ha
+  - intent: smalltalk_emotions_wow
+  - action: utter_smalltalk_emotions_wow
+- story: greetings
+  steps:
+  - intent: smalltalk_greetings_bye
+  - action: utter_smalltalk_greetings_bye
+  - intent: smalltalk_greetings_goodevening
+  - action: utter_smalltalk_greetings_goodevening
+  - intent: smalltalk_greetings_goodmorning
+  - action: utter_smalltalk_greetings_goodmorning
+  - intent: smalltalk_greetings_goodnight
+  - action: utter_smalltalk_greetings_goodnight
+  - intent: smalltalk_greetings_hello
+  - action: utter_smalltalk_greetings_hello
+  - intent: smalltalk_greetings_how_are_you
+  - action: utter_smalltalk_greetings_how_are_you
+  - intent: smalltalk_greetings_nice_to_meet_you
+  - action: utter_smalltalk_greetings_nice_to_meet_you
+  - intent: smalltalk_greetings_nice_to_see_you
+  - action: utter_smalltalk_greetings_nice_to_see_you
+  - intent: smalltalk_greetings_nice_to_talk_to_you
+  - action: utter_smalltalk_greetings_nice_to_talk_to_you
+  - intent: smalltalk_greetings_whatsup
+  - action: utter_smalltalk_greetings_whatsup
+- story: user
+  steps:
+  - intent: smalltalk_user_angry
+  - action: utter_smalltalk_user_angry
+  - intent: smalltalk_user_back
+  - action: utter_smalltalk_user_back
+  - intent: smalltalk_user_bored
+  - action: utter_smalltalk_user_bored
+  - intent: smalltalk_user_busy
+  - action: utter_smalltalk_user_busy
+  - intent: smalltalk_user_can_not_sleep
+  - action: utter_smalltalk_user_can_not_sleep
+  - intent: smalltalk_user_does_not_want_to_talk
+  - action: utter_smalltalk_user_does_not_want_to_talk
+  - intent: smalltalk_user_excited
+  - action: utter_smalltalk_user_excited
+  - intent: smalltalk_user_going_to_bed
+  - action: utter_smalltalk_user_going_to_bed
+  - intent: smalltalk_user_good
+  - action: utter_smalltalk_user_good
+  - intent: smalltalk_user_happy
+  - action: utter_smalltalk_user_happy
+  - intent: smalltalk_user_has_birthday
+  - action: utter_smalltalk_user_has_birthday
+  - intent: smalltalk_user_here
+  - action: utter_smalltalk_user_here
+  - intent: smalltalk_user_joking
+  - action: utter_smalltalk_user_joking
+  - intent: smalltalk_user_likes_agent
+  - action: utter_smalltalk_user_likes_agent
+  - intent: smalltalk_user_lonely
+  - action: utter_smalltalk_user_lonely
+  - intent: smalltalk_user_looks_like
+  - action: utter_smalltalk_user_looks_like
+  - intent: smalltalk_user_loves_agent
+  - action: utter_smalltalk_user_loves_agent
+  - intent: smalltalk_user_misses_agent
+  - action: utter_smalltalk_user_misses_agent
+  - intent: smalltalk_user_needs_advice
+  - action: utter_smalltalk_user_needs_advice
+  - intent: smalltalk_user_sad
+  - action: utter_smalltalk_user_sad
+  - intent: smalltalk_user_sleepy
+  - action: utter_smalltalk_user_sleepy
+  - intent: smalltalk_user_testing_agent
+  - action: utter_smalltalk_user_testing_agent
+  - intent: smalltalk_user_tired
+  - action: utter_smalltalk_user_tired
+  - intent: smalltalk_user_waits
+  - action: utter_smalltalk_user_waits
+  - intent: smalltalk_user_wants_to_see_agent_again
+  - action: utter_smalltalk_user_wants_to_see_agent_again
+  - intent: smalltalk_user_wants_to_talk
+  - action: utter_smalltalk_user_wants_to_talk
+  - intent: smalltalk_user_will_be_back
+  - action: utter_smalltalk_user_will_be_back
+
