@@ -1,0 +1,35 @@
+{
+  "cust_sex": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 42,
+    "confused_with": {}
+  },
+  "cust_name": {
+    "precision": 1.0,
+    "recall": 0.9871794871794872,
+    "f1-score": 0.9935483870967742,
+    "support": 234,
+    "confused_with": {}
+  },
+  "micro avg": {
+    "precision": 1.0,
+    "recall": 0.9891304347826086,
+    "f1-score": 0.994535519125683,
+    "support": 276
+  },
+  "macro avg": {
+    "precision": 1.0,
+    "recall": 0.9935897435897436,
+    "f1-score": 0.9967741935483871,
+    "support": 276
+  },
+  "weighted avg": {
+    "precision": 1.0,
+    "recall": 0.9891304347826086,
+    "f1-score": 0.9945301542776999,
+    "support": 276
+  },
+  "accuracy": 0.9998193424063592
+}

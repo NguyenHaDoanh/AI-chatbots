@@ -1,0 +1,6 @@
+[
+  {
+    "name": "truong_dai_hoc",
+    "pattern": "(\\bĐH\\ Khoa\\ học\\ Tự\\ nhiên\\b|\\bĐH\\ Khoa\\ học\\ Tự\\ nhiên\\-ĐH\\ Quốc\\ gia\\ Hà\\ Nội\\b|\\bĐH\\ KHTN\\b|\\bĐại\\ học\\ Khoa\\ học\\ Tự\\ nhiên\\b)"
+  }
+]

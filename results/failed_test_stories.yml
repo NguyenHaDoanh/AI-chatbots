@@ -1,8 +1,1 @@
-version: "3.1"
-stories:
-- story: agent (.\tests\test_stories.yml)
-  steps:
-  - intent: smalltalk_greetings_hello
-  - action: utter_smalltalk_greetings_hello  # predicted: action_default_fallback after action_unlikely_intent
-  - intent: smalltalk_greetings_nice_to_meet_you  # predicted: smalltalk_appraisal_good: amazing
-  - action: utter_smalltalk_greetings_nice_to_meet_you  # predicted: action_default_fallback after action_unlikely_intent
+# None of the test stories failed - all good!

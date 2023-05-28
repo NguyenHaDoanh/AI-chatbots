@@ -1,15 +1,553 @@
-#### This file contains tests to evaluate that your bot behaves as expected.
-#### If you want to learn more, please see the docs: https://rasa.com/docs/rasa/testing-your-assistant
+version: "3.1"
 
 stories:
-- story: agent
-  steps:
-  - user: |
-      hello there!
-    intent: smalltalk_greetings_hello
-  - action: utter_smalltalk_greetings_hello
-  - user: |
-      amazing
-    intent: smalltalk_greetings_nice_to_meet_you
-  - action: utter_smalltalk_greetings_nice_to_meet_you
+  - story: story_0
+    steps:
+      - intent: chao_hoi
+      - action: utter_chao_hoi
+  - story: story_1
+    steps:
+      - intent: nganh_dao_tao
+      - action: utter_nganh_dao_tao
+  - story: story_chuong_trinh_dao_tao
+    steps:
+      - intent: chuong_trinh_dao_tao
+      - action: utter_chuong_trinh_dao_tao
+  - story: story_2
+    steps:
+      - intent: chao_hoi
+      - action: utter_chao_hoi
+      - intent: chuong_trinh_dao_tao
+      - action: utter_chuong_trinh_dao_tao
+      - intent: hoc_phi
+      - action: utter_hoc_phi
+      - intent: tam_biet
+      - action: utter_tam_biet
+  - story: story_3
+    steps:
+      - intent: tam_biet
+      - action: utter_tam_biet
+  - story: story_4
+    steps:
+      - intent: hoc_phi
+      - action: utter_hoc_phi
+      - intent: hoc_bong
+      - action: utter_hoc_bong
 
+  - story: phuong thuc tuyen sinh
+    steps:
+      - intent: phuong_thuc_tuyen_sinh
+      - action: utter_phuong_thuc_tuyen_sinh
+
+  - story: gioi thieu đh khtn
+    steps:
+      - intent: gioi_thieu
+      - action: utter_gioi_thieu
+      - action: utter_gioi_thieu1
+  - story: story_7
+    steps:
+      - intent: cam_on
+      - action: utter_tam_biet
+  - story: Chỉ đưa tên
+    steps:
+      - intent: give_name_1
+      - action: utter_give_name_1
+  - story: dua ten
+    steps:
+      - intent: give_name
+      - action: utter_greet_with_name
+  - story: rep_iambottt
+    steps:
+      - intent: hoi_ve_bot
+      - action: utter_rep
+
+
+      # - action: utter_greet_with_name
+  - story: Đặt câu hỏi
+    steps:
+      - intent: dat_cau_hoi
+      - action: utter_dat_cau_hoi
+      - action: utter_fb_element_example
+  - story: cosovatchat truong khtn
+    steps:
+    - intent: cosovatchat
+    - action: utter_cosovatchat
+  - story: Khoa hoc va CN thuc pham
+    steps:
+      - intent: hp_QHT96
+      - action: utter_hp_QHT96
+  - story: Khoa hoc va CN thuc pham1
+    steps:
+      - intent: gt_QHT96
+      - action: utter_gt_QHT96
+  - story: CN quan trac va giam sat tai nguyen mt1
+    steps:
+      - intent: hp_QHT97
+      - action: utter_hp_QHT97
+
+  - story: CN quan trac va giam sat tn mt2
+    steps:
+      - intent: gt_QHT97
+      - action: utter_gt_QHT97
+  - story: khoa hoc du lieu
+    steps:
+      - intent: gt_QHT93
+      - action: utter_gt_QHT93
+  - story: khoa hoc du lieu1
+    steps:
+      - intent: hp_QHT93
+      - action: utter_hp_QHT93
+  - story: hai duong hoc
+    steps:
+      - intent: gt_QHT17
+      - action: utter_gt_QHT17
+  - story: hai duong hoc phi
+    steps:
+      - intent: hp_QHT17
+      - action: utter_hp_QHT17
+  - story: tai nguyen moi truong
+    steps:
+      - intent: gt_QHT92
+      - action: utter_gt_QHT92
+
+  - story: tai nguyen moi truong 1
+    steps:
+      - intent: hp_QHT92
+      - action: utter_hp_QHT92
+  - story: dia chat hoc
+    steps:
+      - intent: gt_QHT18
+      - action: utter_gt_QHT18
+  - story: dia chat hoc1
+    steps:
+      - intent: hp_QHT18
+      - action: utter_hp_QHT18
+
+  - story: quan ly tai nguyen va moi truong
+    steps:
+      - intent: gt_QHT20
+      - action: utter_gt_QHT20
+
+  - story: quan ly tai nguyen va moi truong1
+    steps:
+      - intent: hp_QHT20
+      - action: utter_hp_QHT20
+
+  - story: Dia ly tu nhien
+    steps:
+      - intent: gt_QHT10
+      - action: utter_gt_QHT10
+
+  - story: Dia ly tu nhien1
+    steps:
+      - intent: hp_QHT10
+      - action: utter_hp_QHT10
+
+
+  - story: Khoa hoc thong tin dia khong gian
+    steps:
+      - intent: gt_QHT91
+      - action: utter_gt_QHT91
+  - story: Khoa hoc thong tin dia khong gian1
+    steps:
+      - intent: hp_QHT91
+      - action: utter_hp_QHT91
+
+  - story: quan ly dat dai
+    steps:
+      - intent: gt_QHT12
+      - action: utter_gt_QHT12
+  - story: quan ly dat dai1
+    steps:
+      - intent: hp_QHT12
+      - action: utter_hp_QHT12
+
+
+  - story: quan ly phat trien do thi
+    steps:
+      - intent: gt_QHT95
+      - action: utter_gt_QHT95
+  - story: quan ly phat trien do thi1
+    steps:
+      - intent: hp_QHT95
+      - action: utter_hp_QHT95
+
+
+  - story: sinh hoc
+    steps:
+      - intent: gt_QHT08
+      - action: utter_gt_QHT08
+
+  - story: sinh hoc1
+    steps:
+      - intent: hp_QHT08
+      - action: utter_hp_QHT08
+
+
+  - story: khoa hoc moi truong
+    steps:
+      - intent: gt_QHT13
+      - action: utter_gt_QHT13
+
+  - story: khoa hoc moi truong1
+    steps:
+      - intent: hp_QHT13
+      - action: utter_hp_QHT13
+ 
+
+  - story: cong nghe ky thuat moi truong
+    steps:
+      - intent: gt_QHT46
+      - action: utter_gt_QHT46
+
+  - story: cong nghe ky thuat moi truong hoc phi
+    steps:
+      - intent: hp_QHT46
+      - action: utter_hp_QHT46
+
+
+  - story: khi tuong va khi hau hoc
+    steps:
+      - intent: gt_QHT16
+      - action: utter_gt_QHT16
+  - story: khi tuong va khi hau hoc1
+    steps:
+      - intent: hp_QHT16
+      - action: utter_hp_QHT16
+
+  - story: cong nghe sinh hoc
+    steps:
+    - intent: gt_QHT44
+    - action: utter_gt_QHT44  
+
+  - story: cong nghe sinh hoc1
+    steps:
+    - intent: hp_QHT44
+    - action: utter_hp_QHT44
+
+
+
+  - story: Toan hoc
+    steps:
+    - intent: gt_QHT01
+    - action: utter_gt_QHT01
+  - story: Toan hoc1
+    steps:
+    - intent: hp_QHT01
+    - action: utter_hp_QHT01
+
+  - story: Toan tin
+    steps:
+    - intent: gt_QHT02
+    - action: utter_gt_QHT02
+    - action: utter_toan_tin
+  - story: Toan tin1
+    steps:
+    - intent: hp_QHT02
+    - action: utter_hp_QHT02
+    - action: utter_toan_tin
+
+  - story: May tinh va Khoa hoc thong tin
+    steps:
+      - intent: gt_QHT98
+      - action: utter_gt_QHT98
+  - story: May tinh va Khoa hoc thong tin1
+    steps:
+      - intent: hp_QHT98
+      - action: utter_hp_QHT98
+
+
+
+
+  - story: Vat ly hoc
+    steps:
+
+      - intent: gt_QHT03
+      - action: utter_gt_QHT03
+  - story: Vat ly hoc phi
+    steps:
+
+      - intent: hp_QHT03
+      - action: utter_hp_QHT03
+
+  - story: Khoa hoc Vat lieu
+    steps:
+      - intent: gt_QHT04
+      - action: utter_gt_QHT04
+  - story: Khoa hoc Vat lieu1
+    steps:
+      - intent: hp_QHT04
+      - action: utter_hp_QHT04
+  - story: Cong nghe ky thuat hat nhan
+    steps:
+
+      - intent: gt_QHT05
+      - action: utter_gt_QHT05
+      - intent: hp_QHT05
+      - action: utter_hp_QHT05
+
+  - story: Ky thuat dien tu va tin hoc
+    steps:
+      - intent: gt_QHT94
+      - action: utter_gt_QHT94
+      - intent: hp_QHT94
+      - action: utter_hp_QHT94
+
+  - story: Hoa hoc
+    steps:
+    - intent: gt_QHT06
+    - action: utter_gt_QHT06
+    - intent: hp_QHT06
+    - action: utter_hp_QHT06
+
+  - story: Hoa hoc**
+    steps:
+      - intent: gt_QHT41
+      - action: utter_gt_QHT41
+      - intent: hp_QHT41
+      - action: utter_hp_QHT41
+
+  - story: Cong nghe ky thuat Hoa hoc**
+    steps:
+      - intent: hp_QHT42
+      - action: utter_hp_QHT42
+  - story: Cong nghe ky thuat Hoa hoc gioi thieu
+    steps:
+      - intent: gt_QHT42
+      - action: utter_gt_QHT42
+  - story: Hoa duoc**
+    steps:
+
+    - intent: gt_QHT43
+    - action: utter_gt_QHT43
+    - intent: hp_QHT43
+    - action: utter_hp_QHT43
+
+
+  - story: chnn_pht98
+    steps:
+    - intent: hnn_QHT98
+    - action: utter_hnn_QHT98
+
+
+
+
+
+
+  - story: thoi gian dao tao
+    steps: 
+    - intent: thoi_gian_dao_tao
+    - action: utter_thoi_gian_dao_tao
+
+  - story: dia chi mang xa hoi
+    steps:
+    - intent: dia_chi_trang_mang_xa_hoi
+    - action: utter_dia_chi_trang_mang_xa_hoi
+
+  - story: lien he tuyen sinh1
+    steps:
+    - intent: so_dien_thoai_lien_he_tuyen_sinh
+    - action: utter_so_dien_thoai_lien_he_tuyen_sinh
+  - story: hoat dong
+    steps:
+    - intent: hoat_dong
+    - action: utter_hoat_dong
+  - story: diem chuan
+    steps:
+    - intent: diem_chuan
+    - action: utter_diem_chuan
+
+  - story: tin moi nhat
+    steps:
+    - intent: tin_moi_nhat
+    - action: utter_tin_moi_nhat
+  
+
+
+  - story: nút button1
+    steps:
+      - intent: photo_foyer_fr1
+      - action: utter_fb_element_example
+
+  - story: thu tuc nhap hoc
+    steps:
+      - intent: huong_dan_thu_tuc_nhap_hoc
+      - action: utter_huong_dan_thu_tuc_nhap_hoc
+
+  - story: de an ts 2022
+    steps:
+      - intent: de_an_tuyensinh_2022
+      - action: utter_de_an_tuyensinh_2022
+  - story: de an ts 2023
+    steps:
+      - intent: de_an_tuyensinh_2023
+      - action: utter_de_an_tuyensinh_2023
+
+  - story: ts dh
+    steps:
+      - intent: tuyen_sinh_dh
+      - action: utter_tuyen_sinh_dh
+  - story: nop hp
+    steps:
+      - intent: nop_hp
+      - action: utter_nop_hp
+  - story: th pt
+    steps:
+      - intent: thpt
+      - action: utter_THPT
+
+  - story: gt_toan_co_tinhoc
+    steps:
+      - intent: toan_co_tin_gth
+      - action: utter_toan_co_tin_gth
+
+
+  - story: gt_vat_ly
+    steps:
+      - intent: khoa_vat_ly_gt
+      - action: utter_khoa_vat_ly_gt
+
+  - story: gt_hoa hoc
+    steps:
+    - intent: khoa_hoa_hoc_gt
+    - action: utter_khoa_hoa_hoc_gt
+
+  - story: gt_sinhhoc_khoa
+    steps:
+    - intent: khoa_sinh_hoc_gt
+    - action: utter_khoa_sinh_hoc_gt
+  - story: gt_toan_khoa_dia_ly_gt
+    steps:
+    - intent: khoa_dia_ly_gt
+    - action: utter_khoa_dia_ly_gt
+  - story: gt_khoa_dia_chat_gt
+    steps:
+    - intent: khoa_dia_chat_gt
+    - action: utter_khoa_dia_chat_gt
+    - action: utter_khoa_dia_chat_gt1
+  - story: gt_khoa_moi_truong_gt
+    steps:
+    - intent: khoa_moi_truong_gt
+    - action: utter_khoa_moi_truong_gt
+  - story: gt_khoa_khituonhthuyvan_haiduong_hoc
+    steps:
+    - intent: khoa_khituonhthuyvan_haiduong_hoc_gt
+    - action: utter_khoa_khituonhthuyvan_haiduong_hoc_gt
+
+
+
+
+  - story: chnn_qht98
+    steps:
+    - intent: chnn_QHT98
+    - action: utter_chnn_QHT98
+  - story: chnn_qht02
+    steps:
+    - intent: chnn_QHT02
+    - action: utter_chnn_QHT02
+
+  - story: chnn_qht43
+    steps:
+    - intent: chnn_QHT43
+    - action: utter_chnn_QHT43
+  - story: chnn_qht42
+    steps:
+    - intent: chnn_QHT42
+    - action: utter_chnn_QHT42
+  - story: chnn_qht41
+    steps:
+    - intent: chnn_QHT41
+    - action: utter_chnn_QHT41
+  - story: chnn_qht06
+    steps:
+    - intent: chnn_QHT06
+    - action: utter_chnn_QHT06
+  - story: chnn_qht94
+    steps:
+    - intent: chnn_QHT94
+    - action: utter_chnn_QHT94
+  - story: chnn_qht05
+    steps:
+    - intent: chnn_QHT05
+    - action: utter_chnn_QHT05
+  - story: chnn_qht04
+    steps:
+    - intent: chnn_QHT04
+    - action: utter_chnn_QHT04
+  - story: chnn_qht03
+    steps:
+    - intent: chnn_QHT03
+    - action: utter_chnn_QHT03
+
+  - story: chnn_qht01
+    steps:
+    - intent: chnn_QHT01
+    - action: utter_chnn_QHT01
+  - story: chnn_qht44
+    steps:
+    - intent: chnn_QHT44
+    - action: utter_chnn_QHT44
+  - story: chnn qht08
+    steps:
+    - intent: chnn_QHT08
+    - action: utter_chnn_QHT08
+  - story: chnn_qht13
+    steps:
+    - intent: chnn_QHT13
+    - action: utter_chnn_QHT13
+
+  - story: chnn qht 46
+    steps:
+    - intent: chnn_QHT46
+    - action: utter_chnn_QHT46
+
+  - story: chnn_qht16
+    steps:
+    - intent: chnn_QHT16
+    - action: utter_chnn_QHT16
+# // class _HomePage extends State<HomePage> {
+# //   static String routeName = "/home_page";
+  - story: chnn_qht95
+    steps:
+    - intent: chnn_QHT95
+    - action: utter_chnn_QHT95
+  - story: chnn_qht12
+    steps:
+    - intent: chnn_QHT12
+    - action: utter_chnn_QHT12
+  - story: chnn_qht91
+    steps:
+    - intent: chnn_QHT91
+    - action: utter_chnn_QHT91
+  - story: chnn_qht10
+    steps:
+    - intent: chnn_QHT10
+    - action: utter_chnn_QHT10
+  - story: chnn_qht20
+    steps:
+    - intent: chnn_QHT20
+    - action: utter_chnn_QHT20
+  - story: chnn_qht18
+    steps:
+    - intent: chnn_QHT18
+    - action: utter_chnn_QHT18
+  - story: chnn_qht 96
+    steps:
+    - intent: chnn_QHT96  
+    - action: utter_chnn_QHT96
+  - story: chnn_qht92
+    steps:
+    - intent: chnn_QHT92
+    - action: utter_chnn_QHT92
+  - story: chnn_qht17
+    steps:
+    - intent: chnn_QHT17
+    - action: utter_chnn_QHT17
+  - story: chnn_qht93
+    steps:
+    - intent: chnn_QHT93
+    - action: utter_chnn_QHT93
+  - story: chnn_qht97
+    steps:
+    - intent: chnn_QHT97
+    - action: utter_chnn_QHT97

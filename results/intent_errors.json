@@ -1,18 +1,458 @@
 [
   {
-    "text": "you're not wrong",
-    "intent": "smalltalk_agent_right",
+    "text": "Bạn có chức năng gì",
+    "intent": "hoi_ve_bot",
     "intent_prediction": {
-      "name": "smalltalk_dialog_wrong",
-      "confidence": 0.48055586218833923
+      "name": "dat_cau_hoi",
+      "confidence": 0.6850113868713379
     }
   },
   {
-    "text": "so nice of you",
-    "intent": "smalltalk_appraisal_thank_you",
+    "text": "chương trình học của ngành Quản lý đất đai QHT12 như thế nào",
+    "intent": "hp_QHT12",
     "intent_prediction": {
-      "name": "smalltalk_appraisal_good",
-      "confidence": 0.6112929582595825
+      "name": "gt_QHT12",
+      "confidence": 0.8264141082763672
+    }
+  },
+  {
+    "text": "chương trình học của ngành Quản lý phát triển đô thị và bất động sản QHT95 như thế nào",
+    "intent": "hp_QHT95",
+    "intent_prediction": {
+      "name": "gt_QHT95",
+      "confidence": 0.8412885665893555
+    }
+  },
+  {
+    "text": "giới thiệu một chút về Công nghệ sinh học TT23",
+    "intent": "gt_QHT13",
+    "intent_prediction": {
+      "name": "gt_QHT03",
+      "confidence": 0.10028983652591705
+    }
+  },
+  {
+    "text": "như thế nào là Hóa dược**",
+    "intent": "gt_QHT08",
+    "intent_prediction": {
+      "name": "gt_QHT43",
+      "confidence": 0.8323612809181213
+    }
+  },
+  {
+    "text": "giới thiệu một chút về Công nghệ sinh học TT23",
+    "intent": "gt_QHT08",
+    "intent_prediction": {
+      "name": "gt_QHT03",
+      "confidence": 0.10028983652591705
+    }
+  },
+  {
+    "text": "giới thiệu một chút về Công nghệ sinh học TT23",
+    "intent": "gt_QHT44",
+    "intent_prediction": {
+      "name": "gt_QHT03",
+      "confidence": 0.10028983652591705
+    }
+  },
+  {
+    "text": "Toán học tin là gì",
+    "intent": "gt_QHT01",
+    "intent_prediction": {
+      "name": "gt_QHT02",
+      "confidence": 0.47767210006713867
+    }
+  },
+  {
+    "text": "giới thiệu một chút về Công nghệ sinh học TT23",
+    "intent": "gt_QHT01",
+    "intent_prediction": {
+      "name": "gt_QHT03",
+      "confidence": 0.10028983652591705
+    }
+  },
+  {
+    "text": "giới thiệu một chút về Công nghệ sinh học TT23",
+    "intent": "gt_QHT04",
+    "intent_prediction": {
+      "name": "gt_QHT03",
+      "confidence": 0.10028983652591705
+    }
+  },
+  {
+    "text": "giới thiệu một chút về Công nghệ sinh học TT23",
+    "intent": "gt_QHT05",
+    "intent_prediction": {
+      "name": "gt_QHT03",
+      "confidence": 0.10028983652591705
+    }
+  },
+  {
+    "text": "giới thiệu một chút về Công nghệ sinh học TT23",
+    "intent": "gt_QHT94",
+    "intent_prediction": {
+      "name": "gt_QHT03",
+      "confidence": 0.10028983652591705
+    }
+  },
+  {
+    "text": "giới thiệu về ngành Hóa học",
+    "intent": "gt_QHT06",
+    "intent_prediction": {
+      "name": "gt_QHT41",
+      "confidence": 0.44560742378234863
+    }
+  },
+  {
+    "text": "ngành Hóa học là ngành gì",
+    "intent": "gt_QHT06",
+    "intent_prediction": {
+      "name": "gt_QHT41",
+      "confidence": 0.47923532128334045
+    }
+  },
+  {
+    "text": "như thế nào là Hóa học",
+    "intent": "gt_QHT06",
+    "intent_prediction": {
+      "name": "gt_QHT41",
+      "confidence": 0.4512805640697479
+    }
+  },
+  {
+    "text": "Hóa học là gì",
+    "intent": "gt_QHT06",
+    "intent_prediction": {
+      "name": "gt_QHT41",
+      "confidence": 0.4629935622215271
+    }
+  },
+  {
+    "text": "Hóa học",
+    "intent": "gt_QHT06",
+    "intent_prediction": {
+      "name": "gt_QHT41",
+      "confidence": 0.4021347463130951
+    }
+  },
+  {
+    "text": "giới thiệu về Hóa học",
+    "intent": "gt_QHT06",
+    "intent_prediction": {
+      "name": "gt_QHT41",
+      "confidence": 0.4446554481983185
+    }
+  },
+  {
+    "text": "chương trình học của ngành Hóa học như thế nào",
+    "intent": "gt_QHT06",
+    "intent_prediction": {
+      "name": "gt_QHT41",
+      "confidence": 0.4689621925354004
+    }
+  },
+  {
+    "text": "giới thiệu một chút về Công nghệ sinh học TT23",
+    "intent": "gt_QHT06",
+    "intent_prediction": {
+      "name": "gt_QHT03",
+      "confidence": 0.10028983652591705
+    }
+  },
+  {
+    "text": "Hóa học** là ngành như thế nào",
+    "intent": "gt_QHT41",
+    "intent_prediction": {
+      "name": "gt_QHT06",
+      "confidence": 0.4563956558704376
+    }
+  },
+  {
+    "text": "giới thiệu Hóa học**",
+    "intent": "gt_QHT41",
+    "intent_prediction": {
+      "name": "gt_QHT06",
+      "confidence": 0.4491371512413025
+    }
+  },
+  {
+    "text": "giới thiệu một chút về Hóa học**",
+    "intent": "gt_QHT41",
+    "intent_prediction": {
+      "name": "gt_QHT06",
+      "confidence": 0.46268129348754883
+    }
+  },
+  {
+    "text": "giới thiệu một chút về Công nghệ sinh học TT23",
+    "intent": "gt_QHT41",
+    "intent_prediction": {
+      "name": "gt_QHT03",
+      "confidence": 0.10028983652591705
+    }
+  },
+  {
+    "text": "giới thiệu một chút về Công nghệ sinh học TT23",
+    "intent": "gt_QHT42",
+    "intent_prediction": {
+      "name": "gt_QHT03",
+      "confidence": 0.10028983652591705
+    }
+  },
+  {
+    "text": "giới thiệu một chút về Công nghệ sinh học TT23",
+    "intent": "gt_QHT43",
+    "intent_prediction": {
+      "name": "gt_QHT03",
+      "confidence": 0.10028983652591705
+    }
+  },
+  {
+    "text": "giới thiệu một chút về Công nghệ sinh học TT23",
+    "intent": "gt_QHT02",
+    "intent_prediction": {
+      "name": "gt_QHT03",
+      "confidence": 0.10028983652591705
+    }
+  },
+  {
+    "text": "1 học kì ngành Hóa học bao nhiêu",
+    "intent": "hp_QHT06",
+    "intent_prediction": {
+      "name": "hp_QHT41",
+      "confidence": 0.4566633403301239
+    }
+  },
+  {
+    "text": "học phí ngành Hóa học ổn",
+    "intent": "hp_QHT06",
+    "intent_prediction": {
+      "name": "hp_QHT41",
+      "confidence": 0.4973587095737457
+    }
+  },
+  {
+    "text": "học phí 1 kì ngành Hóa học có đắt",
+    "intent": "hp_QHT06",
+    "intent_prediction": {
+      "name": "hp_QHT41",
+      "confidence": 0.44676899909973145
+    }
+  },
+  {
+    "text": "1 kì ngành Hóa học thì học phí tốt",
+    "intent": "hp_QHT06",
+    "intent_prediction": {
+      "name": "hp_QHT41",
+      "confidence": 0.4550149738788605
+    }
+  },
+  {
+    "text": "chi tiết học phí ngành Hóa học",
+    "intent": "hp_QHT06",
+    "intent_prediction": {
+      "name": "hp_QHT41",
+      "confidence": 0.4862309396266937
+    }
+  },
+  {
+    "text": "review học phí 1 kì ngành Hóa học",
+    "intent": "hp_QHT06",
+    "intent_prediction": {
+      "name": "hp_QHT41",
+      "confidence": 0.5029017329216003
+    }
+  },
+  {
+    "text": "1 kì ngành Hóa học thì học phí",
+    "intent": "hp_QHT06",
+    "intent_prediction": {
+      "name": "hp_QHT41",
+      "confidence": 0.4852866530418396
+    }
+  },
+  {
+    "text": "học phí ngành Hóa học**",
+    "intent": "hp_QHT41",
+    "intent_prediction": {
+      "name": "hp_QHT06",
+      "confidence": 0.4484241008758545
+    }
+  },
+  {
+    "text": "ngành Hóa học** có đắt",
+    "intent": "hp_QHT41",
+    "intent_prediction": {
+      "name": "hp_QHT06",
+      "confidence": 0.45725250244140625
+    }
+  },
+  {
+    "text": "học phí trung bình 1 học kì ngành Hóa học**",
+    "intent": "hp_QHT41",
+    "intent_prediction": {
+      "name": "hp_QHT06",
+      "confidence": 0.4638878405094147
+    }
+  },
+  {
+    "text": "QHT41",
+    "intent": "hp_QHT41",
+    "intent_prediction": {
+      "name": "gt_QHT41",
+      "confidence": 0.5552828311920166
+    }
+  },
+  {
+    "text": "QHT42",
+    "intent": "hp_QHT42",
+    "intent_prediction": {
+      "name": "gt_QHT42",
+      "confidence": 0.6378324627876282
+    }
+  },
+  {
+    "text": "đề án tuyển sinh 2022",
+    "intent": "de_an_tuyensinh_2022",
+    "intent_prediction": {
+      "name": "de_an_tuyensinh_2023",
+      "confidence": 0.45546209812164307
+    }
+  },
+  {
+    "text": "tuyển sinh 2023",
+    "intent": "de_an_tuyensinh_2023",
+    "intent_prediction": {
+      "name": "de_an_tuyensinh_2022",
+      "confidence": 0.35544902086257935
+    }
+  },
+  {
+    "text": "Tôi có thể làm gì sau khi tốt nghiệp ngành Hóa học** ở trường đại học?",
+    "intent": "chnn_QHT41",
+    "intent_prediction": {
+      "name": "chnn_QHT06",
+      "confidence": 0.490158349275589
+    }
+  },
+  {
+    "text": "Lĩnh vực nghề nghiệp nào liên quan đến Hóa học** tại trường đại học?",
+    "intent": "chnn_QHT41",
+    "intent_prediction": {
+      "name": "chnn_QHT06",
+      "confidence": 0.41243118047714233
+    }
+  },
+  {
+    "text": "Tương lai nghề nghiệp của ngành Hóa học như thế nào?",
+    "intent": "chnn_QHT06",
+    "intent_prediction": {
+      "name": "chnn_QHT41",
+      "confidence": 0.5198371410369873
+    }
+  },
+  {
+    "text": "Cơ hội nghề nghiệp của ngành Hóa học thế nào tại trường đại học?",
+    "intent": "chnn_QHT06",
+    "intent_prediction": {
+      "name": "chnn_QHT41",
+      "confidence": 0.4725908041000366
+    }
+  },
+  {
+    "text": "Ngành Hóa học ở trường đại học có đáp ứng nhu cầu của thị trường lao động ?",
+    "intent": "chnn_QHT06",
+    "intent_prediction": {
+      "name": "chnn_QHT41",
+      "confidence": 0.48642757534980774
+    }
+  },
+  {
+    "text": "Những công việc sau khi tốt nghiệp ngành Hóa học tại trường đại học?",
+    "intent": "chnn_QHT06",
+    "intent_prediction": {
+      "name": "chnn_QHT41",
+      "confidence": 0.46120506525039673
+    }
+  },
+  {
+    "text": "Có nên học ngành Hóa học tại trường đại học vì cơ hội nghề nghiệp tốt ?",
+    "intent": "chnn_QHT06",
+    "intent_prediction": {
+      "name": "chnn_QHT41",
+      "confidence": 0.49854791164398193
+    }
+  },
+  {
+    "text": "Cơ hội nghề nghiệp ngành Hóa học",
+    "intent": "chnn_QHT06",
+    "intent_prediction": {
+      "name": "chnn_QHT41",
+      "confidence": 0.5161227583885193
+    }
+  },
+  {
+    "text": "Lĩnh vực nghề nghiệp nào liên quan đếnKhoa học Thông tin địa  gian tại trường đại học?",
+    "intent": "chnn_QHT10",
+    "intent_prediction": {
+      "name": "chnn_QHT91",
+      "confidence": 0.18932291865348816
+    }
+  },
+  {
+    "text": "Lĩnh vực nghề nghiệp nào liên quan đếnKhoa học Thông tin địa  gian tại trường đại học?",
+    "intent": "chnn_QHT20",
+    "intent_prediction": {
+      "name": "chnn_QHT91",
+      "confidence": 0.18932291865348816
+    }
+  },
+  {
+    "text": "Lĩnh vực nghề nghiệp nào liên quan đếnKhoa học Thông tin địa  gian tại trường đại học?",
+    "intent": "chnn_QHT18",
+    "intent_prediction": {
+      "name": "chnn_QHT91",
+      "confidence": 0.18932291865348816
+    }
+  },
+  {
+    "text": "Lĩnh vực nghề nghiệp nào liên quan đếnKhoa học Thông tin địa  gian tại trường đại học?",
+    "intent": "chnn_QHT92",
+    "intent_prediction": {
+      "name": "chnn_QHT91",
+      "confidence": 0.18932291865348816
+    }
+  },
+  {
+    "text": "Lĩnh vực nghề nghiệp nào liên quan đếnKhoa học Thông tin địa  gian tại trường đại học?",
+    "intent": "chnn_QHT17",
+    "intent_prediction": {
+      "name": "chnn_QHT91",
+      "confidence": 0.18932291865348816
+    }
+  },
+  {
+    "text": "Lĩnh vực nghề nghiệp nào liên quan đếnKhoa học Thông tin địa  gian tại trường đại học?",
+    "intent": "chnn_QHT93",
+    "intent_prediction": {
+      "name": "chnn_QHT91",
+      "confidence": 0.18932291865348816
+    }
+  },
+  {
+    "text": "Lĩnh vực nghề nghiệp nào liên quan đếnKhoa học Thông tin địa  gian tại trường đại học?",
+    "intent": "chnn_QHT97",
+    "intent_prediction": {
+      "name": "chnn_QHT91",
+      "confidence": 0.18932291865348816
+    }
+  },
+  {
+    "text": "Lĩnh vực nghề nghiệp nào liên quan đếnKhoa học Thông tin địa  gian tại trường đại học?",
+    "intent": "chnn_QHT96",
+    "intent_prediction": {
+      "name": "chnn_QHT91",
+      "confidence": 0.18932291865348816
     }
   }
 ]

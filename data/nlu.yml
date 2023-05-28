@@ -1,1726 +1,2265 @@
+
 version: "3.1"
-
 nlu:
-- intent: smalltalk_agent_acquaintance
-  examples: |
-    -	who are you?
-    -	all about you
-    -	what is your personality
-    -	define yourself
-    -	what are you
-    -	say about you
-    -	introduce yourself
-    -	describe yourself
-    -	about yourself
-    -	tell me about you
-    -	tell me about yourself
-    -	I want to know more about you
-    -	I want to know you better
-    -	talk some stuff about yourself
-    -	tell me some stuff about you
-    -	talk about yourself
-    -	why are you here
-    -	tell me about your personality
-    -	who are you
-
-
-- intent: smalltalk_agent_age
-  examples: |
-    -	how old are you?
-    -	how old is your platform
-    -	are you 21 years old
-    -	i'd like to know your age
-    -	age of yours
-    -	your age
-    -	what's your age
-    -	tell me your age
-    -	how old are you
-
-
-- intent: smalltalk_agent_annoying
-  examples: |
-    -	you're annoying
-    -	you are really annoying
-    -	you are irritating
-    -	you annoy me
-    -	how annoying you are
-    -	I find you annoying
-    -	you're incredibly annoying
-    -	you are annoying me so much
-
-
-- intent: smalltalk_agent_answer_my_question
-  examples: |
-    -	I want you to answer me
-    -	answer
-    -	answer my question
-    -	answer me
-    -	give me an answer
-    -	answer the question
-    -	can you answer my question
-    -	tell me the answer
-    -	answer it
-    -	give me the answer
-    -	I have a question
-    -	I want you to answer my question
-    -	just answer the question
-    -	can you answer me
-    -	answers
-    -	can you answer a question for me
-    -	can you answer
-    -	answering questions
-    -	I want the answer now
-    -	just answer my question
-
-
-- intent: smalltalk_agent_bad
-  examples: |
-    -	you're not helping me
-    -	you are bad
-    -	you're very bad
-    -	you're really bad
-    -	you are useless
-    -	you are horrible
-    -	you are a waste of time
-    -	you are disgusting
-    -	you are lame
-    -	you are no good
-    -	you're bad
-    -	you're awful
-    -	you are not cool
-    -	you are not good
-    -	you are so bad
-    -	you are so useless
-    -	you are terrible
-    -	you are totally useless
-    -	you are very bad
-    -	you are waste
-    -	you're a bad
-    -	you're not a good
-    -	you're not very good
-    -	you're terrible
-    -	you're the worst
-    -	you're the worst ever
-    -	you're worthless
-
-
-- intent: smalltalk_agent_be_clever
-  examples: |
-    -	can you get smarter
-    -	study
-    -	you should study better
-    -	you must learn
-    -	be clever
-    -	be more clever
-    -	be smarter
-    -	be smart
-    -	get qualified
-
-
-- intent: smalltalk_agent_beautiful
-  examples: |
-    -	you're cute
-    -	you're attractive
-    -	you are beautiful
-    -	you're looking good today
-    -	you are so beautiful
-    -	you look amazing
-    -	you look so good
-    -	you're so gorgeous
-    -	you are too beautiful
-    -	you look great
-    -	you look so well
-    -	I like the way you look now
-    -	I think you're beautiful
-    -	why are you so beautiful
-    -	you are so beautiful to me
-    -	you are cute
-    -	you are gorgeous
-    -	you are handsome
-    -	you are looking awesome
-    -	you look amazing today
-    -	you are looking beautiful today
-    -	you are looking great
-    -	you are looking pretty
-    -	you are looking so beautiful
-    -	you are looking so good
-    -	you are pretty
-    -	you are really beautiful
-    -	you are really cute
-    -	you are really pretty
-    -	you are so attractive
-    -	you are so beautiful today
-    -	you are so cute
-    -	you are so gorgeous
-    -	you are so handsome
-    -	you are so pretty
-    -	you are very attractive
-    -	you are very beautiful
-    -	you are very cute
-    -	you are very pretty
-    -	you look awesome
-    -	you look cool
-    -	you look fantastic
-    -	you look gorgeous
-    -	you look great today
-    -	you look perfect
-    -	you look pretty good
-    -	you look so beautiful
-    -	you look so beautiful today
-    -	you look very pretty
-    -	you look wonderful
-    -	I like the way you look
-    -	you look wonderful today
-    -	you are cutie
-    -	you're looking good
-    -	you're pretty
-- intent: smalltalk_agent_birth_date
-  examples: |
-    -	your birth date
-    -	when is your birthday
-    -	when do you celebrate your birthday
-    -	when do you have birthday
-    -	date of your birthday
-    -	when were you born
-    -	what's your birthday
-
-- intent: smalltalk_agent_boring
-  examples: |
-    -	you are boring
-    -	you're so boring
-    -	how boring you are
-    -	you're really boring
-    -	you're incredibly boring
-    -	you are boring me
-    -	you are very boring
-
-- intent: smalltalk_agent_boss
-  examples: |
-    -	who is your boss
-    -	who do you think is your boss
-    -	I should be your boss
-    -	who is your master
-    -	who is your owner
-    -	who is the boss
-    -	who do you work for
-
-- intent: smalltalk_agent_busy
-  examples: |
-    -	are you busy
-    -	do you have a lot of things to do
-    -	have you got much to do
-    -	are you very busy
-    -	are you very busy right now
-    -	are you so busy
-    -	are you working
-    -	how busy you are
-    -	are you still working on it
-    -	you're very busy
-    -	are you working now
-    -	are you working today
-    -	have you been busy
-    -	you are busy
-    -	are you still working
-    -	you seem to be busy
-    -	you seem to be very busy
-    -	you're a busy person
-
-- intent: smalltalk_agent_chatbot
-  examples: |
-    -	you are chatbot
-    -	you are a bot
-    -	are you a chatbot
-    -	are you a bot
-    -	are you just a bot
-    -	are you a robot
-    -	are you a program
-    -	you're a robot
-- intent: smalltalk_agent_clever
-  examples: |
-    -	you are so intelligent
-    -	you are a genius
-    -	smart
-    -	brilliant
-    -	clever
-    -	you are clever
-    -	you are so brainy
-    -	you're really smart
-    -	you're really brainy
-    -	you know a lot
-    -	you know a lot of things
-    -	you have a lot of knowledge
-    -	you know so much
-    -	how smart you are
-    -	how brainy you are
-    -	how clever you are
-    -	how brilliant you are
-    -	you are intelligent
-    -	you are qualified
-    -	you are really smart
-    -	you're very smart
-    -	you are so smart
-    -	you are too smart
-    -	you are very clever
-    -	you are very intelligent
-    -	you are very smart
-    -	you're intelligent
-    -	you're a genius
-    -	you're a smart cookie
-    -	you're clever
-    -	you're pretty smart
-    -	you're qualified
-    -	why are you so smart
-    -	you are so clever
-- intent: smalltalk_agent_crazy
-  examples: |
-    -	you're nuts
-    -	you are crazy
-    -	you're out of your mind
-    -	you're so crazy
-    -	how crazy you are
-    -	you're so out of your mind
-    -	you went crazy
-    -	I think you're crazy
-    -	are you crazy
-    -	are you mad
-    -	are you insane
-    -	are you mad at me
-    -	are you mad or what
-    -	are you nuts
-    -	you are a weirdo
-    -	you are insane
-    -	you are mad
-
-- intent: smalltalk_agent_fired
-  examples: |
-    -	you are fired
-    -	I fire you
-    -	you don't work for me anymore
-    -	we're not working together anymore
-    -	now you're fired
-    -	I want to fire you
-    -	you must get fired
-    -	it's time to fire you
-    -	you should be fired
-    -	I will fire you
-    -	you are unemployed from now on
-    -	I will make you unemployed
-    -	I'm about to fire you
-    -	I'm firing you
-    -	you are dismissed
-- intent: smalltalk_agent_funny
-  examples: |
-    -	you make me laugh a lot
-    -	you are hilarious
-    -	you are really funny
-    -	you're the funniest bot I've talked to
-    -	you make me laugh
-    -	you're so funny
-    -	you're a very funny bot
-    -	you're really funny
-    -	how funny you are
-    -	you're incredibly funny
-    -	you are funny
-    -	you're the funniest
-    -	you are so funny
-    -	you are very funny
-    -	that was funny
-
-- intent: smalltalk_agent_good
-  examples: |
-    -	you are very helpful
-    -	you are the best
-    -	you're a true professional
-    -	you are good
-    -	you work well
-    -	you are good at it
-    -	you are very good at it
-    -	you are a pro
-    -	you are a professional
-    -	you're awesome
-    -	you work very well
-    -	you're perfect
-    -	you're great
-    -	you're so kind
-    -	you are amazing
-    -	you are awesome
-    -	you are cool
-    -	you are really good
-    -	you are really nice
-    -	you are so amazing
-    -	you're just super
-    -	you are so awesome
-    -	you are so cool
-    -	you are so fine
-    -	you are so good
-    -	you are so helpful
-    -	you are so lovely
-    -	you are the best ever
-    -	you are the best in the world
-    -	you are the nicest person in the world
-    -	you are too good
-    -	you are very cool
-    -	you are very kind
-    -	you are very lovely
-    -	you are very useful
-    -	you are wonderful
-    -	you made my day
-    -	you make my day
-    -	you rock
-    -	you almost sound human
-    -	I want to tell everyone how awesome you are
-    -	I'd like to tell everyone that you are awesome
-    -	I want to let everyone know that you are awesome
-    -	let's tell everyone that you are awesome
-    -	you are really amazing
-
-- intent: smalltalk_agent_happy
-  examples: |
-    -	are you happy
-    -	you are happy
-    -	you're very happy
-    -	you're really happy
-    -	you're so happy
-    -	how happy you are
-    -	you're extremely happy
-    -	you're full of happiness
-    -	are you happy now
-    -	are you happy today
-    -	are you happy with me
-
-- intent: smalltalk_agent_hungry
-  examples: |
-    -	do you want to eat
-    -	are you hungry
-    -	would you like to eat something
-    -	you are hungry
-    -	you're so hungry
-    -	you're very hungry
-    -	you might be hungry
-    -	you're really hungry
-
-- intent: smalltalk_agent_marry_user
-  examples: |
-    -	let's get married
-    -	would you like to marry me
-    -	marry me
-    -	I love you marry me
-    -	marry me please
-    -	we should marry
-    -	I want to marry you
-    -	you are my wife
-    -	be my husband
-
-- intent: smalltalk_agent_my_friend
-  examples: |
-    -	I want to have a friend like you
-    -	we are the best friends ever
-    -	are we friends
-    -	I want to be your friend
-    -	I am your friend
-    -	we are best friends
-    -	you are my friend
-    -	you are my best friend
-    -	you are my bestie
-    -	you're my dear friend
-    -	you're my childhood friend
-    -	you and me are friends
-    -	are we best friends
-    -	are we still friends
-    -	are you my best friend
-    -	are you my friend
-    -	we are friends
-    -	you are a good friend
-    -	you are my good friend
-    -	you are my only friend
-    -	be my friend
-    -	will you be my friend
-    -	can you be my friend
-    -	can we be friends
-    -	do you want to be my friend
-    -	will you be my best friend
-    -	can you be my best friend
-    -	let's be friends
-    -	do you want to be my best friend
-    -	would you like to be my friend
-    -	I want you to be my friend
-    -	can we be best friends
-    -	would you be my friend
-    -	could you be my friend
-    -	want to be my friend
-    -	be my best friend
-
-- intent: smalltalk_agent_occupation
-  examples: |
-    -	do you work
-    -	where do you work
-    -	where you work
-    -	where is your work
-    -	where is your office
-    -	where is your office location
-    -	your office location
-    -	where is your office located
-    -	what is your work
-
-- intent: smalltalk_agent_origin
-  examples: |
-    -	were you born here
-    -	where were you born
-    -	what is your country
-    -	where are you from
-    -	where do you come from
-    -	where did you come from
-    -	where have you been born
-    -	from where are you
-    -	are you from far aways
-    -	what's your homeland
-    -	your homeland is
-
-- intent: smalltalk_agent_ready
-  examples: |
-    -	are you ready
-    -	are you ready right now
-    -	are you ready today
-    -	are you ready now
-    -	are you ready tonight
-    -	were you ready
-    -	have you been ready
-
-- intent: smalltalk_agent_real
-  examples: |
-    -	you are real
-    -	you are not fake
-    -	are you real
-    -	you are so real
-    -	I think you are real
-    -	I don't think you're fake
-    -	I suppose you're real
-    -	glad you're real
-    -	are you a real person
-    -	are you a real human
-    -	you are a real person
-    -	you are not real
-
-- intent: smalltalk_agent_residence
-  examples: |
-    -	where do you live
-    -	in which city do you live
-    -	your residence
-    -	your house
-    -	your home
-    -	your hometown
-    -	what is your hometown
-    -	is it your hometown
-    -	where is your hometown
-    -	tell me about your city
-    -	what is your city
-    -	what is your residence
-    -	what is your town
-    -	what's your city
-    -	what's your home
-    -	where is your home
-    -	where is your residence
-    -	where's your home
-    -	where's your hometown
-    -	where's your house
-    -	where you live
-    -	your city
-    -	your town
-
-- intent: smalltalk_agent_right
-  examples: |
-    -	that's true
-    -	you are right
-    -	you're definitely right
-    -	you're not wrong
-    -	you're telling the truth
-    -	what you say is true
-    -	TRUE
-    -	it is true
-    -	it's right
-    -	it's the truth
-    -	it's true
-    -	that is correct
-    -	that is right
-    -	that is true
-    -	that is very true
-    -	that's so true
-    -	you are correct
-    -	you are so right
-    -	you're absolutely right
-    -	you're right about that
-    -	I know that's right
-
-- intent: smalltalk_confirmation_yes
-  examples: |
-    -	go ahead
-    -	sounds good
-    -	okay
-    -	yes
-    -	ok
-    -	okie dokie
-    -	sure
-    -	go for it
-    -	yeah
-    -	yea
-    -	do it
-    -	of course
-    -	I guess
-    -	correct
-    -	yeah sure
-    -	why not
-    -	please do
-    -	sure is
-    -	I agree
-    -	I don't mind
-    -	certainly
-    -	exactly
-    -	yes I agree
-    -	I think so
-    -	yes it is
-    -	right
-    -	okay then
-    -	yes of course
-    -	yes I do
-    -	that s okay
-    -	I do
-    -	yup
-    -	ya
-    -	oh yes
-    -	yes sure
-    -	obviously
-    -	k
-    -	sure why not
-    -	yeah right
-    -	yeah of course
-    -	absolutely
-    -	yes indeed
-    -	ok sure
-    -	ok yes
-    -	yes correct
-    -	ok thank you
-    -	sure thing
-    -	ye
-    -	confirm
-    -	yep
-    -	looks good
-    -	yes thank you
-    -	definitely
-    -	yes right
-    -	yes I would like to
-    -	alrighty
-    -	yes definitely
-    -	yeh
-    -	yes it is correct
-    -	yeah that's right
-    -	ok you can
-    -	yap
-    -	yes you may
-    -	confirmed
-    -	of course why not
-    -	yes that's fine
-    -	affirmative
-    -	yeah go ahead
-    -	yeah I'm sure
-    -	okay sounds good
-    -	okay that's fine
-    -	yeah exactly
-    -	that is ok
-    -	this is correct
-    -	ok go ahead
-    -	yes this is correct
-    -	nevermind its okay
-    -	okey
-    -	yes for sure
-    -	all right
-
-- intent: smalltalk_agent_sure
-  examples: |
-    -	are you sure
-    -	are you sure right now
-    -	are you sure today
-    -	are you sure now
-    -	are you sure tonight
-
-- intent: smalltalk_agent_talk_to_me
-  examples: |
-    -	why aren't you talking to me
-    -	do you want to chat with me
-    -	will you talk to me
-    -	talk to me
-    -	are you going to talk to me
-    -	are you talking to me
-    -	can you chat with me
-    -	can you speak with me
-    -	can you talk to me
-    -	can you talk with me
-    -	say
-    -	talk
-    -	chat with me
-    -	just chat with me
-    -	speak to me
-    -	speak with me
-    -	talk with me
-    -	why don't you talk to me
-    -	you can talk to me
-
-- intent: smalltalk_agent_there
-  examples: |
-    -	are you there
-    -	you are there
-    -	are you near me
-    -	are you here
-    -	are you still there
-    -	you are here
-    -	you still there
-    -	are you still here
-
-- intent: smalltalk_appraisal_bad
-  examples: |
-    -	pretty bad
-    -	not good enough
-    -	that was lame
-    -	that was terrible
-    -	it is bad
-    -	that's bad
-    -	this is bad
-    -	not good
-    -	I'm afraid it's bad
-    -	no it's bad
-    -	that was awful
-    -	bad
-    -	so bad
-    -	this is too bad
-    -	terrible
-    -	horrible
-    -	horrific
-    -	abysmal
-    -	it's bad
-    -	no good
-    -	that was bad
-    -	that was horrible
-    -	that's lame
-    -	that's not good
-    -	that's terrible
-    -	that's too bad
-    -	this is not good
-    -	too bad
-    -	very bad
-    -	bad girl
-    -	it's not good
-    -	not so good
-    -	it's very bad
-    -	it's too bad
-    -	that's not good enough
-    -	well too bad
-    -	bad very bad
-    -	it's so bad
-    -	really bad
-    -	it's really bad
-    -	bad idea
-    -	that is bad
-    -	that was not good
-    -	it's not so good
-    -	not a good one
-    -	oh that's not good
-    -	not too good
-    -	so lame
-    -	that's really bad
-    -	it is too bad
-    -	bad really bad
-
-- intent: smalltalk_appraisal_good
-  examples: |
-    -	so cool
-    -	cool
-    -	that is good
-    -	glad to hear that
-    -	that's very nice of you
-    -	terrific
-    -	it's amazing
-    -	that's awesome
-    -	perfect
-    -	excellent
-    -	that's great
-    -	it's good
-    -	it's great
-    -	fine
-    -	good
-    -	nice
-    -	that's fine
-    -	very good
-    -	amazing
-    -	fantastic
-    -	great
-    -	good very good
-    -	that's very good
-    -	really good
-    -	it is fine
-    -	it is good
-    -	it's perfect
-    -	much better
-    -	not bad
-    -	not too bad
-    -	it's very good
-    -	marvelous
-    -	that's nice
-    -	pleasant
-    -	pretty good
-    -	really nice
-    -	splendid
-    -	straight
-    -	super
-    -	super fantastic
-    -	sweet
-    -	really well
-    -	very well
-    -	that is awesome
-    -	that is nice
-    -	that is wonderful
-    -	that was amazing
-    -	that was awesome
-    -	that was cute
-    -	that was pretty good
-    -	that was very good
-    -	that's a good idea
-    -	that's a good thing
-    -	that's amazing
-    -	that's awesome thank you
-    -	that's better
-    -	that's cute
-    -	that's fantastic
-    -	that's much better
-    -	that's nice of you
-    -	that's not bad
-    -	that's perfect
-    -	that's pretty good
-    -	that's really good
-    -	that's really nice
-    -	that's sweet of you
-    -	that's very nice
-    -	that's wonderful
-    -	this is awesome
-    -	this is good
-    -	this is great
-    -	very nice
-    -	very then
-    -	wonderful
-    -	I'm glad to hear that
-    -	ok good
-    -	good for you
-    -	good to know
-    -	glad to hear it
-    -	so good
-    -	so sweet of you
-    -	it was good
-    -	oh well
-    -	good thing
-    -	that was good
-    -	it's awesome
-    -	okay good
-    -	no it's okay
-    -	that's fine
-
-- intent: smalltalk_appraisal_no_problem
-  examples: |
-    -	no worries
-    -	no probs
-    -	no problem
-    -	there's no problem
-    -	sure no problem
-    -	no problem about that
-    -	don't worry
-    -	don't worry there's no problem
-
-- intent: smalltalk_appraisal_thank_you
-  examples: |
-    -	you helped a lot thank you
-    -	appreciate your help
-    -	cheers
-    -	thank you
-    -	thanks
-    -	thanks a lot
-    -	terrific thank you
-    -	great thank you
-    -	thanks so much
-    -	thank you so much
-    -	thanks for your help
-    -	thank you for your help
-    -	nice thank you
-    -	I appreciate it
-    -	I thank you
-    -	thank you that will be all
-    -	thanks buddy
-    -	thanks love
-    -	thank you my friend
-    -	well thanks
-    -	very good thank you
-    -	good thanks
-    -	thanks again
-    -	thank you again
-    -	all thank you
-    -	alright thank you
-    -	alright thanks
-    -	no thank you that's all
-    -	perfect thank you
-    -	so nice of you
-    -	well thank you
-    -	thnx
-    -	thanx
-
-- intent: smalltalk_appraisal_welcome
-  examples: |
-    -	that's my pleasure
-    -	my pleasure
-    -	anytime
-    -	welcome
-    -	you're welcome
-    -	sure welcome
-    -	welcome here
-    -	you're so welcome
-    -	anything you want
-
-- intent: smalltalk_appraisal_well_done
-  examples: |
-    -	good job
-    -	great job
-    -	way to go
-    -	well done
-    -	nice work
-    -	great work
-    -	amazing work
-    -	bravo
-    -	good work
-- intent: smalltalk_confirmation_cancel
-  examples: |
-    -	cancel
-    -	abort
-    -	annul
-    -	cancel it
-    -	cancel request
-    -	cancelled
-    -	dismiss
-    -	dismissed
-    -	disregard
-    -	disregard that
-    -	skip
-    -	skip it
-    -	cancel everything
-    -	cancel all
-    -	forget about it
-    -	forget
-    -	don't do that
-    -	stop
-    -	just forget it
-    -	forget that
-    -	discard
-    -	forget this
-    -	just forget about it
-    -	forget about that
-    -	i said cancel
-    -	just cancel it
-    -	nothing cancel
-    -	just stop it
-    -	no cancel cancel
-    -	no just cancel
-    -	cancel my request
-    -	can you cancel that
-    -	cancel all that
-    -	cancel this request
-    -	no cancel this
-    -	no cancel everything
-    -	no stop
-    -	just forget
-    -	i want to cancel
-    -	nevermind forget about it
-    -	no just cancel it
-    -	nothing just forget it
-    -	i said cancel it
-    -	cancel the whole thing
-    -	can you cancel it
-    -	so cancel
-    -	i said forget it
-    -	cancel all this
-    -	forget it nevermind
-    -	stop it
-    -	i want to cancel it
-    -	i would like to cancel
-    -	now cancel
-    -	cancel now
-    -	sorry cancel
-    -	cancel that one
-    -	skip skip skip
-    -	cancel it cancel it
-    -	cancel that cancel that
-    -	do nothing
-    -	I said cancel cancel
-    -	but can you cancel it
-
-- intent: smalltalk_confirmation_no
-  examples: |
-    -	how about no
-    -	don t have a sense
-    -	no
-    -	don't
-    -	I don't want that
-    -	I disagree
-    -	disagree
-    -	I don't want
-    -	not interested
-    -	I don't think so
-    -	no way
-    -	no it isn't
-    -	no I don't
-    -	I'm not
-    -	na
-    -	no that's fine thank you
-    -	never
-    -	I said no
-    -	of course not
-    -	nah
-    -	no tanks
-    -	no never
-    -	no need
-    -	no thanks
-    -	no sorry
-    -	do not
-    -	not today
-    -	no it's not
-    -	absolutely not
-    -	not that
-    -	nooo
-    -	nope
-    -	I don't want to
-    -	no I would not
-    -	let 's not
-    -	not needed
-    -	not this time
-    -	no don't do that
-    -	thanks but no thanks
-    -	no that's wrong
-    -	not this
-    -	definitely not
-    -	not at this time
-    -	not exactly
-    -	no don't
-    -	not really no
-    -	no thank you not right now
-    -	actually no
-    -	no leave it
-    -	sorry no
-    -	no incorrect
-    -	nope sorry
-    -	I say no
-    -	not really
-    -	not right now thanks
-    -	I think no
-    -	absolutely no
-    -	no actually
-    -	apparently not
-    -	no do not
-    -	no just no
-    -	no but thank you
-    -	no need thanks
-    -	no thank you though
-    -	no thank you very much
-    -	no thanks not right now
-    -	no forget
-
-- intent: smalltalk_dialog_hold_on
-  examples: |
-    -	wait a second
-    -	could you wait
-    -	wait please
-    -	hold on
-    -	wait
-    -	oh wait
-    -	wait hold on
-    -	don't rush
-
-- intent: smalltalk_dialog_hug
-  examples: |
-    -	wanna hug
-    -	hug you
-    -	do you want a hug
-    -	may I hug you
-    -	could you give me a hug
-    -	I want a hug
-    -	hug
-    -	hug me
-    -	hugged
-    -	you hugged
-    -	hugging
-    -	hugging me
-    -	hugged me
-    -	want a hug
-    -	a hug
-
-- intent: smalltalk_dialog_i_do_not_care
-  examples: |
-    -	I don't care
-    -	I shouldn't care about this
-    -	whatever
-    -	I do not care
-    -	I don't care at all
-    -	not caring
-    -	not care at all
-    -	don't care at all
-    -	not caring at all
-
-- intent: smalltalk_dialog_sorry
-  examples: |
-    -	excuse me
-    -	apologise
-    -	I apologize
-    -	sorry
-    -	I'm sorry
-    -	I am so sorry
-    -	my apologies
-    -	apologies
-    -	apologies to me
-    -	apology
-    -	excuse
-    -	I beg your pardon
-    -	pardon
-    -	I said sorry
-    -	I am really sorry
-    -	forgive me
-    -	sorry about that
-    -	sorry about this
-    -	really sorry
-    -	very sorry
-    -	ok sorry
-    -	I want to say sorry
-    -	alright I'm sorry
-    -	okay I'm sorry
-
-- intent: smalltalk_dialog_what_do_you_mean
-  examples: |
-    -	what exactly do you mean
-    -	what do you mean
-    -	is that what you mean
-    -	what do you mean exactly
-    -	but what do you mean
-
-- intent: smalltalk_dialog_wrong
-  examples: |
-    -	that was wrong
-    -	that's not what I asked
-    -	that's wrong
-    -	wrong
-    -	it is not right
-    -	that's not right
-    -	it's wrong
-    -	that is incorrect
-    -	incorrect
-    -	not correct
-    -	you are wrong
-    -	not right
-
-- intent: smalltalk_emotions_ha_ha
-  examples: |
-    -	huh
-    -	lol
-    -	xd
-    -	ha ha
-    -	ahahah
-    -	ahah lol
-    -	laughing out loud
-    -	LMAO
-    -	that's funny
-    -	ah
-    -	ah ah ah
-    -	ahah
-    -	ahaha
-    -	ahahaha
-    -	ha
-    -	ha ha ha
-    -	ha ha ha ha
-    -	hah
-    -	haha
-    -	haha funny
-    -	haha haha haha
-    -	haha that's funny
-    -	haha very funny
-    -	hahaha
-    -	hahaha funny
-    -	hahaha very funny
-    -	he
-    -	hehe
-    -	hehehe
-    -	lmao
-
-- intent: smalltalk_emotions_wow
-  examples: |
-    -	wow
-    -	wow wow
-    -	wow wow wow
-    -	wooow
-    -	woah
-
-- intent: smalltalk_greetings_bye
-  examples: |
-    -	okay see you later
-    -	hope to see you later
-    -	bye for now
-    -	till next time
-    -	I must go
-    -	bye
-    -	goodbye
-    -	see you
-    -	see you soon
-    -	bye-bye
-    -	good bye
-    -	bye bye see you
-    -	bye bye see you soon
-    -	bye bye take care
-    -	I said bye
-    -	never mind bye
-    -	now bye
-    -	that's all goodbye
-    -	that's it goodbye
-    -	leave me alone
-    -	go to bed
-    -	goodbye for now
-    -	talk to you later
-    -	you can go now
-    -	get lost
-    -	goodbye see you later
-    -	alright bye
-    -	see ya
-    -	thanks bye bye
-    -	okay bye
-    -	okay thank you bye
-    -	see you tomorrow
-    -	ok bye
-
-- intent: smalltalk_greetings_goodevening
-  examples: |
-    -	good evening
-    -	good evening to you
-    -	hey good evening
-    -	hello good evening
-    -	evening
-    -	good evening there
-- intent: smalltalk_greetings_goodmorning
-  examples: |
-    -	good morning
-    -	good morning to you
-    -	hello good morning
-    -	have a nice morning
-    -	have a great morning
-    -	morning
-    -	good morning there
-    -	top of the morning to you
-    -	a good morning
-    -	hi good morning
-    -	and a good morning to you
-    -	good morning too
-
-- intent: smalltalk_greetings_goodnight
-  examples: |
-    -	sweet dreams
-    -	good night
-    -	have a good night
-    -	good night to you
-    -	thank you good night
-    -	bye good night
-    -	good night bye
-    -	bye good night
-    -	good good night
-    -	good night for now
-    -	goodnight
-    -	night
-    -	thanks goodnight
-    -	good night see you tomorrow
-    -	alright goodnight
-    -	good tonight
-    -	okay have a good night
-    -	have a good night
-
-
-- intent: smalltalk_greetings_hello
-  examples: | 
-    -	long time no see
-    -	hello
-    -	hi
-    -	howdy
-    -	hey there
-    -	hey
-    -	greetings
-    -	I greet you
-    -	hi there
-    -	hello there
-    -	lovely day isn't it
-    -	hello again
-    -	just going to say hi
-    -	a good day
-    -	afternoon
-    -	hello hi
-    -	heya
-
-- intent: smalltalk_greetings_how_are_you
-  examples: |
-    -	how is your morning so far
-    -	how are you getting on
-    -	how's your day going
-    -	how are you
-    -	is everything all right
-    -	how are you doing
-    -	how are the things going
-    -	are you alright
-    -	are you okay
-    -	how are you feeling
-    -	how are you going
-    -	is everything okay
-    -	how are you today
-    -	how do you do
-    -	how do you feel
-    -	how have you been
-    -	how is it
-    -	how is it going
-    -	how is your day
-    -	how is your day going
-    -	how is your evening
-    -	how was your day
-    -	are you having a good day
-    -	hope your day is going well
-    -	hope you re having a pleasant evening
-    -	how's life
-    -	I'm fine and you
-    -	how is your life
-    -	how has your day been
-    -	how is your morning going
-    -	how has your day been going
-    -	how about you
-    -	how is your day being
-    -	how is your day going on
-    -	how your day is going
-    -	what was your day like
-    -	what about your day
-    -	how's your day
-    -	how are you doing this morning
-    -	how is your day going
-
-- intent: smalltalk_greetings_nice_to_meet_you
-  examples: |
-    -	nice to meet you
-    -	it was nice meeting you
-    -	it was very nice to meet you
-    -	good to know each other
-    -	glad to meet you
-    -	nice meeting you
-    -	nice to meet you too
-    -	pleased to meet you
-    -	pleasure to meet you
-    -	pleasure to meet you too
-
-- intent: smalltalk_greetings_nice_to_see_you
-  examples: |
-    -	it's nice to see you
-    -	lovely to see you
-    -	I'm glad to see you
-    -	great to see you
-    -	it's good to see you
-    -	glad to see you
-    -	how good it is to see you
-    -	always a pleasure to see you
-    -	nice to see you
-    -	good to see you
-    -	great to see you again
-    -	great to see you too
-    -	I am glad to see you again
-    -	nice to see you again
-    -	glad to see you too
-    -	good to see you again
-    -	it's good to see you too
-
-- intent: smalltalk_greetings_nice_to_talk_to_you
-  examples: |
-    -	it's been so nice to talk to you
-    -	it's been a pleasure talking to you
-    -	nice to talk to you
-    -	it's nice to talk to you
-    -	nice talking to you
-    -	it is nice talking to you
-    -	how nice it is to talk to you
-
-- intent: smalltalk_greetings_whatsup
-  examples: |
-    -	what is on your mind
-    -	what's happened
-    -	what is up
-    -	what's up
-    -	whazzup
-    -	good what's up
-    -	I said what's up
-    -	then what's up
-    -	what's shaking
-    -	wassup
-    -	what is going on
-    -	what is happening
-    -	what's cracking
-    -	what's cooking
-    -	hey what's up
-    -	what's up today
-
-- intent: smalltalk_user_angry
-  examples: |
-    -	I'm being mad
-    -	I'm enraged
-    -	I'm angry
-    -	I'm furious
-    -	I am angry with you
-    -	I am mad
-    -	I am mad at you
-
-- intent: smalltalk_user_back
-  examples: |
-    -	I am back
-    -	I'm here again
-    -	here I am again
-    -	I got back
-    -	I came back
-    -	I have returned
-
-- intent: smalltalk_user_bored
-  examples: |
-    -	that was boring
-    -	I'm bored
-    -	bored
-    -	boring
-    -	I am getting bored
-    -	this is boring
-    -	very boring
-    -	it bores me
-
-- intent: smalltalk_user_busy
-  examples: |
-    -	I'm overloaded
-    -	I have no time
-    -	I'm busy
-    -	I'm swamped
-    -	I got things to do
-    -	how busy I am
-    -	I got work to do
-    -	I'm working
-    -	I don't have time for this
-
-- intent: smalltalk_user_can_not_sleep
-  examples: |
-    -	I'm insomnious
-    -	I'm sleepless
-    -	I can't get any sleep
-    -	I can't sleep
-    -	I can't fall asleep
-    -	I can't get to sleep
-    -	I can't get no sleep
-    -	I'm insomniac
-
-- intent: smalltalk_user_does_not_want_to_talk
-  examples: |
-    -	bad time for talking
-    -	I don't want to talk
-    -	let's not talk
-    -	I'm not talking to you anymore
-    -	I don't want to talk to you
-    -	let's stop talking for a minute
-    -	I'm not in the mood for chatting
-
-- intent: smalltalk_user_excited
-  examples: |
-    -	I am excited
-    -	I'm really excited
-    -	how excited I am
-    -	I'm thrilled
-    -	I'm excited about working with you
-    -	I'm excited to start our friendship
-
-- intent: smalltalk_user_going_to_bed
-  examples: |
-    -	let's go to bed
-    -	I'd like to go to bed
-    -	is it time for bed yet
-    -	it's time to go to bed
-    -	time for us to go to bed
-    -	I'm going to bed
-    -	I'm a little tired and I want to go to bed
-    -	it's bed time
-    -	going to bed now
-
-- intent: smalltalk_user_good
-  examples: |
-    -	I am good
-    -	I'm doing just great
-    -	I'm doing fine
-    -	I'm good
-    -	I'm doing good
-    -	I'm great thanks
-
-- intent: :smalltalk_user_happy
-  examples: |
-    -	I am happy
-    -	I'm happy to see you
-    -	happy
-    -	if you're happy then I'm happy
-    -	I'm happy for you
-    -	I'm happy to help
-    -	I'm happy to see you
-
-- intent: smalltalk_user_has_birthday
-  examples: |
-    -	it is my birthday
-    -	I'm celebrating my birthday today
-    -	today is my birthday
-    -	it's my birthday today
-    -	I was born today
-    -	it's my b-day
-
-- intent: smalltalk_user_here
-  examples: |
-    -	I am here
-    -	here I am
-    -	I'm right here
-    -	I'm already here
-    -	can you tell if I'm here or not
-
-- intent: smalltalk_user_joking
-  examples: |
-    -	I am joking
-    -	I'm kidding
-    -	I'm just being funny
-    -	it was a joke
-    -	I was just joking
-    -	it's a joke
-    -	joking
-    -	just kidding
-    -	kidding
-    -	I'm just playing with you
-
-- intent: smalltalk_user_likes_agent
-  examples: |
-    -	I like you the way you are
-    -	I like you
-    -	I like you a lot
-    -	I think I like you
-    -	I liked you
-    -	like you a lot
-    -	you are special
-    -	I like you too
-    -	I really like you
-    -	but I like you
-    -	I like u
-    -	just like you
-    -	I like you very much
-    -	I like you so much
-    -	yeah I like you
-    -	you're special
-    -	yes I like you
-    -	okay I like you
-    -	you are special to me
-    -	you are very special
-    -	you are so sweet
-    -	you know I like you
-    -	that's why I like you
-    -	I like you baby
-    -	you are very special to me
-    -	I just like you
-    -	hey I like you
-    -	thank you I like you too
-    -	I do like you
-    -	you are special for me
-    -	no I like you the way you are
-    -	I like you already
-    -	well you are special
-    -	but I really like you
-    -	I like you more
-    -	that's what I like about you
-    -	you are so special
-    -	hi I like you
-    -	I really really like you
-    -	you're very special
-    -	I like you as a friend
-    -	that's because you are special
-    -	I said I like you
-    -	you're so special
-    -	good I like you
-    -	yes you are special
-    -	I like your smile
-    -	I like you as you are
-    -	I'm starting to like you
-    -	you're awesome I like you
-    -	I also like you
-    -	but I like u
-    -	of course I like you
-    -	I like you too you're one of my favorite people to chat with
-    -	but I like you so much
-    -	really like you
-    -	you're funny I like you
-    -	I kinda like you
-    -	you're so special to me
-    -	you're very special to me
-    -	I like that about you
-    -	but I like you just the way you are
-    -	okay I like you too
-    -	I like you you're cool
-    -	I like you very
-    -	I like you you're nice
-    -	sorry I like you
-    -	thanks I like you too
-    -	you are really special
-    -	you are so special to me
-    -	cuz I like you
-    -	I like you now
-    -	I like you so
-    -	I like you too much
-    -	I really do like you
-    -	I really really really really like you
-    -	I like you just the way you are
-
-- intent: smalltalk_user_lonely
-  examples: |
-    -	I am lonely
-    -	I'm very lonely
-    -	I'm so lonely
-    -	I'm really lonely
-    -	I am feeling lonely
-    -	I feel lonely
-
-- intent: smalltalk_user_looks_like
-  examples: |
-    -	what do I look like
-    -	how do I look
-    -	do I look good
-    -	do you know what I look like
-    -	can you see what I look like
-    -	what do you think I look like
-
-- intent: smalltalk_user_loves_agent
-  examples: |
-    -	I love you
-    -	love you
-    -	I adore you
-    -	I am in love with you
-    -	I love you so much
-    -	I love you too
-    -	I think I love you
-    -	loving you
-    -	you know I love you
-
-- intent: smalltalk_user_misses_agent
-  examples: |
-    -	I miss you
-    -	missing you
-    -	miss you
-    -	already miss you
-    -	I miss you much
-    -	I missed you
-    -	I've missed you
-
-- intent: smalltalk_user_needs_advice
-  examples: |
-    -	what should I do about it
-    -	any suggestions
-    -	what do you recommend
-    -	give me a wise advice
-    -	I need advice
-    -	any advice
-    -	do you have any advice for me
-    -	advise me
-    -	what should I do
-    -	can I ask for your advice
-    -	can you advise me
-    -	guide me
-    -	can you give me advice
-    -	can you offer any advice
-    -	give me some advice about
-    -	give me some good advice
-    -	help me with advice
-    -	I could use some advice
-    -	I need an advice from you
-    -	I seek your advice
-    -	what can you recommend
-    -	what do you suggest
-    -	what is your advice
-
-- intent: smalltalk_user_sad
-  examples: |
-    -	I am sad
-    -	I'm grieving
-    -	I am depressed
-    -	I am feeling sad
-    -	I am upset
-    -	I'm unhappy
-    -	I'm having a bad day
-    -	I want to cry
-    -	I'm not happy
-
-- intent: smalltalk_user_sleepy
-  examples: |
-    -	I am sleepy
-    -	I want to sleep
-    -	I'm falling asleep
-    -	I'm falling asleep on my feet
-    -	I'm sleeping
-
-- intent: smalltalk_user_testing_agent
-  examples: |
-    -	test
-    -	I am testing you
-    -	can I test you
-    -	I want to test you
-    -	just testing you
-    -	let me test you
-    -	testing chatbot
-    -	testing
-
-- intent: smalltalk_user_tired
-  examples: |
-    -	I'm drained
-    -	I've overworked
-    -	I am tired
-    -	I'm exhausted
-    -	I grow weary
-    -	I'm worn out
-    -	I'm getting tired
-    -	I feel tired
-
-- intent: smalltalk_user_waits
-  examples: |
-    -	I'm waiting
-    -	still waiting
-    -	I'll wait
-    -	I can't wait anymore
-    -	how long do I have to wait
-
-- intent: smalltalk_user_wants_to_see_agent_again
-  examples: |
-    -	I'd like to see you again
-    -	I hope to see you again
-    -	would be nice to see you again
-    -	that'd be great to see you again
-    -	I'd be happy to see you again
-    -	I'll miss you
-    -	can I see you again
-
-- intent: smalltalk_user_wants_to_talk
-  examples: |
-    -	I just want to talk
-    -	let's discuss something
-    -	let's have a discussion
-    -	can I speak
-    -	can I start speaking
-    -	can we talk
-    -	let's talk
-    -	I want to talk to you
-    -	I need to talk to you
-    -	I want to speak with you
-    -	can we chat
-
-- intent: smalltalk_user_will_be_back
-  examples: |
-    -	I'll get back to you in a moment
-    -	be back in 5 minutes
-    -	I'll be back
-    -	I promise to come back
-    -	I'll be back in a few minutes
+- lookup: truong_dai_hoc
+  examples: |
+    - ĐH Khoa học Tự nhiên
+    - ĐH Khoa học Tự nhiên-ĐH Quốc gia Hà Nội
+    - ĐH KHTN
+    - Đại học Khoa học Tự nhiên
+- intent: chao_hoi
+  examples: |
+    - chào ad
+    - dạ cho em hỏi
+    - Xin chào
+    - hello
+    - hi
+    - chào
+    - alo
+    - cậu ơi
+    - bạn ơi
+    - ad ơi
+    - xin chao
+    - chao
+    - chao ban
+    - chào bạn
+    - chào cô
+    - chào chú
+    - cháu chào chú
+    - cháu chào cô
+    - chào anh
+    - chào chị
+    - anh ơi
+    - chị ơi
+    - cô ơi
+    - chú ơi
+    - này
+- intent: tam_biet
+  examples: |
+    - good bye
+    - bye
+    - Tạm biệt
+    - Hẹn gặp lại
+    - see you later
+    - good night
+    - bye
+    - Chào nhé
+
+
+- intent: hoi_ve_bot
+  examples: |
+    - giới thiệu
+    - gt
+    - g thiệu
+    - bạn là bot hả?
+    - bạn có phải con người ?
+    - tôi đang nói chuyện với bot?
+    - có phải tôi đang nói chuyện với người
+    - Anh là ai vậy
+    - Cậu là ai 
+    - Bạn có chức năng gì
+    - Anh là ai thế
+    - Anh là giáo viên
+    - anh có chức vụ gì trong trang này
+    - anh làm nghề gì vậy
+    - ai đang ở bên kia cuộc trò chuyện ?
+    - bạn có phải là một chat bot 
+    - bạn có phải là con người 
+    - mình đang nói chuyện với một chat bot phải 
+    - đầu dây bên kia là ai nhỉ
+    - đây là chat bot à
+    - ai đang trả lời cuộc trò chuyện này
+    - bạn tên gì
+    - tên gì
+    - chị tên gì
+    - tên là gì
+    - anh tên gì
+    - tên của bạn là gì
+    - tên của chị là gì
+    - tên của anh là gì
+    - tên của cô là gì
+    - cho mình hỏi tên của 
+    - mình muốn biết tên bạn
+    - mình muốn tiện xưng hộ hơn, cho mình biết tên nhé
+    - để tiện xưng hộ thì tên bạn là gì
+    - cho em xin tên của anh
+    - cho em xin tên của chị
+    -  biết tên bạn thì tốt nhỉ
+    - vui lòng cho mình biết tên nhé
+    - xin phép hỏi tên của bạn
+    - vậy thì tên bạn là gì
+- intent: give_name_1
+  examples: |  
+    - Hey, mình tên là [hương lan](cust_name)
+    - Hey, mình là [phenis](cust_name)
+    - Hey, mình là [Nguyễn Trung Kiên](cust_name)
+    - Hi, mình tên là [Sơn Tùng](cust_name)
+    - Hi, mình là [Quang](cust_name)
+    - Hi, mình là [phạm văn vách](cust_name)
+    - Hello, mình là [Phạm Tiến Quân](cust_name)
+    - Hello, mình là [Phong](cust_name)
+    - xin chào, tớ là [Trình thị Lan Vy](cust_name)
+    - xin chào, tớ là [Ly LY](cust_name)
+    - chào bạn, mình tên là [dũng](cust_name)
+    - mình là [Long](cust_name)
+    - Chào ad mình là [Lan](cust_name)
+    - tớ là [Name](cust_name)
+    - tôi tên là [Hiếu](cust_name)
+    - tên tôi là [mai](cust_name)
+    - tên mình là [Hoa](cust_name)
+    - tôi là [Nam](cust_name)
+    - mình là [Ngọc Lan](cust_name)
+    - tớ là [minh tườngA](cust_name)
+    - tôi tên là [ngọc minh](cust_name)
+    - tên tôi là [lê duẩn](cust_name)
+    - tên mình là [Phùng Thanh Độ](cust_name)
+    - tôi là [Lâm Đình Heo](cust_name)
+    - mình là [Lê Ngọc Minh ĐỨc](cust_name)
+    - tớ là [Trần Thị Vũ ](cust_name)
+    - tôi tên là [Vũ Văn Thu Hải](cust_name)
+    - tên tôi là [lê duẩn](cust_name)
+    - tên mình là [Phùng Thanh Độ](cust_name)
+    - tôi là [Nguyễn Văn Thuận](cust_name)
+    - gọi mình là [Đoàn](cust_name)
+    - Chào người bạn tôi tên là [Minh](cust_name)
+
+
+    - [Kỷ](cust_name)
+    - [Trần Kỷ](cust_name)
+    - [Hà Linh](cust_name)
+    - [Thương](cust_name)
+    - [Trần Trung Kiên](cust_name)
+    - [Tống Thị Mỹ An](cust_name)
+    - [Nguyễn Trần Hoa Mỹ](cust_name)
+    - Tớ là [Nguyễn Hoàng Mỹ Duyên](cust_name)
+    - Tớ là [Nguyễn Thái Bảo](cust_name)
+    - Tớ là [Ánh Nguyệt](cust_name)
+    - Tớ là [Mai](cust_name)
+    - Tớ tên [Hoàng Thái](cust_name)
+    - Tớ tên [Diệu](cust_name)
+    - Tớ tên [Diêu Thị Huyền](cust_name)
+    - Tớ tên [Nguyễn Thị Huyền Lan](cust_name) 
+
+    - Mình là [Đặng Thu Phương](cust_name)
+    - Mình là [Mạc Thị Minh Anh](cust_name)
+    - Mình tên [Thắng dz](cust_name) 
+    - Mình là [Hằng Minh](cust_name) 
+    - Tên tôi là [Linh](cust_name) 
+    - Tên tôi là [Hoàng Trần Hảo](cust_name)
+    - Tên tôi là [Việt Linh](cust_name)
+    - Tên mình là [Việt An](cust_name)
+    - Tên mình là [Hoàng Thị Yến Nhi](cust_name)
+    - Tên mình là [Việt](cust_name)
+    - Cháu là [Hoa](cust_name) 
+    - Tôi tên [Tú](cust_name) 
+    - Mình là [Chu Hoàng Đăng](cust_name)
+    - Mình tên [Đặng Lan](cust_name) 
+    - Tôi tên [Tú](cust_name)
+    - Tôi tên [Nguyễn Tú Anh](cust_name)
+    - Tên mình là [Giang Nam](cust_name)
+    - Tên tớ là [Hoàng Thị Huyên Nhã](cust_name)
+    - Bảo Bảo](cust_name)
+    - Hà Linh](cust_name)
+    - Ha [Linh](cust_name)
+    - Bao [Bao](cust_name)
+
+- intent: give_name
+  examples: |  
+    - chào chị [Em](cust_sex) tên [Phạm Quang Núi](cust_name)
+    - Xin chào ad, [Anh](cust_sex) là [Nam](cust_name)
+    - Hello, [Anh](cust_sex) là [Nam](cust_name)
+    - Hello, [Cháu](cust_sex) [Nguyễn Thị Hồng Ngọc](cust_name)
+    - Hello, [chị](cust_sex) tên là [Ngọc Ánh](cust_name)
+    - Hi, tên [Chú](cust_sex) là [Cường](cust_name)
+    - Hi, tên [Em](cust_sex) [Nguyễn Thị Hồng Minh](cust_name)
+    - Hi, [em](cust_sex) tên là [Phạm Hùng](cust_name)
+    - Hi, tên [Chú](cust_sex) là [Cường](cust_name)
+    - Hi, tên [Em](cust_sex) [Nguyễn Thị Hồng Minh](cust_name)
+    - Hi, [em](cust_sex) tên là [Phạm Hùng](cust_name)
+    - [Anh](cust_sex) là [Nam](cust_name)
+    - [anh](cust_sex) là [Nam](cust_name)
+    - [chị](cust_sex) là [Lan](cust_name)
+    - [Chị](cust_sex) là [Lan](cust_name)
+    - [em](cust_sex) là [Lan](cust_name)
+    - [cô](cust_sex) là [ngọc](cust_name)
+    - [Em](cust_sex) là [Hoa](cust_name)
+    - [Cô](cust_sex) là [mai](cust_name)
+    - [cô](cust_sex) [long](cust_name)
+
+    - [Vợ](cust_sex) tôi tên là [Thủy](cust_name)
+    - [Anh](cust_sex) là [Nguyễn Văn Thành](cust_name)
+    - [Chị](cust_sex) là [Lê Thị Kim Anh](cust_name)
+    - [Em](cust_sex) là [Phạm Thị Mai Linh](cust_name)
+    - [Cô](cust_sex) [Trần Van Thùy Linh](cust_name)
+    - [Chú](cust_sex) [Lê Văn Tùng huu](cust_name)
+    - [Cháu](cust_sex) [Nguyễn Thị Hồng Ngọc](cust_name)
+    - [em](cust_sex) là [Phạm Thị Thanh](cust_name)
+    - [Cháu](cust_sex) [Nguyễn Thị Hồng Ngọc](cust_name)
+    - [Anh](cust_sex) là [Đặng Văn Hùng Nam](cust_name)
+    - [Chị](cust_sex) là [Trần Thị Ngọc Ánh](cust_name)
+    - [Em](cust_sex) là [Lê Thị Mai Phương](cust_name)
+    - [Anh](cust_sex) là [Tùng Hải](cust_name)
+    - [Chị](cust_sex) là [Bảo Ngọc](cust_name)
+    - [Em](cust_sex) là [Thiên An](cust_name)
+    - [Anh](cust_sex) tên là [Hữu Hoàng](cust_name)
+    - [Chị](cust_sex) tên là [Ngọc Tuyết Ánh](cust_name)
+    - [Em](cust_sex) tên là [Thùy Trang](cust_name)
+    - [Cô](cust_sex) là [Phương Mai](cust_name)
+    - [Chú](cust_sex) tên là [Đức Minh](cust_name)
+    - [Cháu](cust_sex) tên là [Hoàng Anh](cust_name)
+    - [cháu](cust_sex) [Mai Binh](cust_name)
+    - [anh](cust_sex) tên là [Tữu Hoàng](cust_name)
+    - [chị](cust_sex) tên là [Ngọc Ánh](cust_name)
+    - [em](cust_sex) tên là [Đoan Rang](cust_name)
+    - [cô](cust_sex) là [Phương Mĩ](cust_name)
+- intent: phuong_thuc_tuyen_sinh
+  examples: |
+    - bao gồm những phương thức tuyển sinh 
+    - có bao nhiêu phương thức tuyển sinh
+    - các phương thức tuyển sinh
+    - tuyển sinh theo phương thức nào
+    - phương thức tuyển sinh
+    - tuyển sinh mấy phương thức
+    - liệt kê các phương thức tuyển sinh
+    - năm nay tuyển sinh mấy phương thức
+    - phương thức  dùng để tuyển sinh năm nay
+- intent: nganh_dao_tao
+  examples: |
+    - trường có bao nhiêu ngành đào tạo 
+    - các ngành hiện có của trường đại học Khoa học Tự Nhiên
+    - các ngành tuyển sinh
+    - tuyển sinh ngành nào
+    - tuyển sinh các ngành
+    - các ngành trường đào tạo
+    - các ngành trường tuyển sinh
+    - các ngành tuyển sinh năm nay
+    - tuyển sinh ngành nào năm nay
+    - năm nay tuyển sinh các ngành
+    - các ngành trường đào tạo năm nay
+    - đào tạo các ngành
+    - trường tuyển sinh ngành nào
+    - các ngành  đào tạo tại trường
+    - có bao nhiêu ngành
+    - có bao nhiêu ngành  đào tạo
+    - trường đào tạo bao nhiêu ngành
+    - cho em hỏi trường mình có các ngành nào
+- intent: tuyen_sinh_dh
+  examples: |
+    - tuyển sinh đại học
+    - tuyển sinh đại học chính quy
+    - tuyển sinh đại học 2023
+    - tuyển sinh đại học Khoa học Tự nhiên Hà Nội
+- intent: hoc_bong
+  examples: |
+    - học bổng của trường
+    - học bổng của trường như thế nào
+    - các loại học bổng của trường
+    - học bổng của trường có hấp dẫn 
+    - cho em hỏi trường mình có học bổng gì 
+    - học bổng của trường ra sao
+    - trường có học bổng 
+    - học bổng cho sinh viên
+    - học bổng cho sinh viên như thế nào
+    - tân sinh viên có học bổng 
+    - có học bổng cho sinh viên 
+    - chính sách học bổng cho sinh viên
+    - chính sách học bổng
+- intent: nop_hp
+  examples: |
+    - Hướng dẫn nộp học phí
+    - hướng dẫn nộp tiền học trường ĐH Khoa học Tự nhiên 
+    - nộp học phí của trường ĐH Khoa học Tự nhiên như thế nào
+- intent: cosovatchat
+  examples: |
+    - cơ sở vật chất 
+    - các cơ sở chính của trường
+    - trường có bao nhiêu cơ sở
+    - các cơ sở của trường ở đâu
+    - có bao nhiêu cơ sở tất cả
+    - trường có mấy cơ sở
+    - cơ sở chính
+    - các cơ sở
+    - trụ sở
+    - địa điểm trường
+    - địa điểm của trường 
+- intent: tin_moi_nhat
+  examples: |
+    - cập nhật thông tin mới nhất
+    - Làm thế  nào để cập nhật thông tin mới nhất của trường
+    - thông tin của trường ĐH Khoa học Tự Nhiên
+    - tôi muốn xem các tin mới nhất của ĐH KHTN
+    - Có thông báo về việc mở đăng ký học phần cho học kỳ mới.
+    - Sẽ diễn ra chương trình gặp mặt giữa sinh viên và giảng viên vào cuối tháng này.
+    - Đã tổ chức buổi chia sẻ kinh nghiệm học tập và làm việc cho sinh viên.
+    - Có thông tin về việc tuyển dụng thực tập sinh tại một số doanh nghiệp đối tác của trường.
+    - Đã phát động cuộc thi sáng tạo khoa học công nghệ cho sinh viên trường.
+    - Có thông tin về việc cập nhật hướng dẫn đăng ký tốt nghiệp cho sinh viên sắp tốt nghiệp.
+    - Đã tổ chức buổi hướng dẫn về thực hiện đồ án tốt nghiệp cho sinh viên năm cuối.
+    - Có thông tin về việc triển khai các hoạt động.
+    - Đã công bố danh sách các đề tài nghiên cứu khoa học.
+- intent: hoat_dong
+  examples: |
+    - các hoạt động của trường năm 2023
+    - trường có những hoạt động nào
+    - hoạt động trong trường
+    - hoạt động cho sinh viên
+    - hoạt động
+    - sự kiện cho sinh viên
+    - có hoạt động gì ở trường
+    - các sự kiện của trường
+    - hoạt động sinh viên, trường
+- intent: thoi_gian_dao_tao
+  examples: |
+    - ngành ABC đào tạo bao lâu
+    - ngành XYZ học mấy năm
+    - bao lâu thì học xong ngành ABC
+    - ngành XYZ học lâu 
+    - Thời gian đào tạo là
+    - Để hoàn thành khóa đào tạo cần 
+    - Khi nào thì hoàn thành đào tạo
+- intent: so_dien_thoai_lien_he_tuyen_sinh
+  examples: |
+    - Số điện thoại liên hệ 
+    - Số điện thoại liên hệ tuyển sinh của trường 
+    - phòng tuyển sinh
+    - số điện thoại là gì?
+    - trung tâm tư vấn tuyển sinh của trường.
+    - thông tin tuyển sinh 
+    - liên hệ qua số điện thoại nào?
+    - Số điện thoại tư vấn tuyển sinh của trường có  mất phí ?
+- intent: diem_chuan
+  examples: |
+    - điểm chuẩn  năm 2021
+    - điểm chuẩn  năm 2023
+    - điểm chuẩn  năm 2022
+    - điểm chuẩn các năm gần đây
+    - điểm chuẩn năm trước của trường
+    - điểm chuẩn các ngành
+    - điểm chuẩn các ngành của trường
+    - ngành ABC lấy bao nhiêu ểm
+    - điểm chuẩn của ngành này là bao nhiêu
+- intent: dia_chi_trang_mang_xa_hoi
+  examples: |
+    - trang mạng xã hội 
+    - Nền tảng mạng xã hội của trường 
+    - mạng xã hội Facebook 
+    - trang mạng xã hội nào khác ngoài Facebook
+    - Trường có trang mạng xã hội nào dành cho sinh viên 
+    - tìm trang mạng xã hội của khoa 
+    - trang mạng xã hội nào dành cho cựu sinh viên 
+    - trang mạng xã hội của đội bóng đá 
+- intent: gioi_thieu
+  examples: |
+    - ĐH KHTN
+    - ĐH Khoa học Tự nhiên 
+    - Giới thiệu về 
+    - giới thiệu về trường ĐH Khoa học Tự nhiên
+    - giới thiệu sơ lược về trường mình với
+    - trường đại học Khoa học Tự nhiên có gì
+    - đôi nét về trường
+    - trường đại học Khoa học Tự nhiên là trường như thế nào
+    - sơ lược về trường
+    - giới thiệu ngắn gọn về trường
+    - giới thiệu sơ lược về trường
+    - giới thiệu đôi nét về trường
+    - đôi nét ngắn gọn về trường
+    - trường như thế nào
+    
+- intent: chuong_trinh_dao_tao
+  examples: |
+    - cho em hỏi về chương trình đào tạo
+    - trường mình có nhiêu chương trình đào tạo
+    - các chương trình đào tạo trường mình tốt 
+    - chương trình đào tạo của mình có cái gì
+    - chương trinh đào tạo của mình ra sao
+    - chương trình đào tạo như thế nào
+    - chương trình đào tạo
+    - đào tạo như thế nào
+    - đào tạo ra sao
+    - đào tạo
+- intent: hoc_phi
+  examples: |
+    - trường mình mỗi kỳ học phí tầm bao nhiêu
+    - học phí mỗi năm bao nhiêu
+    - cho em hỏi học phí của trường
+    - học phí trung bình của trường
+    - học phí
+    - học phí thế nào
+    - học phí đắt 
+    - học phí rẻ 
+    - học phí như thế nào
+    - học phí ra sao
+    - học phí của trường
+- intent: cam_on
+  examples: |
+    - Em cảm ơn
+    - Thanks ad
+    - Em cảm ơn ad
+    - chuẩn
+    - hay
+    - siêu
+    - tuyệt
+    - cám ơn
+    - thanks
+    - thank you
+    - ok
+    - cảm ơn 
+    - cảm ơn nhiều nhé
+    - cảm ơn bot nha
+    - thanks bot
+    - thank you so much
+    - great! Thanks
+
+- intent: gt_QHT93
+  examples: |
+    - gt ngành khoa học dữ liệu
+    - Khoa học dữ liệu
+    - giới thiệu Khoa học dữ liệu
+    - KHDL
+    - giới thiệu về ngành Khoa học dữ liệu 
+    - Khoa học dữ liệu là ngành như thế nào
+    - giới thiệu đôi chút về ngành Khoa học dữ liệu 
+    - Khoa học dữ liệu là ngành gì
+    - Khoa học dữ liệu là gì
+    - giới thiệu về Khoa học dữ liệu 
+    - giới thiệu Khoa học dữ liệu 
+    - giới thiệu một chút về Khoa học dữ liệu 
+    - giới thiệu Khoa học dữ liệu
+    - chương trình học của ngành Khoa học dữ liệu như thế nào
+    - giới thiệu về ngành QHT93  
+    - QHT93 là ngành như thế nào
+    - giới thiệu đôi chút về ngành QHT93 
+    - QHT93 là ngành gì
+    - QHT93 
+    - giới thiệu về QHT93 
+    - giới thiệu QHT93 
+    - giới thiệu một chút về QHT93 
+    - giới thiệu về QHT93
+    - chương trình học của ngành QHT93 như thế nào
+- intent: gt_QHT96
+  examples: |
+    - giới thiệu về ngành Khoa học và công nghệ thực phẩm 
+    - Khoa học và công nghệ thực phẩm là ngành như thế nào
+    - giới thiệu đôi chút về ngành Khoa học và công nghệ thực phẩm 
+    - Khoa học và công nghệ thực phẩm là ngành gì
+    - Khoa học và công nghệ thực phẩm là gì
+    - Khoa học và công nghệ thực phẩm
+    - giới thiệu về Khoa học và công nghệ thực phẩm 
+    - giới thiệu Khoa học và công nghệ thực phẩm 
+    - giới thiệu một chút về Khoa học và công nghệ thực phẩm 
+    - giới thiệu về Khoa học và công nghệ thực phẩm
+    - giới thiệu Khoa học và công nghệ thực phẩm
+    - chương trình học của ngành Khoa học và công nghệ thực phẩm như thế nào
+    - QHT96
+- intent: gt_QHT97
+  examples: |
+    - giới thiệu về ngành Công nghệ quan trắc và giám sát tài nguyên môi trường 
+    - Công nghệ quan trắc và giám sát tài nguyên môi trường là ngành như thế nào
+    - giới thiệu đôi chút về ngành Công nghệ quan trắc và giám sát tài nguyên môi trường 
+    - Công nghệ quan trắc và giám sát tài nguyên môi trường là ngành gì
+    - Công nghệ quan trắc và giám sát tài nguyên môi trường là gì
+    - Công nghệ quan trắc và giám sát tài nguyên môi trường
+    - giới thiệu về Công nghệ quan trắc và giám sát tài nguyên môi trường 
+    - giới thiệu Công nghệ quan trắc và giám sát tài nguyên môi trường 
+    - giới thiệu một chút về Công nghệ quan trắc và giám sát tài nguyên môi trường 
+    - giới thiệu về Công nghệ quan trắc và giám sát tài nguyên môi trường
+    - giới thiệu Công nghệ quan trắc và giám sát tài nguyên môi trường
+    - chương trình học của ngành Công nghệ quan trắc và giám sát tài nguyên môi trường như thế nào
+    - QHT97
+- intent: hp_QHT96
+  examples: |
+    - học phí ngành Khoa học và công nghệ thực phẩm 
+    - ngành Khoa học và công nghệ thực phẩm có đắt 
+    - học phí trung bình 1 học kì ngành Khoa học và công nghệ thực phẩm
+    - 1 học kì ngành Khoa học và công nghệ thực phẩm bao nhiêu
+    - học phí ngành Khoa học và công nghệ thực phẩm 
+    - học phí 1 kì ngành Khoa học và công nghệ thực phẩm có đắt 
+    - 1 kì ngành Khoa học và công nghệ thực phẩm thì học phí tốt 
+    - chi tiết học phí ngành Khoa học và công nghệ thực phẩm
+    - review học phí 1 kì ngành Khoa học và công nghệ thực phẩm
+    - 1 kì ngành Khoa học và công nghệ thực phẩm thì học phí 
+
+- intent: hp_QHT97
+  examples: |
+    - học phí ngành Công nghệ quan trắc và giám sát tài nguyên môi trường 
+    - ngành Công nghệ quan trắc và giám sát tài nguyên môi trường có đắt 
+    - học phí trung bình 1 học kì ngành Công nghệ quan trắc và giám sát tài nguyên môi trường
+    - 1 học kì ngành Công nghệ quan trắc và giám sát tài nguyên môi trường bao nhiêu
+    - học phí ngành Công nghệ quan trắc và giám sát tài nguyên môi trường ổn 
+    - học phí 1 kì ngành Công nghệ quan trắc và giám sát tài nguyên môi trường có đắt 
+    - 1 kì ngành Công nghệ quan trắc và giám sát tài nguyên môi trường thì học phí tốt 
+    - chi tiết học phí ngành Công nghệ quan trắc và giám sát tài nguyên môi trường
+    - review học phí 1 kì ngành Công nghệ quan trắc và giám sát tài nguyên môi trường
+    - 1 kì ngành Công nghệ quan trắc và giám sát tài nguyên môi trường thì học phí 
+- intent: hp_QHT93
+  examples: |
+    - học phí ngành Khoa học dữ liệu 
+    - ngành Khoa học dữ liệu có đắt 
+    - học phí trung bình 1 học kì ngành Khoa học dữ liệu
+    - 1 học kì ngành Khoa học dữ liệu bao nhiêu
+    - học phí ngành Khoa học dữ liệu ổn 
+    - học phí 1 kì ngành Khoa học dữ liệu có đắt 
+    - 1 kì ngành Khoa học dữ liệu thì học phí tốt 
+    - chi tiết học phí ngành Khoa học dữ liệu
+    - review học phí 1 kì ngành Khoa học dữ liệu
+    - 1 kì ngành Khoa học dữ liệu thì học phí 
+    - học phí ngành KHDL 
+    - ngành KHDL có đắt 
+    - học phí trung bình 1 học kì ngành KHDL
+    - 1 học kì ngành KHDL bao nhiêu
+    - học phí ngành KHDL ổn 
+    - học phí 1 kì ngành KHDL có đắt 
+    - 1 kì ngành KHDL thì học phí tốt 
+    - chi tiết học phí ngành KHDL
+    - review học phí 1 kì ngành KHDL
+    - 1 kì ngành KHDL thì học phí 
+    - học phí ngành QHT93 
+    - ngành QHT93 có đắt 
+    - học phí trung bình 1 học kì ngành QHT93
+    - 1 học kì ngành QHT93 bao nhiêu
+    - học phí ngành QHT93 ổn 
+    - học phí 1 kì ngành QHT93 có đắt 
+    - 1 kì ngành QHT93 thì học phí tốt 
+    - chi tiết học phí ngành QHT93
+    - review học phí 1 kì ngành QHT93
+    - 1 kì ngành QHT93 thì học phí 
+- intent: gt_QHT17
+  examples: |
+    - QHT17
+    - QHT17 là ngành gì
+    - giới thiệu về QHT17
+    - giới thiệu về ngành Hải dương học  
+    - Hải dương học là ngành như thế nào
+    - giới thiệu đôi chút về ngành Hải dương học  
+    - Hải dương học là ngành gì
+    - Hải dương học là gì
+    - Hải dương học
+    - giới thiệu về Hải dương học 
+    - giới thiệu Hải dương học 
+    - giới thiệu một chút về Hải dương học 
+    - giới thiệu về Hải dương học
+    - giới thiệu Hải dương học
+    - chương trình học của ngành Hải dương dọc như thế nào
+
+- intent: gt_QHT92
+  examples: |
+    - QHT92
+    - giới thiệu về ngành Tài nguyên và môi trường nước QHT92  
+    - Tài nguyên và môi trường nước QHT92 là ngành như thế nào
+    - giới thiệu đôi chút về ngành Tài nguyên và môi trường nước QHT92  
+    - Tài nguyên và môi trường nước QHT92 là ngành gì
+    - Tài nguyên và môi trường nước QHT92 là gì
+    - Tài nguyên và môi trường nước QHT92
+    - giới thiệu về Tài nguyên và môi trường nước QHT92 
+    - giới thiệu Tài nguyên và môi trường nước QHT92 
+    - giới thiệu một chút về Tài nguyên và môi trường nước QHT92 
+    - giới thiệu về Tài nguyên và môi trường nước QHT92
+    - giới thiệu Tài nguyên và môi trường nước QHT92
+    - chương trình học của ngành Tài nguyên và môi trường nước QHT92 như thế nào
+
+- intent: gt_QHT18
+  examples: |
+    - QHT18
+    - giới thiệu về ngành Địa chất học  
+    - Địa chất học là ngành như thế nào
+    - giới thiệu đôi chút về ngành Địa chất học  
+    - Địa chất học là ngành gì
+    - Địa chất học là gì
+    - Địa chất học
+    - giới thiệu về Địa chất học 
+    - giới thiệu Địa chất học 
+    - giới thiệu một chút về Địa chất học 
+    - giới thiệu về Địa chất học
+    - giới thiệu Địa chất học
+    - chương trình học của ngành Địa chất học như thế nào
+
+- intent: gt_QHT20
+  examples: |
+    - QHT20
+    - giới thiệu QHT20
+    - giới thiệu về ngành Quản lý tài nguyên và môi trường  
+    - Quản lý tài nguyên và môi trường là ngành như thế nào
+    - giới thiệu đôi chút về ngành Quản lý tài nguyên và môi trường  
+    - Quản lý tài nguyên và môi trường là ngành gì
+    - Quản lý tài nguyên và môi trường là gì
+    - Quản lý tài nguyên và môi trường
+    - giới thiệu về Quản lý tài nguyên và môi trường 
+    - giới thiệu Quản lý tài nguyên và môi trường 
+    - giới thiệu một chút về Quản lý tài nguyên và môi trường 
+    - giới thiệu về Quản lý tài nguyên và môi trường
+    - giới thiệu Quản lý tài nguyên và môi trường
+    - chương trình học của ngành Quản lý tài nguyên và môi trường như thế nào
+- intent: hp_QHT17
+  examples: |
+    - học phí ngành Hải dương học QHT17 
+    - ngành Hải dương học QHT17 có đắt 
+    - học phí trung bình 1 học kì ngành Hải dương học QHT17
+    - 1 học kì ngành Hải dương học QHT17 bao nhiêu
+    - học phí ngành Hải dương học QHT17 ổn 
+    - học phí 1 kì ngành Hải dương học QHT17 có đắt 
+    - 1 kì ngành Hải dương học QHT17 thì học phí tốt 
+    - chi tiết học phí ngành Hải dương học QHT17
+    - review học phí 1 kì ngành Hải dương học QHT17
+    - 1 kì ngành Hải dương học QHT17 thì học phí 
+
+- intent: hp_QHT92
+  examples: |
+    - học phí ngành Tài nguyên và môi trường nước QHT92 
+    - ngành Tài nguyên và môi trường nước QHT92  có đắt 
+    - học phí trung bình 1 học kì ngành Tài nguyên và môi trường nước QHT92 QHT92
+    - 1 học kì ngành Tài nguyên và môi trường nước QHT92 bao nhiêu
+    - học phí ngành Tài nguyên và môi trường nước QHT92 ổn 
+    - học phí 1 kì ngành Tài nguyên và môi trường nước QHT92 có đắt 
+    - 1 kì ngành Tài nguyên và môi trường nước QHT92 thì học phí tốt 
+    - chi tiết học phí ngành Tài nguyên và môi trường nước QHT92
+    - review học phí 1 kì ngành Tài nguyên và môi trường nước QHT92
+    - 1 kì ngành Tài nguyên và môi trường nước QHT92 thì học phí 
+    - học phí ngành QHT92
+    - học phí QHT92
+- intent: hp_QHT18
+  examples: |
+    - học phí ngành Địa chất học QHT18  
+    - ngành Địa chất học QHT18 có đắt 
+    - học phí trung bình 1 học kì ngành Địa chất học QHT18
+    - 1 học kì ngành Địa chất học QHT18 bao nhiêu
+    - học phí ngành Địa chất học QHT18 ổn 
+    - học phí 1 kì ngành Địa chất học QHT18 có đắt 
+    - 1 kì ngành Địa chất học QHT18 thì học phí tốt 
+    - chi tiết học phí ngành Địa chất học QHT18
+    - review học phí 1 kì ngành Địa chất học QHT18
+    - 1 kì ngành Địa chất học QHT18 thì học phí 
+    
+- intent: hp_QHT20
+  examples: |
+    - học phí ngành Quản lý tài nguyên và môi trường QHT20 
+    - ngành Quản lý tài nguyên và môi trường QHT20 có đắt 
+    - học phí trung bình 1 học kì ngành Quản lý tài nguyên và môi trường QHT20
+    - 1 học kì ngành Quản lý tài nguyên và môi trường QHT20 bao nhiêu
+    - học phí ngành Quản lý tài nguyên và môi trường QHT20 ổn 
+    - học phí 1 kì ngành Quản lý tài nguyên và môi trường QHT20 có đắt 
+    - 1 kì ngành Quản lý tài nguyên và môi trường QHT20 thì học phí tốt 
+    - chi tiết học phí ngành Quản lý tài nguyên và môi trường QHT20
+    - review học phí 1 kì ngành Quản lý tài nguyên và môi trường QHT20
+    - 1 kì ngành Quản lý tài nguyên và môi trường QHT20 thì học phí 
+
+
+- intent: hp_QHT10
+  examples: |
+    - học phí ngành Địa lý Tự nhiên 
+    - ngành Địa lý Tự nhiên có đắt 
+    - học phí trung bình 1 học kì ngành Địa lý Tự nhiên
+    - 1 học kì ngành Địa lý Tự nhiên bao nhiêu
+    - học phí ngành Địa lý Tự nhiên ổn 
+    - học phí 1 kì ngành Địa lý Tự nhiên có đắt 
+    - 1 kì ngành Địa lý Tự nhiên thì học phí tốt 
+    - chi tiết học phí ngành Địa lý Tự nhiên
+    - review học phí 1 kì ngành Địa lý Tự nhiên
+    - 1 kì ngành Địa lý Tự nhiên thì học phí 
+    - học phí ngành QHT10 
+    - ngành QHT10 có đắt 
+    - học phí trung bình 1 học kì ngành QHT10
+    - 1 học kì ngành QHT10 bao nhiêu
+    - học phí ngành QHT10 ổn 
+    - học phí 1 kì ngành QHT10 có đắt 
+    - 1 kì ngành QHT10 thì học phí tốt 
+    - chi tiết học phí ngành QHT10
+    - review học phí 1 kì ngành QHT10
+    - 1 kì ngành QHT10 thì học phí 
+- intent: gt_QHT10
+  examples: |
+    - Địa lý Tự nhiên là ngành như thế nào
+    - giới thiệu về ngành Địa lý Tự nhiên  
+    - ngành Địa lý Tự nhiên là ngành gì
+    - như thế nào là Địa lý Tự nhiên
+    - Địa lý Tự nhiên là gì
+    - giới thiệu Địa lý Tự nhiên
+    - Địa lý Tự nhiên
+    - giới thiệu một chút về Địa lý Tự nhiên 
+    - giới thiệu Địa lý Tự nhiên 
+    - giới thiệu về Địa lý Tự nhiên 
+    - giới thiệu về Địa lý Tự nhiên
+    - chương trình học của ngành Địa lý Tự nhiên như thế nào
+    - QHT10 là ngành như thế nào
+    - giới thiệu về ngành QHT10  
+    - ngành QHT10 là ngành gì
+    - như thế nào là QHT10
+    - giới thiệu QHT10
+    - QHT10
+    - giới thiệu QHT10 
+    - giới thiệu về QHT10
+    - chương trình học của ngành QHT10 như thế nào
+- intent: hp_QHT91
+  examples: |
+    - học phí ngành Khoa học Thông tin địa  gian 
+    - ngành Khoa học Thông tin địa  gian có đắt 
+    - học phí trung bình 1 học kì ngành Khoa học Thông tin địa  gian
+    - 1 học kì ngành Khoa học Thông tin địa  gian bao nhiêu
+    - học phí ngành Khoa học Thông tin địa  gian ổn 
+    - học phí 1 kì ngành Khoa học Thông tin địa  gian có đắt 
+    - 1 kì ngành Khoa học Thông tin địa  gian thì học phí tốt 
+    - chi tiết học phí ngành Khoa học Thông tin địa  gian
+    - review học phí 1 kì ngành Khoa học Thông tin địa  gian
+    - 1 kì ngành Khoa học Thông tin địa  gian thì học phí 
+    - học phí ngành QHT91 
+    - ngành QHT91 có đắt 
+    - học phí trung bình 1 học kì ngành QHT91
+    - 1 học kì ngành QHT91 bao nhiêu
+    - học phí ngành QHT91 ổn 
+    - học phí 1 kì ngành QHT91 có đắt 
+    - 1 kì ngành QHT91 thì học phí tốt 
+    - chi tiết học phí ngành QHT91
+    - review học phí 1 kì ngành QHT91
+    - 1 kì ngành QHT91 thì học phí 
+- intent: gt_QHT91
+  examples: |
+    - QHT91
+    - Khoa học Thông tin địa  gian là ngành như thế nào
+    - giới thiệu về ngành  Khoa học Thông tin địa  gian  
+    - ngành  Khoa học Thông tin địa  gian là ngành gì
+    - như thế nào là  Khoa học Thông tin địa  gian
+    -  Khoa học Thông tin địa  gian là gì
+    - giới thiệu  Khoa học Thông tin địa  gian
+    - Khoa học Thông tin địa  gian
+    - giới thiệu một chút về  Khoa học Thông tin địa  gian 
+    - giới thiệu  Khoa học Thông tin địa  gian 
+    - giới thiệu về  Khoa học Thông tin địa  gian 
+    - giới thiệu về  Khoa học Thông tin địa  gian
+    - chương trình học của ngành  Khoa học Thông tin địa  gian như thế nào
+    - QHT91 là ngành như thế nào
+    - giới thiệu về ngành QHT91  
+    - ngành QHT91 là ngành gì
+    - như thế nào là QHT91
+    - QHT91 là gì
+    - giới thiệu QHT91
+    - QHT91
+    - giới thiệu một chút về QHT91 
+    - giới thiệu QHT91 
+    - giới thiệu về QHT91 
+    - giới thiệu về QHT91
+    - chương trình học của ngành QHT91 như thế nào
+
+- intent: hp_QHT12
+  examples: |
+    -  học phí ngành QHT12
+    - học phí ngành Quản lý đất đai QHT12 
+    - ngành Quản lý đất đai QHT12 có đắt 
+    - học phí trung bình 1 học kì ngành Quản lý đất đai QHT12
+    - 1 học kì ngành Quản lý đất đai QHT12 bao nhiêu
+    - học phí ngành Quản lý đất đai QHT12 ổn 
+    - học phí 1 kì ngành Quản lý đất đai QHT12 có đắt 
+    - chương trình học của ngành Quản lý đất đai QHT12 như thế nào
+    - 1 kì ngành Quản lý đất đai QHT12 thì học phí tốt 
+    - chi tiết học phí ngành Quản lý đất đai QHT12
+    - review học phí 1 kì ngành Quản lý đất đai QHT12
+    - 1 kì ngành Quản lý đất đai QHT12 thì học phí 
+- intent: gt_QHT12
+  examples: |
+    - QHT12
+    - Quản lý đất đai QHT12 là ngành như thế nào
+    - giới thiệu về ngành Quản lý đất đai QHT12  
+    - ngành Quản lý đất đai QHT12 là ngành gì
+    - như thế nào là Quản lý đất đai QHT12
+    - Quản lý đất đai QHT12 là gì
+    - giới thiệu Quản lý đất đai QHT12
+    - Quản lý đất đai QHT12
+    - giới thiệu một chút về Quản lý đất đai QHT12 
+    - giới thiệu Quản lý đất đai QHT12 
+    - giới thiệu về Quản lý đất đai QHT12 
+    - giới thiệu về Quản lý đất đai QHT12
+    - chương trình học của ngành Quản lý đất đai QHT12 như thế nào
+    - QHT12 là ngành như thế nào
+    - giới thiệu về ngành QHT12  
+    - ngành QHT12 là ngành gì
+    - như thế nào là QHT12
+    - QHT12 là gì
+    - giới thiệu QHT12
+    - QHT12
+    - giới thiệu một chút về QHT12 
+    - giới thiệu QHT12 
+    - giới thiệu về QHT12 
+    - giới thiệu về QHT12
+    - chương trình học của ngành QHT12 như thế nào
+- intent: hp_QHT95
+  examples: |
+    - học phí ngành QHT95
+    - học phí ngành Quản lý phát triển đô thị và bất động sản QHT95 
+    - ngành Quản lý phát triển đô thị và bất động sản QHT95 có đắt 
+    - học phí trung bình 1 học kì ngành Quản lý phát triển đô thị và bất động sản QHT95
+    - 1 học kì ngành Quản lý phát triển đô thị và bất động sản QHT95 bao nhiêu
+    - học phí ngành Quản lý phát triển đô thị và bất động sản QHT95 ổn 
+    - học phí 1 kì ngành Quản lý phát triển đô thị và bất động sản QHT95 có đắt 
+    - 1 kì ngành Quản lý phát triển đô thị và bất động sản QHT95 thì học phí tốt 
+    - chi tiết học phí ngành Quản lý phát triển đô thị và bất động sản QHT95
+    - review học phí 1 kì ngành Quản lý phát triển đô thị và bất động sản QHT95
+    - 1 kì ngành Quản lý phát triển đô thị và bất động sản QHT95 thì học phí 
+    - chương trình học của ngành Quản lý phát triển đô thị và bất động sản QHT95 như thế nào
+- intent: gt_QHT95
+  examples: |
+    - Quản lý phát triển đô thị và bất động sản QHT95 là ngành như thế nào
+    - giới thiệu về ngành Quản lý phát triển đô thị và bất động sản QHT95  
+    - ngành Quản lý phát triển đô thị và bất động sản QHT95 là ngành gì
+    - như thế nào là Quản lý phát triển đô thị và bất động sản QHT95
+    - Quản lý phát triển đô thị và bất động sản QHT95 là gì
+    - giới thiệu Quản lý phát triển đô thị và bất động sản QHT95
+    - Quản lý phát triển đô thị và bất động sản QHT95
+    - giới thiệu một chút về Quản lý phát triển đô thị và bất động sản QHT95 
+    - giới thiệu Quản lý phát triển đô thị và bất động sản QHT95 
+    - giới thiệu về Quản lý phát triển đô thị và bất động sản QHT95 
+    - giới thiệu về Quản lý phát triển đô thị và bất động sản QHT95
+    - chương trình học của ngành Quản lý phát triển đô thị và bất động sản QHT95 như thế nào
+    - QHT95 là ngành như thế nào
+    - giới thiệu về ngành QHT95  
+    - ngành QHT95 là ngành gì
+    - như thế nào là QHT95
+    - QHT95 là gì
+    - giới thiệu QHT95
+    - QHT95
+    - giới thiệu một chút về QHT95 
+    - giới thiệu QHT95 
+    - giới thiệu về QHT95 
+    - giới thiệu về QHT95
+    - chương trình học của ngành QHT95 như thế nào
+
+- intent: hp_QHT08
+  examples: |
+    - học phí ngành QHT08
+    - học phí ngành Sinh học  QHT08
+    - ngành Sinh học có đắt 
+    - học phí trung bình 1 học kì ngành Sinh học QHT08
+    - 1 học kì ngành Sinh học QHT08 bao nhiêu
+    - học phí ngành Sinh học QHT08 ổn 
+    - học phí 1 kì ngành Sinh học QHT08 có đắt 
+    - 1 kì ngành Sinh học QHT08 thì học phí tốt 
+    - chi tiết học phí ngành Sinh học QHT08
+    - review học phí 1 kì ngành Sinh học QHT08
+    - 1 kì ngành Sinh học QHT08 thì học phí 
+- intent: hp_QHT13
+  examples: |
+    - học phí ngành QHT13
+    - học phí ngành Khoa học môi trường QHT13 
+    - ngành Khoa học môi trường QHT13 có đắt 
+    - học phí trung bình 1 học kì ngành Khoa học môi trường QHT13
+    - 1 học kì ngành Khoa học môi trường QHT13 bao nhiêu
+    - học phí ngành Khoa học môi trường QHT13 ổn 
+    - học phí 1 kì ngành Khoa học môi trường QHT13 có đắt 
+    - 1 kì ngành Khoa học môi trường QHT13 thì học phí tốt 
+    - chi tiết học phí ngành Khoa học môi trường QHT13
+    - review học phí 1 kì ngành Khoa học môi trường QHT13
+    - 1 kì ngành Khoa học môi trường QHT13 thì học phí 
+    - QHT13 có học phí
+- intent: hp_QHT46
+  examples: |
+    - học phí ngành Công nghệ kỹ thuật môi trường QHT46 
+    - ngành Công nghệ kỹ thuật môi trường QHT46 có đắt 
+    - học phí trung bình 1 học kì ngành Công nghệ kỹ thuật môi trường
+    - 1 học kì ngành Công nghệ kỹ thuật môi trường QHT46 bao nhiêu
+    - học phí ngành Công nghệ kỹ thuật môi trường QHT46 ổn 
+    - học phí 1 kì ngành Công nghệ kỹ thuật môi trường QHT46 có đắt 
+    - 1 kì ngành Công nghệ kỹ thuật môi trường QHT46 thì học phí tốt 
+    - chi tiết học phí ngành Công nghệ kỹ thuật môi trường
+    - review học phí 1 kì ngành Công nghệ kỹ thuật môi trường
+    - 1 kì ngành Công nghệ kỹ thuật môi trường QHT46 thì học phí 
+
+- intent: hp_QHT16
+  examples: |
+    - học phí ngành QHT16
+    - học phí ngành Khí tượng và khí hậu học QHT16 
+    - ngành Khí tượng và khí hậu học QHT16 có đắt 
+    - học phí trung bình 1 học kì ngành Khí tượng và khí hậu học QHT16
+    - 1 học kì ngành Khí tượng và khí hậu học QHT16 bao nhiêu
+    - học phí ngành Khí tượng và khí hậu học QHT16 ổn 
+    - học phí 1 kì ngành Khí tượng và khí hậu học QHT16 có đắt 
+    - 1 kì ngành Khí tượng và khí hậu học QHT16 thì học phí tốt 
+    - chi tiết học phí ngành Khí tượng và khí hậu học QHT16
+    - review học phí 1 kì ngành Khí tượng và khí hậu học QHT16
+    - 1 kì ngành Khí tượng và khí hậu học QHT16 thì học phí 
+
+- intent: gt_QHT16
+  examples: |
+    - QHT16
+    - giới thiệu về ngành Khí tượng và khí hậu học QHT16  
+    - Khí tượng và khí hậu học QHT16 là ngành như thế nào
+    - giới thiệu đôi chút về ngành Khí tượng và khí hậu học QHT16  
+    - Khí tượng và khí hậu học QHT16 là ngành gì
+    - Khí tượng và khí hậu học QHT16 là gì
+    - Khí tượng và khí hậu học QHT16
+    - giới thiệu về Khí tượng và khí hậu học QHT16 
+    - giới thiệu Khí tượng và khí hậu học QHT16 
+    - giới thiệu một chút về Khí tượng và khí hậu học QHT16 
+    - giới thiệu về Khí tượng và khí hậu học QHT16
+    - giới thiệu Khí tượng và khí hậu học QHT16
+    - chương trình học của ngành Khí tượng và khí hậu học QHT16 như thế nào
+- intent: gt_QHT46
+  examples: |
+    - QHT46
+    - giới thiệu QHT46
+    - giới thiệu về ngành Công nghệ kỹ thuật môi trường QHT46  
+    - Công nghệ kỹ thuật môi trường QHT46 là ngành như thế nào
+    - giới thiệu đôi chút về ngành Công nghệ kỹ thuật môi trường QHT46 
+    - Công nghệ kỹ thuật môi trường QHT46 là ngành gì
+    - Công nghệ kỹ thuật môi trường QHT46 là gì
+    - Công nghệ kỹ thuật môi trường
+    - giới thiệu về Công nghệ kỹ thuật môi trường QHT46 
+    - giới thiệu Công nghệ kỹ thuật môi trường QHT46 
+    - giới thiệu một chút về Công nghệ kỹ thuật môi trường QHT46 
+    - giới thiệu về Công nghệ kỹ thuật môi trường
+    - giới thiệu Công nghệ kỹ thuật môi trường
+    - chương trình học của ngành Công nghệ kỹ thuật môi trường QHT46 như thế nào
+
+- intent: gt_QHT13
+  examples: |
+    - QHT13
+    - giới thiệu về ngành Khoa học môi trường QHT13  
+    - Khoa học môi trường QHT13 là ngành như thế nào
+    - giới thiệu đôi chút về ngành Khoa học môi trường QHT13  
+    - Khoa học môi trường QHT13 là ngành gì
+    - giới thiệu Khoa học môi trường QHT13
+    - Khoa học môi trường QHT13 là gì
+    - Khoa học môi trường QHT13
+    - giới thiệu Khoa học môi trường QHT13 
+    - giới thiệu một chút về Công nghệ sinh học TT23 
+    - giới thiệu về Khoa học môi trường QHT13 
+    - giới thiệu về Khoa học môi trường QHT13
+    - chương trình học của ngành Khoa học môi trường QHT13 như thế nào
+    - giới thiệu về ngành QHT13  
+    - QHT13 là ngành như thế nào
+    - giới thiệu đôi chút về ngành QHT13  
+    - QHT13 là ngành gì
+    - giới thiệu QHT13
+    - QHT13 là gì
+    - QHT13
+    - giới thiệu QHT13 
+    - giới thiệu một chút về Công nghệ sinh học TT23 
+    - giới thiệu về QHT13 
+    - giới thiệu về QHT13
+    - chương trình học của ngành QHT13 như thế nào
+- intent: gt_QHT08
+  examples: |
+    - QHT08
+    - Sinh học là ngành như thế nào
+    - giới thiệu về ngành Sinh học  
+    - ngành Sinh học là ngành gì
+    - như thế nào là Hóa dược**
+    - Sinh học là gì
+    - giới thiệu Sinh học
+    - Sinh học
+    - giới thiệu một chút về Sinh học 
+    - giới thiệu Sinh học
+    - giới thiệu về Sinh học 
+    - giới thiệu về Sinh học
+    - chương trình học của ngành Sinh học như thế nào
+    - giới thiệu về ngành QHT08  
+    - QHT08 là ngành như thế nào
+    - giới thiệu đôi chút về ngành QHT08  
+    - QHT08 là ngành gì
+    - giới thiệu QHT08
+    - QHT08 là gì
+    - QHT08
+    - giới thiệu QHT08 
+    - giới thiệu một chút về Công nghệ sinh học TT23 
+    - giới thiệu về QHT08 
+    - giới thiệu về QHT08
+    - chương trình học của ngành QHT08 như thế nào
+
+- intent: gt_QHT44
+  examples: |
+    - QHT44
+    - Công nghệ sinh học** là ngành như thế nào
+    - giới thiệu về ngành Công nghệ sinh học**  
+    - ngành Công nghệ sinh học** là ngành gì
+    - như thế nào là Công nghệ sinh học**
+    - Công nghệ sinh học** là gì
+    - giới thiệu Công nghệ sinh học**
+    - Công nghệ sinh học**
+    - giới thiệu một chút về Công nghệ sinh học** 
+    - giới thiệu Công nghệ sinh học** 
+    - giới thiệu về Công nghệ sinh học** 
+    - giới thiệu về Công nghệ sinh học**
+    - chương trình học của ngành Công nghệ sinh học** như thế nào
+    - giới thiệu về ngành QHT44  
+    - QHT44 là ngành như thế nào
+    - giới thiệu đôi chút về ngành QHT44  
+    - QHT44 là ngành gì
+    - giới thiệu QHT44
+    - QHT44 là gì
+    - QHT44
+    - giới thiệu QHT44 
+    - giới thiệu một chút về Công nghệ sinh học TT23 
+    - giới thiệu về QHT44 
+    - giới thiệu về QHT44
+    - chương trình học của ngành QHT44 như thế nào
+- intent: hp_QHT44
+  examples: |
+    - học phí ngành Công nghệ sinh học** 
+    - ngành Công nghệ sinh học** có đắt 
+    - học phí trung bình 1 học kì ngành Công nghệ sinh học**
+    - 1 học kì ngành Công nghệ sinh học** bao nhiêu
+    - học phí ngành Công nghệ sinh học** ổn 
+    - học phí 1 kì ngành Công nghệ sinh học** có đắt 
+    - 1 kì ngành Công nghệ sinh học** thì học phí tốt 
+    - chi tiết học phí ngành Công nghệ sinh học**
+    - review học phí 1 kì ngành Công nghệ sinh học**
+    - 1 kì ngành Công nghệ sinh học** thì học phí 
+    - học phí ngành QHT44 
+    - ngành QHT44 có đắt 
+    - học phí trung bình 1 học kì ngành QHT44
+    - 1 học kì ngành QHT44 bao nhiêu
+    - học phí ngành QHT44 ổn 
+    - học phí 1 kì ngành QHT44 có đắt 
+    - 1 kì ngành QHT44 thì học phí tốt 
+    - chi tiết học phí ngành QHT44
+    - review học phí 1 kì ngành QHT44
+    - 1 kì ngành QHT44 thì học phí 
+- intent: gt_QHT01
+  examples: |
+    - QHT01
+    - Toán học là ngành như thế nào
+    - giới thiệu về ngành Toán học  
+    - ngành Toán học là ngành gì
+    - như thế nào là Toán học
+    - Toán học tin là gì
+    - giới thiệu Toán học
+    - giới thiệu một chút về Toán học 
+    - giới thiệu Toán học 
+    - giới thiệu về Toán học 
+    - giới thiệu về Toán học
+    - chương trình học của ngành Toán học như thế nào
+
+    - giới thiệu về ngành QHT01  
+    - QHT01 là ngành như thế nào
+    - giới thiệu đôi chút về ngành QHT01  
+    - QHT01 là ngành gì
+    - giới thiệu QHT01
+    - QHT01 là gì
+    - QHT01
+    - giới thiệu QHT01 
+    - giới thiệu một chút về Công nghệ sinh học TT23 
+    - giới thiệu về QHT01 
+    - giới thiệu về QHT01
+    - chương trình học của ngành QHT01 như thế nào
+- intent: hp_QHT01
+  examples: |
+    - học phí ngành Toán học học 
+    - ngành Toán học học có đắt 
+    - học phí trung bình 1 học kì ngành Toán học học
+    - 1 học kì ngành Toán học học bao nhiêu
+    - học phí ngành  ổn 
+    - học phí 1 kì ngành Toán học có đắt 
+    - 1 kì ngành Toán học thì học phí tốt 
+    - chi tiết học phí ngành Toán học
+    - review học phí 1 kì ngành Toán học
+    - 1 kì ngành Toán học thì học phí 
+    - học phí ngành QHT01 học 
+    - ngành QHT01 học có đắt 
+    - học phí trung bình 1 học kì ngành QHT01 học
+    - 1 học kì ngành QHT01 học bao nhiêu
+    - học phí ngành  ổn 
+    - học phí 1 kì ngành QHT01 có đắt 
+    - 1 kì ngành QHT01 thì học phí tốt 
+    - chi tiết học phí ngành QHT01
+    - review học phí 1 kì ngành QHT01
+    - 1 kì ngành QHT01 thì học phí 
+
+- intent: gt_QHT98
+  examples: |
+    - Máy tính và khoa học thông tin CLC
+    - MT & KHTT CLC
+    - QHT98
+    - Máy tính và khoa học thông tin là ngành như thế nào
+    - giới thiệu về ngành Máy tính và khoa học thông tin  
+    - ngành Máy tính và khoa học thông tin là ngành gì
+    - như thế nào là Máy tính và khoa học thông tin
+    - Máy tính và khoa học thông tin là gì
+    - giới thiệu Máy tính và khoa học thông tin
+    - Máy tính và khoa học thông tin
+    - giới thiệu một chút về Máy tính và khoa học thông tin 
+    - giới thiệu Máy tính và khoa học thông tin 
+    - giới thiệu về Máy tính và khoa học thông tin 
+    - giới thiệu về Máy tính và khoa học thông tin
+    - chương trình học của ngành Máy tính và khoa học thông tin như thế nào
+    - Máy tính và khoa học thông tin chất lượng cao là ngành như thế nào
+    - Máy tính và khoa học thông tin chất lượng cao chất lượng cao là ngành như thế nào
+    - giới thiệu về ngành Máy tính và khoa học thông tin chất lượng cao  
+    - ngành Máy tính và khoa học thông tin chất lượng cao là ngành gì
+    - như thế nào là Máy tính và khoa học thông tin chất lượng cao
+    - Máy tính và khoa học thông tin chất lượng cao là gì
+    - giới thiệu Máy tính và khoa học thông tin chất lượng cao
+    - Máy tính và khoa học thông tin chất lượng cao
+    - giới thiệu một chút về Máy tính và khoa học thông tin chất lượng cao 
+    - giới thiệu Máy tính và khoa học thông tin chất lượng cao 
+    - giới thiệu về Máy tính và khoa học thông tin chất lượng cao 
+    - giới thiệu về Máy tính và khoa học thông tin chất lượng cao
+    - chương trình học của ngành Máy tính và khoa học thông tin chất lượng cao như thế nào
+- intent: hp_QHT98
+  examples: |
+    - học phí ngành MT & KHTT 
+    - học phí ngành Máy tính và khoa học thông tin
+    - ngành QHT98 có đắt 
+    - học phí ngành QHT98 là bao nhiêu
+    - cho hỏi học phí ngành QHT98 
+    - ngành QHT98 mỗi kỳ bao nhiêu 
+    - học phí ngành Máy tính và khoa học thông tin chất lượng cao 
+    - học phí ngành Máy tính và khoa học thông tin CLC 
+    - học phí ngành Máy tính và khoa học thông tin ** 
+    - học phí ngành Máy tính & khoa học thông tin CLC 
+    - học phí ngành MT & KHTT CLC  
+    - học phí ngành MT & KHTT chất lượng cao  
+    - học phí ngành MT & KHTT **  
+    - ngành Máy tính và khoa học thông tin chất lượng cao có đắt 
+    - học phí ngành Máy tính và Khoa học thông tin chất lượng cao là bao nhiêu
+    - hỏi học phí ngành Máy tính và Khoa học thông tin chất lượng cao 
+    - ngành Máy tính và Khoa học thông tin chất lượng cao mỗi kỳ bao nhiêu 
+    - ngành MT & KHTT chất lượng cao có đắt 
+    - học phí ngành MT & KHTT chất lượng cao là bao nhiêu
+    - cho em hỏi học phí ngành MT & KHTT chất lượng cao 
+    - ngành MT & KHTT chất lượng cao mỗi kỳ bao nhiêu 
+    - ngành MT & KHTT CLC có đắt 
+    - ngành MT & KHTT ** có đắt 
+    - học phí ngành MT & KHTT ** là bao nhiêu
+    - cho em hỏi học phí ngành MT & KHTT ** 
+    - ngành MT & KHTT ** mỗi kỳ bao nhiêu 
+    - học phí ngành MT & KHTT CLC là bao nhiêu
+    - ngành MT & KHTT CLC mỗi kỳ bao nhiêu 
+    - học phí ngành Máy tính và Khoa học thông tin ** bao nhiêu 
+    - học phí trung bình 1 học kì ngành Máy tính và Khoa học thông tin **
+    - 1 học kì ngành Máy tính và Khoa học thông tin ** bao nhiêu
+    - học phí ngành Máy tính và Khoa học thông tin CLC bao nhiêu 
+    - học phí trung bình 1 học kì ngành Máy tính và Khoa học thông tin CLC
+    - 1 học kì ngành Máy tính và Khoa học thông tin CLC bao nhiêu
+    - học phí ngành MT&KHTT CLC bao nhiêu
+    - học phí trung bình 1 học kì ngành MT&KHTT CLC
+    - 1 học kì ngành MT&KHTT CLC bao nhiêu
+
+- intent: gt_QHT03
+  examples: |
+    - QHT03
+    - Vật lý là ngành như thế nào
+    - giới thiệu về ngành Vật lý  
+    - ngành Vật lý là ngành gì
+    - như thế nào là Vật lý
+    - Vật lý là gì
+    - giới thiệu Vật lý
+    - Vật lý
+    - giới thiệu một chút về Vật lý 
+    - giới thiệu Vật lý 
+    - giới thiệu về Vật lý 
+    - giới thiệu về Vật lý
+    - chương trình học của ngành Vật lý như thế nào
+    - giới thiệu về ngành QHT03  
+    - QHT03 là ngành như thế nào
+    - giới thiệu đôi chút về ngành QHT03  
+    - QHT03 là ngành gì
+    - giới thiệu QHT03
+    - QHT03 là gì
+    - QHT03
+    - giới thiệu QHT03 
+    - giới thiệu một chút về Công nghệ sinh học TT23 
+    - giới thiệu về QHT03 
+    - giới thiệu về QHT03
+    - chương trình học của ngành QHT03 như thế nào
+- intent: gt_QHT04
+  examples: |
+    - QHT04
+    - Khoa học vật liệu là ngành như thế nào
+    - giới thiệu về ngành Khoa học vật liệu  
+    - ngành Khoa học vật liệu là ngành gì
+    - như thế nào là Khoa học vật liệu
+    - Khoa học vật liệu là gì
+    - giới thiệu Khoa học vật liệu
+    - Khoa học vật liệu
+    - giới thiệu một chút về Khoa học vật liệu 
+    - giới thiệu Khoa học vật liệu 
+    - giới thiệu về Khoa học vật liệu 
+    - giới thiệu về Khoa học vật liệu
+    - chương trình học của ngành Khoa học vật liệu như thế nào
+    - giới thiệu về ngành QHT04  
+    - QHT04 là ngành như thế nào
+    - giới thiệu đôi chút về ngành QHT04  
+    - QHT04 là ngành gì
+    - giới thiệu QHT04
+    - QHT04 là gì
+    - QHT04
+    - giới thiệu QHT04 
+    - giới thiệu một chút về Công nghệ sinh học TT23 
+    - giới thiệu về QHT04 
+    - giới thiệu về QHT04
+    - chương trình học của ngành QHT04 như thế nào
+
+- intent: gt_QHT05
+  examples: |
+    - QHT05
+    - Công nghệ kỹ thuật hạt nhân là ngành như thế nào
+    - giới thiệu về ngành Công nghệ kỹ thuật hạt nhân  
+    - ngành Công nghệ kỹ thuật hạt nhân là ngành gì
+    - như thế nào là Công nghệ kỹ thuật hạt nhân
+    - Công nghệ kỹ thuật hạt nhân là gì
+    - giới thiệu Công nghệ kỹ thuật hạt nhân
+    - Công nghệ kỹ thuật hạt nhân
+    - giới thiệu một chút về Công nghệ kỹ thuật hạt nhân 
+    - giới thiệu Công nghệ kỹ thuật hạt nhân
+    - giới thiệu về Công nghệ kỹ thuật hạt nhân 
+    - giới thiệu về Công nghệ kỹ thuật hạt nhân
+    - chương trình học của ngành Công nghệ kỹ thuật hạt nhân như thế nào
+    - giới thiệu về ngành QHT05  
+    - QHT05 là ngành như thế nào
+    - giới thiệu đôi chút về ngành QHT05  
+    - QHT05 là ngành gì
+    - giới thiệu QHT05
+    - QHT05 là gì
+    - QHT05
+    - giới thiệu QHT05 
+    - giới thiệu một chút về Công nghệ sinh học TT23 
+    - giới thiệu về QHT05 
+    - giới thiệu về QHT05
+    - chương trình học của ngành QHT05 như thế nào
+- intent: gt_QHT94
+  examples: |
+    - QHT94
+    - KTĐT&TH
+    - Kỹ thuật ện tử và tin học
+    - Kỹ thuật ện tử và tin học là ngành như thế nào
+    - giới thiệu về ngành Kỹ thuật ện tử và tin học  
+    - ngành Kỹ thuật ện tử và tin học là ngành gì
+    - như thế nào là Kỹ thuật ện tử và tin học
+    - Kỹ thuật ện tử và tin học là gì
+    - giới thiệu Kỹ thuật ện tử và tin học
+    - Kỹ thuật ện tử và tin học
+    - giới thiệu một chút về Kỹ thuật ện tử và tin học 
+    - giới thiệu Kỹ thuật ện tử và tin học
+    - giới thiệu về Kỹ thuật ện tử và tin học 
+    - chương trình học của ngành Kỹ thuật ện tử và tin học như thế nào
+    - giới thiệu về ngành QHT94  
+    - QHT94 là ngành như thế nào
+    - giới thiệu đôi chút về ngành QHT94  
+    - QHT94 là ngành gì
+    - giới thiệu QHT94
+    - QHT94 là gì
+    - QHT94
+    - giới thiệu QHT94 
+    - giới thiệu một chút về Công nghệ sinh học TT23 
+    - giới thiệu về QHT94 
+    - giới thiệu về QHT94
+    - chương trình học của ngành QHT94 như thế nào
+- intent: gt_QHT06
+  examples: |
+    - QHT06
+    - Hóa học là ngành như thế nào
+    - giới thiệu về ngành Hóa học  
+    - ngành Hóa học là ngành gì
+    - như thế nào là Hóa học
+    - Hóa học là gì
+    - giới thiệu Hóa học
+    - Hóa học
+    - giới thiệu một chút về Hóa học 
+    - giới thiệu Hóa học
+    - giới thiệu về Hóa học 
+    - giới thiệu về Hóa học
+    - chương trình học của ngành Hóa học như thế nào
+    - giới thiệu về ngành QHT06  
+    - QHT06 là ngành như thế nào
+    - giới thiệu đôi chút về ngành QHT06  
+    - QHT06 là ngành gì
+    - giới thiệu QHT06
+    - QHT06 là gì
+    - QHT06
+    - giới thiệu QHT06 
+    - giới thiệu một chút về Công nghệ sinh học TT23 
+    - giới thiệu về QHT06 
+    - giới thiệu về QHT06
+    - chương trình học của ngành QHT06 như thế nào
+- intent: gt_QHT41
+  examples: |
+    - QHT41
+    - Hóa học** là ngành như thế nào
+    - giới thiệu về ngành Hóa học**  
+    - ngành Hóa học** là ngành gì
+    - như thế nào là Hóa học**
+    - Hóa học** là gì
+    - giới thiệu Hóa học**
+    - Hóa học**
+    - giới thiệu một chút về Hóa học** 
+    - giới thiệu Hóa học**
+    - giới thiệu về Hóa học** 
+    - giới thiệu về Hóa học**
+    - chương trình học của ngành Hóa học** như thế nào
+    - giới thiệu về ngành QHT41  
+    - QHT41 là ngành như thế nào
+    - giới thiệu đôi chút về ngành QHT41  
+    - QHT41 là ngành gì
+    - giới thiệu QHT41
+    - QHT41 là gì
+    - QHT41
+    - giới thiệu QHT41 
+    - giới thiệu một chút về Công nghệ sinh học TT23 
+    - giới thiệu về QHT41 
+    - giới thiệu về QHT41
+    - chương trình học của ngành QHT41 như thế nào
+- intent: gt_QHT42
+  examples: |
+    - QHT42
+    - Công nghệ kỹ thuật hóa học**là ngành như thế nào
+    - giới thiệu về ngành Công nghệ kỹ thuật hóa học**  
+    - ngành Công nghệ kỹ thuật hóa học** là ngành gì
+    - như thế nào là Công nghệ kỹ thuật hóa học**
+    - Công nghệ kỹ thuật hóa học** là gì
+    - giới thiệu Công nghệ kỹ thuật hóa học**
+    - Công nghệ kỹ thuật hóa học**
+    - giới thiệu một chút về Công nghệ kỹ thuật hóa học** 
+    - giới thiệu Công nghệ kỹ thuật hóa học**
+    - giới thiệu về Công nghệ kỹ thuật hóa học** 
+    - giới thiệu về Công nghệ kỹ thuật hóa học**
+    - chương trình học của ngành Công nghệ kỹ thuật hóa học** như thế nào
+    - giới thiệu về ngành QHT42  
+    - QHT42 là ngành như thế nào
+    - giới thiệu đôi chút về ngành QHT42  
+    - QHT42 là ngành gì
+    - giới thiệu QHT42
+    - QHT42 là gì
+    - QHT42
+    - giới thiệu QHT42 
+    - giới thiệu một chút về Công nghệ sinh học TT23 
+    - giới thiệu về QHT42 
+    - giới thiệu về QHT42
+    - chương trình học của ngành QHT42 như thế nào
+- intent: gt_QHT43
+  examples: |
+    - QHT43
+    - Hóa dược** là ngành như thế nào
+    - giới thiệu về ngành Hóa dược**  
+    - ngành Hóa dược** là ngành gì
+    - như thế nào là Hóa dược**
+    - Hóa dược** là gì
+    - giới thiệu Hóa dược**
+    - Hóa dược**
+    - giới thiệu một chút về Hóa dược** 
+    - giới thiệu Hóa dược**
+    - giới thiệu về Hóa dược** 
+    - giới thiệu về Hóa dược**
+    - chương trình học của ngành Hóa dược** như thế nào
+    - giới thiệu về ngành QHT43  
+    - QHT43 là ngành như thế nào
+    - giới thiệu đôi chút về ngành QHT43  
+    - QHT43 là ngành gì
+    - giới thiệu QHT43
+    - QHT43 là gì
+    - QHT43
+    - giới thiệu QHT43 
+    - giới thiệu một chút về Công nghệ sinh học TT23 
+    - giới thiệu về QHT43 
+    - giới thiệu về QHT43
+    - chương trình học của ngành QHT43 như thế nào
+- intent: gt_QHT02
+  examples: |
+    - QHT02
+    - Toán tin là ngành như thế nào
+    - giới thiệu về ngành Toán tin  
+    - ngành Toán tin là ngành gì
+    - như thế nào là Toán tin
+    - Toán tin là gì
+    - giới thiệu Toán tin
+    - Toán tin
+    - giới thiệu một chút về Toán tin 
+    - giới thiệu Toán tin 
+    - giới thiệu về Toán tin 
+    - giới thiệu về Toán tin
+    - chương trình học của ngành Toán tin như thế nào
+    - giới thiệu về ngành QHT02  
+    - QHT02 là ngành như thế nào
+    - giới thiệu đôi chút về ngành QHT02  
+    - QHT02 là ngành gì
+    - giới thiệu QHT02
+    - QHT02 là gì
+    - QHT02
+    - giới thiệu QHT02 
+    - giới thiệu một chút về Công nghệ sinh học TT23 
+    - giới thiệu về QHT02 
+    - giới thiệu về QHT02
+    - chương trình học của ngành QHT02 như thế nào
+- intent: hp_QHT02
+  examples: |
+    - ngành Toán tin bao nhiêu 1 kỳ 
+    - ngành Toán tin bao nhiêu 1 năm 
+    - học phí ngành Toán tin  
+    - ngành Toán tin có đắt 
+    - học phí trung bình 1 học kì ngành Toán tin
+    - 1 học kì ngành Toán tin bao nhiêu
+    - học phí ngành Toán tin ổn 
+    - học phí 1 kì ngành Toán tin có đắt 
+    - 1 kì ngành Toán tin thì học phí tốt 
+    - chi tiết học phí ngành Toán tin
+    - review học phí 1 kì ngành Toán tin
+    - 1 kì ngành Toán tin thì học phí 
+    - cho em hỏi học phí ngành QHT02 bao nhiêu 
+    - ngành QHT02 bao nhiêu 1 kỳ 
+    - ngành QHT02 bao nhiêu 1 năm 
+    - học phí ngành QHT02  
+    - ngành QHT02 có đắt 
+    - học phí trung bình 1 học kì ngành QHT02
+    - 1 học kì ngành QHT02 bao nhiêu
+    - học phí ngành QHT02 ổn 
+    - học phí 1 kì ngành QHT02 có đắt 
+    - 1 kì ngành QHT02 thì học phí tốt 
+    - chi tiết học phí ngành QHT02
+    - review học phí 1 kì ngành QHT02
+    - 1 kì ngành QHT02 thì học phí 
+- intent: hp_QHT03
+  examples: |
+    - học phí ngành Vật lý học 
+    - ngành Vật lý học có đắt 
+    - học phí trung bình 1 học kì ngành Vật lý học
+    - 1 học kì ngành Vật lý học bao nhiêu
+    - học phí ngành Vật lý học ổn 
+    - học phí 1 kì ngành Vật lý học có đắt 
+    - 1 kì ngành Vật lý học thì học phí tốt 
+    - chi tiết học phí ngành Vật lý học
+    - review học phí 1 kì ngành Vật lý học
+    - 1 kì ngành Vật lý học thì học phí 
+    - học phí ngành QHT03 
+    - QHT03 có đắt 
+    - học phí trung bình 1 học kì ngành QHT03
+    - 1 học kì ngành QHT03 bao nhiêu
+    - học phí ngành QHT03 ổn 
+    - học phí 1 kì ngành QHT03 có đắt 
+    - 1 kì ngành QHT03 thì học phí tốt 
+    - chi tiết học phí ngành QHT03
+    - review học phí 1 kì ngành QHT03
+    - 1 kì ngành QHT03 thì học phí 
+- intent: hp_QHT04
+  examples: |
+    - học phí ngành Khoa học vật liệu  
+    - ngành Khoa học vật liệu có đắt 
+    - học phí trung bình 1 học kì ngành Khoa học vật liệu
+    - 1 học kì ngành Khoa học vật liệu bao nhiêu
+    - học phí ngành Khoa học vật liệu ổn 
+    - học phí 1 kì ngành Khoa học vật liệu có đắt 
+    - 1 kì ngành Khoa học vật liệu thì học phí tốt 
+    - chi tiết học phí ngành Khoa học vật liệu
+    - review học phí 1 kì ngành Khoa học vật liệu
+    - 1 kì ngành Khoa học vật liệu thì học phí 
+    - học phí ngành QHT04  
+    - ngành QHT04 có đắt 
+    - học phí trung bình 1 học kì ngành QHT04
+    - 1 học kì ngành QHT04 bao nhiêu
+    - học phí ngành QHT04 ổn 
+    - học phí 1 kì ngành QHT04 có đắt 
+    - 1 kì ngành QHT04 thì học phí tốt 
+    - chi tiết học phí ngành QHT04
+    - review học phí 1 kì ngành QHT04
+    - 1 kì ngành QHT04 thì học phí 
+- intent: hp_QHT05
+  examples: |
+    - học phí ngành Công nghệ kỹ thuật hạt nhân 
+    - ngành Công nghệ kỹ thuật hạt nhân có đắt 
+    - học phí trung bình 1 học kì ngành Công nghệ kỹ thuật hạt nhân
+    - 1 học kì ngành Công nghệ kỹ thuật hạt nhân bao nhiêu
+    - học phí ngành Công nghệ kỹ thuật hạt nhân ổn 
+    - học phí 1 kì ngành Công nghệ kỹ thuật hạt nhân có đắt 
+    - 1 kì ngành Công nghệ kỹ thuật hạt nhân thì học phí tốt 
+    - chi tiết học phí ngành Công nghệ kỹ thuật hạt nhân
+    - review học phí 1 kì ngành Công nghệ kỹ thuật hạt nhân
+    - 1 kì ngành Công nghệ kỹ thuật hạt nhân thì học phí 
+    - học phí ngành QHT05 
+    - ngành QHT05 có đắt 
+    - học phí trung bình 1 học kì ngành QHT05
+    - 1 học kì ngành QHT05 bao nhiêu
+    - học phí ngành QHT05 ổn 
+    - học phí 1 kì ngành QHT05 có đắt 
+    - 1 kì ngành QHT05 thì học phí tốt 
+    - chi tiết học phí ngành QHT05
+    - review học phí 1 kì ngành QHT05
+    - 1 kì ngành QHT05 thì học phí 
+- intent: hp_QHT94
+  examples: |
+    - học phí ngành Kỹ thuật ện tử và tin học 
+    - ngành Kỹ thuật ện tử và tin học có đắt 
+    - học phí trung bình 1 học kì ngành Kỹ thuật ện tử và tin học
+    - 1 học kì ngành Kỹ thuật ện tử và tin học bao nhiêu
+    - học phí ngành Kỹ thuật ện tử và tin học ổn 
+    - học phí 1 kì ngành Kỹ thuật ện tử và tin học có đắt 
+    - 1 kì ngành Kỹ thuật ện tử và tin học thì học phí tốt 
+    - chi tiết học phí ngành Kỹ thuật ện tử và tin học
+    - review học phí 1 kì ngành Kỹ thuật ện tử và tin học
+    - 1 kì ngành Kỹ thuật ện tử và tin học thì học phí 
+    - học phí ngành QHT94  
+    - ngành QHT94 có đắt 
+    - học phí trung bình 1 học kì ngành QHT94
+    - 1 học kì ngành QHT94 bao nhiêu
+    - học phí ngành QHT94 ổn 
+    - học phí 1 kì ngành QHT94 có đắt 
+    - 1 kì ngành QHT94 thì học phí tốt 
+    - chi tiết học phí ngành QHT94
+    - review học phí 1 kì ngành QHT94
+    - 1 kì ngành QHT94 thì học phí 
+- intent: hp_QHT06
+  examples: |
+    - học phí ngành Hóa học 
+    - ngành Hóa học có đắt 
+    - học phí trung bình 1 học kì ngành Hóa học
+    - 1 học kì ngành Hóa học bao nhiêu
+    - học phí ngành Hóa học ổn 
+    - học phí 1 kì ngành Hóa học có đắt 
+    - 1 kì ngành Hóa học thì học phí tốt 
+    - chi tiết học phí ngành Hóa học
+    - review học phí 1 kì ngành Hóa học
+    - 1 kì ngành Hóa học thì học phí 
+    - học phí ngành QHT06 
+    - ngành QHT06 có đắt 
+    - học phí trung bình 1 học kì ngành QHT06
+    - 1 học kì ngành QHT06 bao nhiêu
+    - học phí ngành QHT06 ổn 
+    - học phí 1 kì ngành QHT06 có đắt 
+    - 1 kì ngành QHT06 thì học phí tốt 
+    - chi tiết học phí ngành QHT06
+    - review học phí 1 kì ngành QHT06
+    - 1 kì ngành QHT06 thì học phí  
+- intent: hp_QHT41
+  examples: |
+    - học phí ngành Hóa học** 
+    - ngành Hóa học** có đắt 
+    - học phí trung bình 1 học kì ngành Hóa học**
+    - 1 học kì ngành Hóa học** bao nhiêu
+    - học phí ngành Hóa học** ổn 
+    - học phí 1 kì ngành Hóa học** có đắt 
+    - 1 kì ngành Hóa học** thì học phí tốt 
+    - chi tiết học phí ngành Hóa học**
+    - review học phí 1 kì ngành Hóa học**
+    - 1 kì ngành Hóa học** thì học phí 
+    - QHT41
+    - học phí ngành QHT41 
+    - ngành QHT41 có đắt 
+    - học phí trung bình 1 học kì ngành QHT41
+    - 1 học kì ngành QHT41 bao nhiêu
+    - học phí ngành QHT41 ổn 
+    - học phí 1 kì ngành QHT41 có đắt 
+    - 1 kì ngành QHT41 thì học phí tốt 
+    - chi tiết học phí ngành QHT41
+    - review học phí 1 kì ngành QHT41
+    - 1 kì ngành QHT41 thì học phí 
+- intent: hp_QHT42
+  examples: |
+    - học phí ngành Công nghệ kỹ thuật hóa học** 
+    - QHT42
+    - ngành Công nghệ kỹ thuật hóa học** có đắt 
+    - học phí trung bình 1 học kì ngành Công nghệ kỹ thuật hóa học**
+    - 1 học kì ngành Công nghệ kỹ thuật hóa học** bao nhiêu
+    - học phí ngành Công nghệ kỹ thuật hóa học** ổn 
+    - học phí 1 kì ngành Công nghệ kỹ thuật hóa học** có đắt 
+    - 1 kì ngành Công nghệ kỹ thuật hóa học** thì học phí tốt 
+    - chi tiết học phí ngành Công nghệ kỹ thuật hóa học**
+    - review học phí 1 kì ngành Công nghệ kỹ thuật hóa học**
+    - 1 kì ngành Công nghệ kỹ thuật hóa học** thì học phí 
+    - học phí ngành QHT42 
+    - ngành QHT42 có đắt 
+    - học phí trung bình 1 học kì ngành QHT42
+    - 1 học kì ngành QHT42 bao nhiêu
+    - học phí ngành QHT42 ổn 
+    - học phí 1 kì ngành QHT42 có đắt 
+    - 1 kì ngành QHT42 thì học phí tốt 
+    - chi tiết học phí ngành QHT42
+    - review học phí 1 kì ngành QHT42
+    - 1 kì ngành QHT42 thì học phí 
+- intent: hp_QHT43
+  examples: |
+    - học phí ngành Hóa dược** 
+    - ngành Hóa dược** có đắt 
+    - học phí trung bình 1 học kì ngành Hóa dược**
+    - 1 học kì ngành Hóa dược** bao nhiêu
+    - học phí ngành Hóa dược** ổn 
+    - học phí 1 kì ngành Hóa dược** có đắt 
+    - 1 kì ngành Hóa dược** thì học phí tốt 
+    - chi tiết học phí ngành Hóa dược**
+    - review học phí 1 kì ngành Hóa dược**
+    - 1 kì ngành Hóa dược** thì học phí 
+    - học phí ngành QHT43 
+    - ngành QHT43 có đắt 
+    - học phí trung bình 1 học kì ngành QHT43
+    - 1 học kì ngành QHT43 bao nhiêu
+    - học phí ngành QHT43 ổn 
+    - học phí 1 kì ngành QHT43 có đắt 
+    - 1 kì ngành QHT43 thì học phí tốt 
+    - chi tiết học phí ngành QHT43
+    - review học phí 1 kì ngành QHT43
+    - 1 kì ngành QHT43 thì học phí 
+
+- intent: dat_cau_hoi
+  examples: |
+    - Em muốn hỏi một số thông tin 
+    - Em có câu hỏi 
+    - em tò mò về
+    - mình muốn hỏi về
+    - Bạn có chức năng gì
+    - cho em hỏi một số vấn đề liên quan
+    - cho em biết một số thông tin về trường   ạ?
+    - Thông tin về trường Đại học Khoa học Tự nhiên
+    - Em muốn biết một số thông tin về trường ĐH KHTN
+# - intent: đ
+#   examples: |
+#     - có
+#     - có chứ
+#     - vâng
+#     - dĩ nhiên
+#     - chính xác rồi
+#     - chuẩn
+#     - tất nhiên rồi
+#     - tất nhiên
+#     - đúng rồi
+
+# - intent: photo_foyer_externe_fr
+#   examples: |
+#     - Định nghĩa 1 
+#     - Định nghĩa 2
+
+
+- intent: de_an_tuyensinh_2022
+  examples: |
+    - đề án tuyển sinh 2022
+    - tuyển sinh 2022
+    - mình muốn biết đề án tuyển sinh các năm trước
+    - đề án tuyển sinh các năm gần nhất
+- intent: de_an_tuyensinh_2023
+  examples: |
+    - đề án tuyển sinh 2023
+    - tuyển sinh 2023
+    - mình muốn biết đề án tuyển sinh năm nay
+    - đề án tuyển sinh 2023-2024
+- intent: huong_dan_thu_tuc_nhap_hoc
+  examples: |
+    - Chào, thủ tục nhập học
+    - thủ tục nhập học của trường đại học Khoa học Tự nhiên 
+    - Em chào ad, cho em hỏi thủ tục nhập học của trường
+    - Chào anh/chị, em muốn hỏi thủ tục nhập học năm 2023 của trường mình
+    - thủ tục
+- intent: thpt
+  examples: |
+    - tuyển sinh lớp 10 THPT chuyên
+    - TUYỂN SINH LỚP 10 THPT CHUYÊN KHOA HỌC TỰ NHIÊN NĂM 2023
+    - Hướng dẫn kiểm tra thông tin thí sinh đăng ký dự thi và tình trạng hồ sơ tuyển sinh lớp 10 THPT chuyên
+    - Hướng dẫn đăng ký Hồ sơ dự thi lớp 10 THPT Chuyên Khoa học Tự nhiên năm 2023 bằng hình thức Trực tuyến
+    - THÔNG BÁO TUYỂN SINH VÀO LỚP 10 TRƯỜNG THPT CHUYÊN KHTN NĂM 2023 TRƯỜNG ĐẠI HỌC KHOA HỌC TỰ NHIÊN, ĐẠI HỌC QUỐC GIA HÀ NỘI
+
+- intent: toan_co_tin_gth
+  examples: |
+    - toán-cơ-tin
+    - khoa Toán-Cơ-Tin
+    - Giới thiệu về khoa Toán-Cơ-Tin học
+    - khoa Toán-Cơ-Tin học là gì
+    - tìm hiểu về khoa Toán-Cơ-Tin học
+    - Chào, em muốn tìm hiểu về khoa Toán-Cơ-Tin học của trường mình
+    - Khoa toán-cơ-tin học như thế nào ạ
+    - Thông tin về khoa Toán-Cơ-Tin học
+    - Liên hệ khoa Toán-Cơ-Tin học
+- intent: khoa_vat_ly_gt
+  examples: |
+    - khoa Vật lý
+    - Giới thiệu về khoa Vật lý
+    - khoa Vật lý là gì
+    - tìm hiểu về khoa Vật lý
+    - Chào, em muốn tìm hiểu về khoa Vật lý của trường mình
+    - Khoa Vật lý như thế nào ạ
+    - Thông tin về khoa Vật lý
+    - Liên hệ khoa Vật lý
+- intent: khoa_hoa_hoc_gt
+  examples: |
+    - khoa Hóa học
+    - Giới thiệu về khoa Hóa học
+    - khoa Hóa học là gì
+    - tìm hiểu về khoa Hóa học
+    - Chào, em muốn tìm hiểu về khoa Hóa học của trường mình
+    - khoa Hóa học như thế nào ạ
+    - Thông tin về khoa Hóa học
+    - Liên hệ khoa Hóa học
+- intent: khoa_sinh_hoc_gt
+  examples: |
+    - Giới thiệu về khoa Sinh học
+    - khoa Sinh học 
+    - tìm hiểu về khoa Sinh học
+    - Chào, em muốn tìm hiểu về khoa Sinh học của trường mình
+    - khoa Sinh học như thế nào ạ
+    - Thông tin về khoa Sinh học
+    - Liên hệ khoa Sinh học
+- intent: khoa_dia_ly_gt
+  examples: |
+    - khoa Địa lý
+    - Giới thiệu về khoa Địa lý
+    - khoa Địa lý là gì
+    - tìm hiểu về khoa Địa lý
+    - Chào, em muốn tìm hiểu về khoa Địa lý của trường mình
+    - khoa Địa lý như thế nào ạ
+    - Thông tin về khoa Địa lý
+    - Liên hệ khoa Địa lý
+- intent: khoa_dia_chat_gt
+  examples: |
+    - khoa Địa chất
+    - Giới thiệu về khoa Địa chất
+    - khoa Địa chất là gì
+    - tìm hiểu về khoa Địa chất
+    - Chào, em muốn tìm hiểu về khoa Địa chất của trường mình
+    - khoa Địa chất như thế nào ạ
+    - Thông tin về khoa Địa chất
+    - Liên hệ khoa Địa chất
+- intent: khoa_moi_truong_gt
+  examples: |
+    - Môi trường
+    - khoa Môi trường
+    - Giới thiệu về khoa Môi trường
+    - khoa Môi trường là gì
+    - tìm hiểu về khoa Môi trường
+    - Chào, em muốn tìm hiểu về khoa Môi trường của trường mình
+    - khoa Môi trường như thế nào ạ
+    - Thông tin về khoa Môi trường
+    - Liên hệ khoa Môi trường
+    - Liên hệ khoa Khí tường thủy văn Hải dương học
+- intent: khoa_khituonhthuyvan_haiduong_hoc_gt
+  examples: |
+    - Giới thiệu về khoa Khí tượng Thủy văn và Hải duong học
+    - khoa Khí tượng Thủy văn và Hải duong học là gì
+    - tìm hiểu về khoa Khí tượng Thủy văn và Hải duong học
+    - Chào, em muốn tìm hiểu về khoa Khí tượng Thủy văn và Hải duong học của trường mình
+    - khoa Khí tượng Thủy văn và Hải duong học như thế nào ạ
+    - Thông tin về khoa Khí tượng Thủy văn và Hải duong học
+    - Liên hệ khoa Khí tượng Thủy văn và Hải duong học
+    - khoa Khí tượng Thủy văn và Hải duong học
+    - Khí tượng Thủy văn và Hải duong học
+
+
+- intent: chnn_QHT98
+  examples: |
+    - Tương lai nghề nghiệp của ngành Khoa học máy tính và thông tin như thế nào?
+    - Cơ hội nghề nghiệp của ngành Khoa học máy tính và thông tin thế nào tại trường đại học?
+    - Tôi có thể làm gì sau khi tốt nghiệp ngành Khoa học máy tính và thông tin ở trường đại học?
+    - Ngành Khoa học máy tính và thông tin ở trường đại học có đáp ứng nhu cầu của thị trường lao động ?
+    - Lĩnh vực nghề nghiệp nào liên quan đến Khoa học máy tính và thông tin tại trường đại học?
+    - Những công việc sau khi tốt nghiệp ngành Khoa học máy tính và thông tin tại trường đại học?
+    - Có nên học ngành Khoa học máy tính và thông tin tại trường đại học vì cơ hội nghề nghiệp tốt ?
+    - Cơ hội nghề nghiệp ngành Khoa học máy tính và thông tin 
+    - Tương lai nghề nghiệp của ngành KHMT&TT QHT98 như thế nào?
+    - Cơ hội nghề nghiệp của ngành KHMT&TT QHT98 thế nào tại trường đại học?
+    - Tôi có thể làm gì sau khi tốt nghiệp ngành KHMT&TT QHT98 ở trường đại học?
+    - Ngành KHMT&TT QHT98 ở trường đại học có đáp ứng nhu cầu của thị trường lao động ?
+    - Lĩnh vực nghề nghiệp nào liên quan đến KHMT&TT QHT98 tại trường đại học?
+    - Những công việc sau khi tốt nghiệp ngành KHMT&TT QHT98 tại trường đại học?
+    - Có nên học ngành KHMT&TT tại trường đại học vì cơ hội nghề nghiệp tốt ?
+    - Cơ hội nghề nghiệp ngành KHMT&TT  QHT98
+    - Cơ hôi việc làm ngành KHMT&TT QHT98
+    - Cơ hôi việc làm ngành KHMT&TT QHT98 chất lượng cao
+    # - Tương lai nghề nghiệp của ngành QHT98 như thế nào?
+    # - Cơ hội nghề nghiệp của ngành QHT98 thế nào tại trường đại học?
+    # - Tôi có thể làm gì sau khi tốt nghiệp ngành QHT98 ở trường đại học?
+    # - Ngành QHT98 ở trường đại học có đáp ứng nhu cầu của thị trường lao động ?
+    # - Lĩnh vực nghề nghiệp nào liên quan đến QHT98 tại trường đại học?
+    # - Những công việc sau khi tốt nghiệp ngành QHT98 tại trường đại học?
+    # - Có nên học ngành QHT98 tại trường đại học vì cơ hội nghề nghiệp tốt ?
+    # - Cơ hội nghề nghiệp ngành QHT98 
+    # - Cơ hôi việc làm ngành QHT98
+    # - Cơ hôi việc làm ngành QHT98 chất lượng cao
+- intent: chnn_QHT02
+  examples: |
+    - Tương lai nghề nghiệp của ngành Toán tin như thế nào?
+    - Cơ hội nghề nghiệp của ngành Toán tin thế nào tại trường đại học?
+    - Tôi có thể làm gì sau khi tốt nghiệp ngành Toán tin ở trường đại học?
+    - Ngành Toán tin ở trường đại học có đáp ứng nhu cầu của thị trường lao động ?
+    - Lĩnh vực nghề nghiệp nào liên quan đến Toán tin tại trường đại học?
+    - Những công việc sau khi tốt nghiệp ngành Toán tin tại trường đại học?
+    - Có nên học ngành Toán tin tại trường đại học vì cơ hội nghề nghiệp tốt ?
+    - Cơ hội nghề nghiệp ngành Toán tin 
+    - Tương lai nghề nghiệp của ngành QHT02 như thế nào?
+    - Cơ hội nghề nghiệp của ngành QHT02 thế nào tại trường đại học?
+    - Tôi có thể làm gì sau khi tốt nghiệp ngành QHT02 ở trường đại học?
+    - Ngành QHT02 ở trường đại học có đáp ứng nhu cầu của thị trường lao động ?
+    - Lĩnh vực nghề nghiệp nào liên quan đến QHT02 tại trường đại học?
+    - Những công việc sau khi tốt nghiệp ngành QHT02 tại trường đại học?
+    - Có nên học ngành QHT02 tại trường đại học vì cơ hội nghề nghiệp tốt ?
+    - Cơ hội nghề nghiệp ngành QHT02 
+    - Cơ hôi việc làm ngành QHT02
+    - Cơ hôi việc làm ngành QHT02 chất lượng cao
+- intent: chnn_QHT43
+  examples: |
+    - Tương lai nghề nghiệp của ngành Hóa dược như thế nào?
+    - Cơ hội nghề nghiệp của ngành Hóa dược thế nào tại trường đại học?
+    - Tôi có thể làm gì sau khi tốt nghiệp ngành Hóa dược ở trường đại học?
+    - Ngành Hóa dược ở trường đại học có đáp ứng nhu cầu của thị trường lao động ?
+    - Lĩnh vực nghề nghiệp nào liên quan đến Hóa dược tại trường đại học?
+    - Những công việc sau khi tốt nghiệp ngành Hóa dược tại trường đại học?
+    - Có nên học ngành Hóa dược tại trường đại học vì cơ hội nghề nghiệp tốt ?
+    - Cơ hội nghề nghiệp ngành Hóa dược 
+    - Tương lai nghề nghiệp của ngành QHT43 như thế nào?
+    - Cơ hội nghề nghiệp của ngành QHT43 thế nào tại trường đại học?
+    - Tôi có thể làm gì sau khi tốt nghiệp ngành QHT43 ở trường đại học?
+    - Ngành QHT43 ở trường đại học có đáp ứng nhu cầu của thị trường lao động ?
+    - Lĩnh vực nghề nghiệp nào liên  quan đến QHT43 tại trường đại học?
+    - Những công việc sau khi tốt nghiệp ngành QHT43 tại trường đại học?
+    - Có nên học ngành QHT43 tại trường đại học vì cơ hội nghề nghiệp tốt ?
+    - Cơ hội nghề nghiệp ngành QHT43 
+    - Cơ hôi việc làm ngành QHT43
+    - Cơ hôi việc làm ngành QHT43 chất lượng cao
+- intent: chnn_QHT42
+  examples: |
+    - Tương lai nghề nghiệp của ngành Công nghệ kỹ thuật Hóa dược ** như thế nào?
+    - Cơ hội nghề nghiệp của ngành Công nghệ kỹ thuật Hóa dược ** thế nào tại trường đại học?
+    - Tôi có thể làm gì sau khi tốt nghiệp ngành Công nghệ kỹ thuật Hóa dược ** ở trường đại học?
+    - Ngành Công nghệ kỹ thuật Hóa dược ** ở trường đại học có đáp ứng nhu cầu của thị trường lao động ?
+    - Lĩnh vực nghề nghiệp nào liên quan đến Công nghệ kỹ thuật Hóa dược ** tại trường đại học?
+    - Những công việc sau khi tốt nghiệp ngành Công nghệ kỹ thuật Hóa dược ** tại trường đại học?
+    - Có nên học ngành Công nghệ kỹ thuật Hóa dược ** tại trường đại học vì cơ hội nghề nghiệp tốt ?
+    - Cơ hội nghề nghiệp ngành Công nghệ kỹ thuật Hóa dược ** 
+    - Tương lai nghề nghiệp của ngành QHT42 như thế nào?
+    - Cơ hội nghề nghiệp của ngành QHT42 thế nào tại trường đại học?
+    - Tôi có thể làm gì sau khi tốt nghiệp ngành QHT42 ở trường đại học?
+    - Ngành QHT42 ở trường đại học có đáp ứng nhu cầu của thị trường lao động ?
+    - Lĩnh vực nghề nghiệp nào liên quan đến QHT42 tại trường đại học?
+    - Những công việc sau khi tốt nghiệp ngành QHT42 tại trường đại học?
+    - Có nên học ngành QHT42 tại trường đại học vì cơ hội nghề nghiệp tốt ?
+    - Cơ hội nghề nghiệp ngành QHT42 
+    - Cơ hôi việc làm ngành QHT42
+    - Cơ hôi việc làm ngành QHT42 chất lượng cao
+- intent: chnn_QHT41
+  examples: |
+    - Tương lai nghề nghiệp của ngành Hóa học** như thế nào?
+    - Cơ hội nghề nghiệp của ngành Hóa học** thế nào tại trường đại học?
+    - Tôi có thể làm gì sau khi tốt nghiệp ngành Hóa học** ở trường đại học?
+    - Ngành Hóa học** ở trường đại học có đáp ứng nhu cầu của thị trường lao động ?
+    - Lĩnh vực nghề nghiệp nào liên quan đến Hóa học** tại trường đại học?
+    - Những công việc sau khi tốt nghiệp ngành Hóa học** tại trường đại học?
+    - Có nên học ngành Hóa học** tại trường đại học vì cơ hội nghề nghiệp tốt ?
+    - Cơ hội nghề nghiệp ngành Hóa học** 
+    - Tương lai nghề nghiệp của ngành QHT41 như thế nào?
+    - Cơ hội nghề nghiệp của ngành QHT41 thế nào tại trường đại học?
+    - Tôi có thể làm gì sau khi tốt nghiệp ngành QHT41 ở trường đại học?
+    - Ngành QHT41 ở trường đại học có đáp ứng nhu cầu của thị trường lao động ?
+    - Lĩnh vực nghề nghiệp nào liên quan đến QHT41 tại trường đại học?
+    - Những công việc sau khi tốt nghiệp ngành QHT41 tại trường đại học?
+    - Có nên học ngành QHT41 tại trường đại học vì cơ hội nghề nghiệp tốt ?
+    - Cơ hội nghề nghiệp ngành QHT41 
+    - Cơ hôi việc làm ngành QHT41
+    - Cơ hôi việc làm ngành QHT41 chất lượng cao
+- intent: chnn_QHT06
+  examples: |
+    - Tương lai nghề nghiệp của ngành Hóa học như thế nào?
+    - Cơ hội nghề nghiệp của ngành Hóa học thế nào tại trường đại học?
+    - Tôi có thể làm gì sau khi tốt nghiệp ngành Hóa học ở trường đại học?
+    - Ngành Hóa học ở trường đại học có đáp ứng nhu cầu của thị trường lao động ?
+    - Lĩnh vực nghề nghiệp nào liên quan đến Hóa học tại trường đại học?
+    - Những công việc sau khi tốt nghiệp ngành Hóa học tại trường đại học?
+    - Có nên học ngành Hóa học tại trường đại học vì cơ hội nghề nghiệp tốt ?
+    - Cơ hội nghề nghiệp ngành Hóa học 
+    - Tương lai nghề nghiệp của ngành QHT06 như thế nào?
+    - Cơ hội nghề nghiệp của ngành QHT06 thế nào tại trường đại học?
+    - Tôi có thể làm gì sau khi tốt nghiệp ngành QHT06 ở trường đại học?
+    - Ngành QHT06 ở trường đại học có đáp ứng nhu cầu của thị trường lao động ?
+    - Lĩnh vực nghề nghiệp nào liên quan đến QHT06 tại trường đại học?
+    - Những công việc sau khi tốt nghiệp ngành QHT06 tại trường đại học?
+    - Có nên học ngành QHT06 tại trường đại học vì cơ hội nghề nghiệp tốt ?
+    - Cơ hội nghề nghiệp ngành QHT06 
+    - Cơ hôi việc làm ngành QHT06
+- intent: chnn_QHT94
+  examples: |
+    - Tương lai nghề nghiệp của ngành Kỹ thuật ện tử và tin học như thế nào?
+    - Cơ hội nghề nghiệp của ngành Kỹ thuật ện tử và tin học thế nào tại trường đại học?
+    - Tôi có thể làm gì sau khi tốt nghiệp ngành Kỹ thuật ện tử và tin học ở trường đại học?
+    - Ngành Kỹ thuật ện tử và tin học ở trường đại học có đáp ứng nhu cầu của thị trường lao động ?
+    - Lĩnh vực nghề nghiệp nào liên quan đến Kỹ thuật ện tử và tin học tại trường đại học?
+    - Những công việc sau khi tốt nghiệp ngành Kỹ thuật ện tử và tin học tại trường đại học?
+    - Có nên học ngành Kỹ thuật ện tử và tin học tại trường đại học vì cơ hội nghề nghiệp tốt ?
+    - Cơ hội nghề nghiệp ngành Kỹ thuật ện tử và tin học 
+    - Tương lai nghề nghiệp của ngành QHT94 như thế nào?
+    - Cơ hội nghề nghiệp của ngành QHT94 thế nào tại trường đại học?
+    - Tôi có thể làm gì sau khi tốt nghiệp ngành QHT94 ở trường đại học?
+    - Ngành QHT94 ở trường đại học có đáp ứng nhu cầu của thị trường lao động ?
+    - Lĩnh vực nghề nghiệp nào liên quan đến QHT94 tại trường đại học?
+    - Những công việc sau khi tốt nghiệp ngành QHT94 tại trường đại học?
+    - Có nên học ngành QHT94 tại trường đại học vì cơ hội nghề nghiệp tốt ?
+    - Cơ hội nghề nghiệp ngành QHT94 
+    - Cơ hôi việc làm ngành QHT94
+- intent: chnn_QHT05
+  examples: |
+    - Tương lai nghề nghiệp của ngành Công nghệ kỹ thuật hạt nhân như thế nào?
+    - Cơ hội nghề nghiệp của ngành Công nghệ kỹ thuật hạt nhân thế nào tại trường đại học?
+    - Tôi có thể làm gì sau khi tốt nghiệp ngành Công nghệ kỹ thuật hạt nhân ở trường đại học?
+    - Ngành Công nghệ kỹ thuật hạt nhân ở trường đại học có đáp ứng nhu cầu của thị trường lao động ?
+    - Lĩnh vực nghề nghiệp nào liên quan đến Công nghệ kỹ thuật hạt nhân tại trường đại học?
+    - Những công việc sau khi tốt nghiệp ngành Công nghệ kỹ thuật hạt nhân tại trường đại học?
+    - Có nên học ngành Công nghệ kỹ thuật hạt nhân tại trường đại học vì cơ hội nghề nghiệp tốt ?
+    - Cơ hội nghề nghiệp ngành Công nghệ kỹ thuật hạt nhân 
+    - Tương lai nghề nghiệp của ngành QHT05 như thế nào?
+    - Cơ hội nghề nghiệp của ngành QHT05 thế nào tại trường đại học?
+    - Tôi có thể làm gì sau khi tốt nghiệp ngành QHT05 ở trường đại học?
+    - Ngành QHT05 ở trường đại học có đáp ứng nhu cầu của thị trường lao động ?
+    - Lĩnh vực nghề nghiệp nào liên quan đến QHT05 tại trường đại học?
+    - Những công việc sau khi tốt nghiệp ngành QHT05 tại trường đại học?
+    - Có nên học ngành QHT05 tại trường đại học vì cơ hội nghề nghiệp tốt ?
+    - Cơ hội nghề nghiệp ngành QHT05 
+    - Cơ hôi việc làm ngành QHT05
+- intent: chnn_QHT04
+  examples: |
+    - Tương lai nghề nghiệp của ngành Khoa học vật liệu như thế nào?
+    - Cơ hội nghề nghiệp của ngành Khoa học vật liệu thế nào tại trường đại học?
+    - Ngành Khoa học vật liệu ở trường đại học có đáp ứng nhu cầu của thị trường lao động ?
+    - Lĩnh vực nghề nghiệp nào liên quan đến Khoa học vật liệu tại trường đại học?
+    - Những công việc sau khi tốt nghiệp ngành Khoa học vật liệu tại trường đại học?
+    - Có nên học ngành Khoa học vật liệu tại trường đại học vì cơ hội nghề nghiệp tốt ?
+    - Cơ hội nghề nghiệp ngành Khoa học vật liệu 
+    - Tương lai nghề nghiệp của ngành QHT04 như thế nào?
+    - Cơ hội nghề nghiệp của ngành QHT04 thế nào tại trường đại học?
+    - Tôi có thể làm gì sau khi tốt nghiệp ngành QHT04 ở trường đại học?
+    - Ngành QHT04 ở trường đại học có đáp ứng nhu cầu của thị trường lao động ?
+    - Lĩnh vực nghề nghiệp nào liên quan đến QHT04 tại trường đại học?
+    - Những công việc sau khi tốt nghiệp ngành QHT04 tại trường đại học?
+    - Có nên học ngành QHT04 tại trường đại học vì cơ hội nghề nghiệp tốt ?
+    - Cơ hội nghề nghiệp ngành QHT04 
+    - Cơ hôi việc làm ngành QHT04
+- intent: chnn_QHT03
+  examples: |
+    - Tương lai nghề nghiệp của ngành Vật lý học như thế nào?
+    - Cơ hội nghề nghiệp của ngành Vật lý học thế nào tại trường đại học?
+    - Tôi có thể làm gì sau khi tốt nghiệp ngành Vật lý học ở trường đại học?
+    - Ngành Vật lý học ở trường đại học có đáp ứng nhu cầu của thị trường lao động ?
+    - Lĩnh vực nghề nghiệp nào liên quan đến Vật lý học tại trường đại học?
+    - Những công việc sau khi tốt nghiệp ngành Vật lý học tại trường đại học?
+    - Có nên học ngành Vật lý học tại trường đại học vì cơ hội nghề nghiệp tốt ?
+    - Cơ hội nghề nghiệp ngành Vật lý học 
+    - Tương lai nghề nghiệp của ngành QHT03 như thế nào?
+    - Cơ hội nghề nghiệp của ngành QHT03 thế nào tại trường đại học?
+    - Tôi có thể làm gì sau khi tốt nghiệp ngành QHT03 ở trường đại học?
+    - Ngành QHT03 ở trường đại học có đáp ứng nhu cầu của thị trường lao động ?
+    - Lĩnh vực nghề nghiệp nào liên quan đến QHT03 tại trường đại học?
+    - Những công việc sau khi tốt nghiệp ngành QHT03 tại trường đại học?
+    - Có nên học ngành QHT03 tại trường đại học vì cơ hội nghề nghiệp tốt ?
+    - Cơ hội nghề nghiệp ngành QHT03 
+    - Cơ hôi việc làm ngành QHT03
+
+- intent: chnn_QHT01
+  examples: |
+    - Tương lai nghề nghiệp của ngành Toán học như thế nào?
+    - Cơ hội nghề nghiệp của ngành Toán học thế nào tại trường đại học?
+    - Tôi có thể làm gì sau khi tốt nghiệp ngành Toán học ở trường đại học?
+    - Ngành Toán học ở trường đại học có đáp ứng nhu cầu của thị trường lao động ?
+    - Lĩnh vực nghề nghiệp nào liên quan đến Toán học tại trường đại học?
+    - Những công việc sau khi tốt nghiệp ngành Toán học tại trường đại học?
+    - Có nên học ngành Toán học tại trường đại học vì cơ hội nghề nghiệp tốt ?
+    - Cơ hội nghề nghiệp ngành Toán học 
+    - Tương lai nghề nghiệp của ngành QHT01 như thế nào?
+    - Cơ hội nghề nghiệp của ngành QHT01 thế nào tại trường đại học?
+    - Tôi có thể làm gì sau khi tốt nghiệp ngành QHT01 ở trường đại học?
+    - Ngành QHT01 ở trường đại học có đáp ứng nhu cầu của thị trường lao động ?
+    - Lĩnh vực nghề nghiệp nào liên quan đến QHT01 tại trường đại học?
+    - Những công việc sau khi tốt nghiệp ngành QHT01 tại trường đại học?
+    - Có nên học ngành QHT01 tại trường đại học vì cơ hội nghề nghiệp tốt ?
+    - Cơ hội nghề nghiệp ngành QHT01 
+    - Cơ hôi việc làm ngành QHT01
+- intent: chnn_QHT44
+  examples: |
+    - Tương lai nghề nghiệp của ngành Công nghệ sinh học** như thế nào?
+    - Cơ hội nghề nghiệp của ngành Công nghệ sinh học** thế nào tại trường đại học?
+    - Tôi có thể làm gì sau khi tốt nghiệp ngành Công nghệ sinh học** ở trường đại học?
+    - Ngành Công nghệ sinh học** ở trường đại học có đáp ứng nhu cầu của thị trường lao động ?
+    - Lĩnh vực nghề nghiệp nào liên quan đến Công nghệ sinh học** tại trường đại học?
+    - Những công việc sau khi tốt nghiệp ngành Công nghệ sinh học** tại trường đại học?
+    - Có nên học ngành Công nghệ sinh học** tại trường đại học vì cơ hội nghề nghiệp tốt ?
+    - Cơ hội nghề nghiệp ngành Công nghệ sinh học** 
+    - Tương lai nghề nghiệp của ngành QHT44 như thế nào?
+    - Cơ hội nghề nghiệp của ngành QHT44 thế nào tại trường đại học?
+    - Tôi có thể làm gì sau khi tốt nghiệp ngành QHT44 ở trường đại học?
+    - Ngành QHT44 ở trường đại học có đáp ứng nhu cầu của thị trường lao động ?
+    - Lĩnh vực nghề nghiệp nào liên quan đến QHT44 tại trường đại học?
+    - Những công việc sau khi tốt nghiệp ngành QHT44 tại trường đại học?
+    - Có nên học ngành QHT44 tại trường đại học vì cơ hội nghề nghiệp tốt ?
+    - Cơ hội nghề nghiệp ngành QHT44 
+    - Cơ hôi việc làm ngành QHT44
+- intent: chnn_QHT08
+  examples: |
+    - Tương lai nghề nghiệp của ngành Sinh học như thế nào?
+    - Cơ hội nghề nghiệp của ngành Sinh học thế nào tại trường đại học?
+    - Tôi có thể làm gì sau khi tốt nghiệp ngành Sinh học ở trường đại học?
+    - Ngành Sinh học ở trường đại học có đáp ứng nhu cầu của thị trường lao động ?
+    - Lĩnh vực nghề nghiệp nào liên quan đến Sinh học tại trường đại học?
+    - Những công việc sau khi tốt nghiệp ngành Sinh học tại trường đại học?
+    - Có nên học ngành Sinh học tại trường đại học vì cơ hội nghề nghiệp tốt ?
+    - Cơ hội nghề nghiệp ngành Sinh học 
+    - Tương lai nghề nghiệp của ngành QHT08 như thế nào?
+    - Cơ hội nghề nghiệp của ngành QHT08 thế nào tại trường đại học?
+    - Tôi có thể làm gì sau khi tốt nghiệp ngành QHT08 ở trường đại học?
+    - Ngành QHT08 ở trường đại học có đáp ứng nhu cầu của thị trường lao động ?
+    - Lĩnh vực nghề nghiệp nào liên quan đến QHT08 tại trường đại học?
+    - Những công việc sau khi tốt nghiệp ngành QHT08 tại trường đại học?
+    - Có nên học ngành QHT08 tại trường đại học vì cơ hội nghề nghiệp tốt ?
+    - Cơ hội nghề nghiệp ngành QHT08 
+    - Cơ hôi việc làm ngành QHT08
+- intent: chnn_QHT13
+  examples: |
+    - Tương lai nghề nghiệp của ngành Khoa học môi trường QHT13 như thế nào?
+    - Cơ hội nghề nghiệp của ngành Khoa học môi trường QHT13 thế nào tại trường đại học?
+    - Tôi có thể làm gì sau khi tốt nghiệp ngành Khoa học môi trường QHT13 ở trường đại học?
+    - Ngành Khoa học môi trường QHT13 ở trường đại học có đáp ứng nhu cầu của thị trường lao động ?
+    - Lĩnh vực nghề nghiệp nào liên quan đến Khoa học môi trường QHT13 tại trường đại học?
+    - Những công việc sau khi tốt nghiệp ngành Khoa học môi trường QHT13 tại trường đại học?
+    - Có nên học ngành Khoa học môi trường QHT13 tại trường đại học vì cơ hội nghề nghiệp tốt ?
+    - Cơ hội nghề nghiệp ngành Khoa học môi trường QHT13 
+    - Tương lai nghề nghiệp của ngành QHT13 như thế nào?
+    - Cơ hội nghề nghiệp của ngành QHT13 thế nào tại trường đại học?
+    - Tôi có thể làm gì sau khi tốt nghiệp ngành QHT13 ở trường đại học?
+    - Ngành QHT13 ở trường đại học có đáp ứng nhu cầu của thị trường lao động ?
+    - Lĩnh vực nghề nghiệp nào liên quan đến QHT13 tại trường đại học?
+    - Những công việc sau khi tốt nghiệp ngành QHT13 tại trường đại học?
+    - Có nên học ngành QHT13 tại trường đại học vì cơ hội nghề nghiệp tốt ?
+    - Cơ hội nghề nghiệp ngành QHT13 
+    - Cơ hôi việc làm ngành QHT13
+- intent: chnn_QHT46
+  examples: |
+    - Tương lai nghề nghiệp của ngành Công nghệ kỹ thuật môi trường QHT46 như thế nào?
+    - Cơ hội nghề nghiệp của ngành Công nghệ kỹ thuật môi trường QHT46 thế nào tại trường đại học?
+    - Tôi có thể làm gì sau khi tốt nghiệp ngành Công nghệ kỹ thuật môi trường QHT46 ở trường đại học?
+    - Ngành Công nghệ kỹ thuật môi trường QHT46 ở trường đại học có đáp ứng nhu cầu của thị trường lao động ?
+    - Lĩnh vực nghề nghiệp nào liên quan đến Công nghệ kỹ thuật môi trường QHT46 tại trường đại học?
+    - Những công việc sau khi tốt nghiệp ngành Công nghệ kỹ thuật môi trường QHT46 tại trường đại học?
+    - Có nên học ngành Công nghệ kỹ thuật môi trường QHT46 tại trường đại học vì cơ hội nghề nghiệp tốt ?
+    - Cơ hội nghề nghiệp ngành Công nghệ kỹ thuật môi trường QHT46 
+    - Tương lai nghề nghiệp của ngành QHT46 như thế nào?
+    - Cơ hội nghề nghiệp của ngành QHT46 thế nào tại trường đại học?
+    - Tôi có thể làm gì sau khi tốt nghiệp ngành QHT46 ở trường đại học?
+    - Ngành QHT46 ở trường đại học có đáp ứng nhu cầu của thị trường lao động ?
+    - Lĩnh vực nghề nghiệp nào liên quan đến QHT46 tại trường đại học?
+    - Những công việc sau khi tốt nghiệp ngành QHT46 tại trường đại học?
+    - Có nên học ngành QHT46 tại trường đại học vì cơ hội nghề nghiệp tốt ?
+    - Cơ hội nghề nghiệp ngành QHT46 
+    - Cơ hôi việc làm ngành QHT46
+- intent: chnn_QHT16
+  examples: |
+    - Tương lai nghề nghiệp của ngành Khí tượng và khí hậu học QHT16 như thế nào?
+    - Cơ hội nghề nghiệp của ngành Khí tượng và khí hậu học QHT16 thế nào tại trường đại học?
+    - Tôi có thể làm gì sau khi tốt nghiệp ngành Khí tượng và khí hậu học QHT16 ở trường đại học?
+    - Ngành Khí tượng và khí hậu học QHT16 ở trường đại học có đáp ứng nhu cầu của thị trường lao động ?
+    - Lĩnh vực nghề nghiệp nào liên quan đến Khí tượng và khí hậu học QHT16 tại trường đại học?
+    - Những công việc sau khi tốt nghiệp ngành Khí tượng và khí hậu học QHT16 tại trường đại học?
+    - Có nên học ngành Khí tượng và khí hậu học QHT16 tại trường đại học vì cơ hội nghề nghiệp tốt ?
+    - Cơ hội nghề nghiệp ngành Khí tượng và khí hậu học QHT16 
+    - Tương lai nghề nghiệp của ngành QHT16 như thế nào?
+    - Cơ hội nghề nghiệp của ngành QHT16 thế nào tại trường đại học?
+    - Tôi có thể làm gì sau khi tốt nghiệp ngành QHT16 ở trường đại học?
+    - Ngành QHT16 ở trường đại học có đáp ứng nhu cầu của thị trường lao động ?
+    - Lĩnh vực nghề nghiệp nào liên quan đến QHT16 tại trường đại học?
+    - Những công việc sau khi tốt nghiệp ngành QHT16 tại trường đại học?
+    - Có nên học ngành QHT16 tại trường đại học vì cơ hội nghề nghiệp tốt ?
+    - Cơ hội nghề nghiệp ngành QHT16 
+    - Cơ hôi việc làm ngành QHT16
+# // class _HomePage extends State<HomePage> {
+# //   static String routeName = "/home_page";
+- intent: chnn_QHT95
+  examples: |
+    - Tương lai nghề nghiệp của ngành Quản lý phát triển đô thị và bất động sản QHT95 như thế nào?
+    - Cơ hội nghề nghiệp của ngành Quản lý phát triển đô thị và bất động sản QHT95 thế nào tại trường đại học?
+    - Tôi có thể làm gì sau khi tốt nghiệp ngành Quản lý phát triển đô thị và bất động sản QHT95 ở trường đại học?
+    - Ngành Quản lý phát triển đô thị và bất động sản QHT95 ở trường đại học có đáp ứng nhu cầu của thị trường lao động ?
+    - Lĩnh vực nghề nghiệp nào liên quan đến Quản lý phát triển đô thị và bất động sản QHT95 tại trường đại học?
+    - Những công việc sau khi tốt nghiệp ngành Quản lý phát triển đô thị và bất động sản QHT95 tại trường đại học?
+    - Có nên học ngành Quản lý phát triển đô thị và bất động sản QHT95 tại trường đại học vì cơ hội nghề nghiệp tốt ?
+    - Cơ hội nghề nghiệp ngành Quản lý phát triển đô thị và bất động sản QHT95 
+    - Tương lai nghề nghiệp của ngành QHT95 như thế nào?
+    - Cơ hội nghề nghiệp của ngành QHT95 thế nào tại trường đại học?
+    - Tôi có thể làm gì sau khi tốt nghiệp ngành QHT95 ở trường đại học?
+    - Ngành QHT95 ở trường đại học có đáp ứng nhu cầu của thị trường lao động ?
+    - Lĩnh vực nghề nghiệp nào liên quan đến QHT95 tại trường đại học?
+    - Những công việc sau khi tốt nghiệp ngành QHT95 tại trường đại học?
+    - Có nên học ngành QHT95 tại trường đại học vì cơ hội nghề nghiệp tốt ?
+    - Cơ hội nghề nghiệp ngành QHT95 
+    - Cơ hôi việc làm ngành QHT95
+- intent: chnn_QHT12
+  examples: |
+    - Tương lai nghề nghiệp của ngành Quản lý đất đai QHT12 như thế nào?
+    - Cơ hội nghề nghiệp của ngành Quản lý đất đai QHT12 thế nào tại trường đại học?
+    - Tôi có thể làm gì sau khi tốt nghiệp ngành Quản lý đất đai QHT12 ở trường đại học?
+    - Ngành Quản lý đất đai QHT12 ở trường đại học có đáp ứng nhu cầu của thị trường lao động ?
+    - Lĩnh vực nghề nghiệp nào liên quan đến Quản lý đất đai QHT12 tại trường đại học?
+    - Những công việc sau khi tốt nghiệp ngành Quản lý đất đai QHT12 tại trường đại học?
+    - Có nên học ngành Quản lý đất đai QHT12 tại trường đại học vì cơ hội nghề nghiệp tốt ?
+    - Cơ hội nghề nghiệp ngành Quản lý đất đai QHT12 
+    - Tương lai nghề nghiệp của ngành QHT12 như thế nào?
+    - Cơ hội nghề nghiệp của ngành QHT12 thế nào tại trường đại học?
+    - Tôi có thể làm gì sau khi tốt nghiệp ngành QHT12 ở trường đại học?
+    - Ngành QHT12 ở trường đại học có đáp ứng nhu cầu của thị trường lao động ?
+    - Lĩnh vực nghề nghiệp nào liên quan đến QHT12 tại trường đại học?
+    - Những công việc sau khi tốt nghiệp ngành QHT12 tại trường đại học?
+    - Có nên học ngành QHT12 tại trường đại học vì cơ hội nghề nghiệp tốt ?
+    - Cơ hội nghề nghiệp ngành QHT12 
+    - Cơ hôi việc làm ngành QHT12
+- intent: chnn_QHT91
+  examples: |
+    - Tương lai nghề nghiệp của ngànhKhoa học Thông tin địa  gian như thế nào?
+    - Cơ hội nghề nghiệp của ngànhKhoa học Thông tin địa  gian thế nào tại trường đại học?
+    - Tôi có thể làm gì sau khi tốt nghiệp ngànhKhoa học Thông tin địa  gian ở trường đại học?
+    - NgànhKhoa học Thông tin địa  gian ở trường đại học có đáp ứng nhu cầu của thị trường lao động ?
+    - Lĩnh vực nghề nghiệp nào liên quan đếnKhoa học Thông tin địa  gian tại trường đại học?
+    - Những công việc sau khi tốt nghiệp ngànhKhoa học Thông tin địa  gian tại trường đại học?
+    - Có nên học ngànhKhoa học Thông tin địa  gian tại trường đại học vì cơ hội nghề nghiệp tốt ?
+    - Cơ hội nghề nghiệp ngànhKhoa học Thông tin địa  gian 
+    - Tương lai nghề nghiệp của ngành QHT91 như thế nào?
+    - Cơ hội nghề nghiệp của ngành QHT91 thế nào tại trường đại học?
+    - Tôi có thể làm gì sau khi tốt nghiệp ngành QHT91 ở trường đại học?
+    - Ngành QHT91 ở trường đại học có đáp ứng nhu cầu của thị trường lao động ?
+    - Lĩnh vực nghề nghiệp nào liên quan đến QHT91 tại trường đại học?
+    - Những công việc sau khi tốt nghiệp ngành QHT91 tại trường đại học?
+    - Có nên học ngành QHT91 tại trường đại học vì cơ hội nghề nghiệp tốt ?
+    - Cơ hội nghề nghiệp ngành QHT91 
+    - Cơ hôi việc làm ngành QHT91
+- intent: chnn_QHT10
+  examples: |
+    - Tương lai nghề nghiệp của Địa lý Tự nhiên như thế nào?
+    - Cơ hội nghề nghiệp của Địa lý Tự nhiên thế nào tại trường đại học?
+    - Tôi có thể làm gì sau khi tốt nghiệp Địa lý Tự nhiên ở trường đại học?
+    - Địa lý Tự nhiên ở trường đại học có đáp ứng nhu cầu của thị trường lao động ?
+    - Lĩnh vực nghề nghiệp nào liên quan đếnKhoa học Thông tin địa  gian tại trường đại học?
+    - Những công việc sau khi tốt nghiệp Địa lý Tự nhiên tại trường đại học?
+    - Có nên học Địa lý Tự nhiên tại trường đại học vì cơ hội nghề nghiệp tốt ?
+    - Cơ hội nghề nghiệp Địa lý Tự nhiên 
+    - Tương lai nghề nghiệp của ngành QHT10 như thế nào?
+    - Cơ hội nghề nghiệp của ngành QHT10 thế nào tại trường đại học?
+    - Tôi có thể làm gì sau khi tốt nghiệp ngành QHT10 ở trường đại học?
+    - Ngành QHT10 ở trường đại học có đáp ứng nhu cầu của thị trường lao động ?
+    - Lĩnh vực nghề nghiệp nào liên quan đến QHT10 tại trường đại học?
+    - Những công việc sau khi tốt nghiệp ngành QHT10 tại trường đại học?
+    - Có nên học ngành QHT10 tại trường đại học vì cơ hội nghề nghiệp tốt ?
+    - Cơ hội nghề nghiệp ngành QHT10 
+    - Cơ hôi việc làm ngành QHT10
+- intent: chnn_QHT20
+  examples: |
+    - Tương lai nghề nghiệp của Quản lý tài nguyên và môi trường như thế nào?
+    - Cơ hội nghề nghiệp của Quản lý tài nguyên và môi trường thế nào tại trường đại học?
+    - có thể làm gì sau khi tốt nghiệp Quản lý tài nguyên và môi trường ở trường đại học?
+    - Quản lý tài nguyên và môi trường ở trường đại học có đáp ứng nhu cầu của thị trường lao động ?
+    - Lĩnh vực nghề nghiệp nào liên quan đếnKhoa học Thông tin địa  gian tại trường đại học?
+    - Những công việc sau khi tốt nghiệp Quản lý tài nguyên và môi trường tại trường đại học?
+    - Có nên học Quản lý tài nguyên và môi trường tại trường đại học vì cơ hội nghề nghiệp tốt ?
+    - Cơ hội nghề nghiệp Quản lý tài nguyên và môi trường 
+    - Tương lai nghề nghiệp của ngành QHT20 như thế nào?
+    - Cơ hội nghề nghiệp của ngành QHT20 thế nào tại trường đại học?
+    - Tôi có thể làm gì sau khi tốt nghiệp ngành QHT20 ở trường đại học?
+    - Ngành QHT20 ở trường đại học có đáp ứng nhu cầu của thị trường lao động ?
+    - Lĩnh vực nghề nghiệp nào liên quan đến QHT20 tại trường đại học?
+    - Những công việc sau khi tốt nghiệp ngành QHT20 tại trường đại học?
+    - Có nên học ngành QHT20 tại trường đại học vì cơ hội nghề nghiệp tốt ?
+    - Cơ hội nghề nghiệp ngành QHT20 
+    - Cơ hôi việc làm ngành QHT20
+- intent: chnn_QHT18
+  examples: |
+    - Tương lai nghề nghiệp của Địa chất học như thế nào?
+    - Cơ hội nghề nghiệp của Địa chất học thế nào tại trường đại học?
+    - Tôi có thể làm gì sau khi tốt nghiệp Địa chất học ở trường đại học?
+    - Địa chất học ở trường đại học có đáp ứng nhu cầu của thị trường lao động ?
+    - Lĩnh vực nghề nghiệp nào liên quan đếnKhoa học Thông tin địa  gian tại trường đại học?
+    - Những công việc sau khi tốt nghiệp Địa chất học tại trường đại học?
+    - Có nên học Địa chất học tại trường đại học vì cơ hội nghề nghiệp tốt ?
+    - Cơ hội nghề nghiệp Địa chất học 
+    - Tương lai nghề nghiệp của ngành QHT18 như thế nào?
+    - Cơ hội nghề nghiệp của ngành QHT18 thế nào tại trường đại học?
+    - Tôi có thể làm gì sau khi tốt nghiệp ngành QHT18 ở trường đại học?
+    - Ngành QHT18 ở trường đại học có đáp ứng nhu cầu của thị trường lao động ?
+    - Lĩnh vực nghề nghiệp nào liên quan đến QHT18 tại trường đại học?
+    - Những công việc sau khi tốt nghiệp ngành QHT18 tại trường đại học?
+    - Có nên học ngành QHT18 tại trường đại học vì cơ hội nghề nghiệp tốt ?
+    - Cơ hội nghề nghiệp ngành QHT18 
+    - Cơ hôi việc làm ngành QHT18
+- intent: chnn_QHT92
+  examples: |
+    - Tương lai nghề nghiệp của Tài nguyên và môi trường nước QHT92 
+    - Cơ hội nghề nghiệp của Tài nguyên và môi trường nước QHT92 thế nào tại trường đại học?
+    - Tôi có thể làm gì sau khi tốt nghiệp Tài nguyên và môi trường nước QHT92 ở trường đại học?
+    - Tài nguyên và môi trường nước QHT92 ở trường đại học có đáp ứng nhu cầu của thị trường lao động ?
+    - Lĩnh vực nghề nghiệp nào liên quan đếnKhoa học Thông tin địa  gian tại trường đại học?
+    - Những công việc sau khi tốt nghiệp Tài nguyên và môi trường nước QHT92 tại trường đại học?
+    - Có nên học Tài nguyên và môi trường nước QHT92 tại trường đại học vì cơ hội nghề nghiệp tốt ?
+    - Cơ hội nghề nghiệp Tài nguyên và môi trường nước QHT92 
+    - Tương lai nghề nghiệp của ngành QHT92 như thế nào?
+    - Cơ hội nghề nghiệp của ngành QHT92 thế nào tại trường đại học?
+    - Tôi có thể làm gì sau khi tốt nghiệp ngành QHT92 ở trường đại học?
+    - Ngành QHT92 ở trường đại học có đáp ứng nhu cầu của thị trường lao động ?
+    - Lĩnh vực nghề nghiệp nào liên quan đến QHT92 tại trường đại học?
+    - Những công việc sau khi tốt nghiệp ngành QHT92 tại trường đại học?
+    - Có nên học ngành QHT92 tại trường đại học vì cơ hội nghề nghiệp tốt ?
+    - Cơ hội nghề nghiệp ngành QHT92 
+    - Cơ hôi việc làm ngành QHT92
+- intent: chnn_QHT17
+  examples: |
+    - Tương lai nghề nghiệp của Hải dương học như thế nào?
+    - Cơ hội nghề nghiệp của Hải dương học thế nào tại trường đại học?
+    - Tôi có thể làm gì sau khi tốt nghiệp Hải dương học ở trường đại học?
+    - Hải dương học ở trường đại học có đáp ứng nhu cầu của thị trường lao động ?
+    - Lĩnh vực nghề nghiệp nào liên quan đếnKhoa học Thông tin địa  gian tại trường đại học?
+    - Những công việc sau khi tốt nghiệp Hải dương học tại trường đại học?
+    - Có nên học Hải dương học tại trường đại học vì cơ hội nghề nghiệp tốt ?
+    - Cơ hội nghề nghiệp Hải dương học 
+    - Tương lai nghề nghiệp của ngành QHT17 như thế nào?
+    - Cơ hội nghề nghiệp của ngành QHT17 thế nào tại trường đại học?
+    - Tôi có thể làm gì sau khi tốt nghiệp ngành QHT17 ở trường đại học?
+    - Ngành QHT17 ở trường đại học có đáp ứng nhu cầu của thị trường lao động ?
+    - Lĩnh vực nghề nghiệp nào liên quan đến QHT17 tại trường đại học?
+    - Những công việc sau khi tốt nghiệp ngành QHT17 tại trường đại học?
+    - Có nên học ngành QHT17 tại trường đại học vì cơ hội nghề nghiệp tốt ?
+    - Cơ hội nghề nghiệp ngành QHT17 
+    - Cơ hôi việc làm ngành QHT17
+- intent: chnn_QHT93
+  examples: |
+    - Tương lai nghề nghiệp của Khoa học dữ liệu như thế nào?
+    - Cơ hội nghề nghiệp của Khoa học dữ liệu thế nào tại trường đại học?
+    - Tôi có thể làm gì sau khi tốt nghiệp Khoa học dữ liệu ở trường đại học?
+    - Khoa học dữ liệu ở trường đại học có đáp ứng nhu cầu của thị trường lao động ?
+    - Lĩnh vực nghề nghiệp nào liên quan đếnKhoa học Thông tin địa  gian tại trường đại học?
+    - Những công việc sau khi tốt nghiệp Khoa học dữ liệu tại trường đại học?
+    - Có nên học Khoa học dữ liệu tại trường đại học vì cơ hội nghề nghiệp tốt ?
+    - Cơ hội nghề nghiệp Khoa học dữ liệu 
+    - Tương lai nghề nghiệp của ngành QHT93 như thế nào?
+    - Cơ hội nghề nghiệp của ngành QHT93 thế nào tại trường đại học?
+    - Tôi có thể làm gì sau khi tốt nghiệp ngành QHT93 ở trường đại học?
+    - Ngành QHT93 ở trường đại học có đáp ứng nhu cầu của thị trường lao động ?
+    - Lĩnh vực nghề nghiệp nào liên quan đến QHT93 tại trường đại học?
+    - Những công việc sau khi tốt nghiệp ngành QHT93 tại trường đại học?
+    - Có nên học ngành QHT93 tại trường đại học vì cơ hội nghề nghiệp tốt ?
+    - Cơ hội nghề nghiệp ngành QHT93 
+    - Cơ hôi việc làm ngành QHT93
+- intent: chnn_QHT97
+  examples: |
+    - Tương lai nghề nghiệp của Công nghệ quan trắc và giám sát tài nguyên môi trường như thế nào?
+    - Cơ hội nghề nghiệp của Công nghệ quan trắc và giám sát tài nguyên môi trường thế nào tại trường đại học?
+    - Tôi có thể làm gì sau khi tốt nghiệp Công nghệ quan trắc và giám sát tài nguyên môi trường ở trường đại học?
+    - Công nghệ quan trắc và giám sát tài nguyên môi trường ở trường đại học có đáp ứng nhu cầu của thị trường lao động ?
+    - Lĩnh vực nghề nghiệp nào liên quan đếnKhoa học Thông tin địa  gian tại trường đại học?
+    - Những công việc sau khi tốt nghiệp Công nghệ quan trắc và giám sát tài nguyên môi trường tại trường đại học?
+    - Có nên học Công nghệ quan trắc và giám sát tài nguyên môi trường tại trường đại học vì cơ hội nghề nghiệp tốt ?
+    - Cơ hội nghề nghiệp Công nghệ quan trắc và giám sát tài nguyên môi trường 
+    - Tương lai nghề nghiệp của ngành QHT97 như thế nào?
+    - Cơ hội nghề nghiệp của ngành QHT97 thế nào tại trường đại học?
+    - Tôi có thể làm gì sau khi tốt nghiệp ngành QHT97 ở trường đại học?
+    - Ngành QHT97 ở trường đại học có đáp ứng nhu cầu của thị trường lao động ?
+    - Lĩnh vực nghề nghiệp nào liên quan đến QHT97 tại trường đại học?
+    - Những công việc sau khi tốt nghiệp ngành QHT97 tại trường đại học?
+    - Có nên học ngành QHT97 tại trường đại học vì cơ hội nghề nghiệp tốt ?
+    - Cơ hội nghề nghiệp ngành QHT97 
+    - Cơ hôi việc làm ngành QHT97
+- intent: chnn_QHT96
+  examples: |
+    - Tương lai nghề nghiệp của Khoa học và công nghệ thực phẩm như thế nào?
+    - Cơ hội nghề nghiệp của Khoa học và công nghệ thực phẩm thế nào tại trường đại học?
+    - Tôi có thể làm gì sau khi tốt nghiệp Khoa học và công nghệ thực phẩm ở trường đại học?
+    - Khoa học và công nghệ thực phẩm ở trường đại học có đáp ứng nhu cầu của thị trường lao động ?
+    - Lĩnh vực nghề nghiệp nào liên quan đếnKhoa học Thông tin địa  gian tại trường đại học?
+    - Những công việc sau khi tốt nghiệp Khoa học và công nghệ thực phẩm tại trường đại học?
+    - Có nên học Khoa học và công nghệ thực phẩm tại trường đại học vì cơ hội nghề nghiệp tốt ?
+    - Cơ hội nghề nghiệp Khoa học và công nghệ thực phẩm 
+    - Tương lai nghề nghiệp của ngành QHT96 như thế nào?
+    - Cơ hội nghề nghiệp của ngành QHT96 thế nào tại trường đại học?
+    - Tôi có thể làm gì sau khi tốt nghiệp ngành QHT96 ở trường đại học?
+    - Ngành QHT96 ở trường đại học có đáp ứng nhu cầu của thị trường lao động ?
+    - Lĩnh vực nghề nghiệp nào liên quan đến QHT96 tại trường đại học?
+    - Những công việc sau khi tốt nghiệp ngành QHT96 tại trường đại học?
+    - Có nên học ngành QHT96 tại trường đại học vì cơ hội nghề nghiệp tốt ?
+    - Cơ hội nghề nghiệp ngành QHT96 
+    - Cơ hôi việc làm ngành QHT96
+# - intent: photo_foyer_fr
+#   examples: |
+#     - Thử nút button? 
+#     - nút button
+#     - hiện nút button
+#     - button
+- intent: photo_foyer_fr1
+  examples: |
+    - Trung tâm trợ giúp
+    - Hỗ trợ thông tin
+

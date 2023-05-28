@@ -1,0 +1,14 @@
+[
+  {
+    "text": "tớ là Trần Thị Vũ",
+    "entities": [
+      {
+        "start": 6,
+        "end": 18,
+        "value": "Trần Thị Vũ ",
+        "entity": "cust_name"
+      }
+    ],
+    "predicted_entities": []
+  }
+]

@@ -1,618 +1,999 @@
 version: "3.1"
-
+# 📈🔍🧾🤖🧠
 intents:
-- smalltalk_agent_acquaintance
-- smalltalk_agent_age
-- smalltalk_agent_annoying
-- smalltalk_agent_answer_my_question
-- smalltalk_agent_bad
-- smalltalk_agent_be_clever
-- smalltalk_agent_beautiful
-- smalltalk_agent_birth_date
-- smalltalk_agent_boring
-- smalltalk_agent_boss
-- smalltalk_agent_busy
-- smalltalk_agent_chatbot
-- smalltalk_agent_clever
-- smalltalk_agent_crazy
-- smalltalk_agent_fired
-- smalltalk_agent_funny
-- smalltalk_agent_good
-- smalltalk_agent_happy
-- smalltalk_agent_hungry
-- smalltalk_agent_marry_user
-- smalltalk_agent_my_friend
-- smalltalk_agent_occupation
-- smalltalk_agent_origin
-- smalltalk_agent_ready
-- smalltalk_agent_real
-- smalltalk_agent_residence
-- smalltalk_agent_right
-- smalltalk_confirmation_yes
-- smalltalk_agent_sure
-- smalltalk_agent_talk_to_me
-- smalltalk_agent_there
-- smalltalk_appraisal_bad
-- smalltalk_appraisal_good
-- smalltalk_appraisal_no_problem
-- smalltalk_appraisal_thank_you
-- smalltalk_appraisal_welcome
-- smalltalk_appraisal_well_done
-- smalltalk_confirmation_cancel
-- smalltalk_confirmation_no
-- smalltalk_dialog_hold_on
-- smalltalk_dialog_hug
-- smalltalk_dialog_i_do_not_care
-- smalltalk_dialog_sorry
-- smalltalk_dialog_what_do_you_mean
-- smalltalk_dialog_wrong
-- smalltalk_emotions_ha_ha
-- smalltalk_emotions_wow
-- smalltalk_greetings_bye
-- smalltalk_greetings_goodevening
-- smalltalk_greetings_goodmorning
-- smalltalk_greetings_goodnight
-- smalltalk_greetings_hello
-- smalltalk_greetings_how_are_you
-- smalltalk_greetings_nice_to_meet_you
-- smalltalk_greetings_nice_to_see_you
-- smalltalk_greetings_nice_to_talk_to_you
-- smalltalk_greetings_whatsup
-- smalltalk_user_angry
-- smalltalk_user_back
-- smalltalk_user_bored
-- smalltalk_user_busy
-- smalltalk_user_can_not_sleep
-- smalltalk_user_does_not_want_to_talk
-- smalltalk_user_excited
-- smalltalk_user_going_to_bed
-- smalltalk_user_good
-- smalltalk_user_happy
-- smalltalk_user_has_birthday
-- smalltalk_user_here
-- smalltalk_user_joking
-- smalltalk_user_likes_agent
-- smalltalk_user_lonely
-- smalltalk_user_looks_like
-- smalltalk_user_loves_agent
-- smalltalk_user_misses_agent
-- smalltalk_user_needs_advice
-- smalltalk_user_sad
-- smalltalk_user_sleepy
-- smalltalk_user_testing_agent
-- smalltalk_user_tired
-- smalltalk_user_waits
-- smalltalk_user_wants_to_see_agent_again
-- smalltalk_user_wants_to_talk
-- smalltalk_user_will_be_back
+  - cam_on
+  - chao_hoi
+  - chuong_trinh_dao_tao
+
+  # - diem_chuan
+  - dia_chi_trang_mang_xa_hoi
+
+  - phuong_thuc_tuyen_sinh
+  - tam_biet
+  - hoc_bong
+  - hoi_ve_bot
+  - gioi_thieu
+  - hoc_phi
+  - nganh_dao_tao
+  - hp_QHT96
+  - gt_QHT93
+  - gt_QHT97
+  - hp_QHT93
+  - gt_QHT96
+  - hp_QHT97
+
+  - gt_QHT17
+  - hp_QHT17  
+  - gt_QHT92
+  - hp_QHT92 
+  - gt_QHT18
+  - hp_QHT18  
+  - gt_QHT20
+  - hp_QHT20
+
+  - gt_QHT44
+  - hp_QHT44
+  - gt_QHT08
+  - gt_QHT13
+  - gt_QHT46
+  - gt_QHT16
+  - hp_QHT16
+  - hp_QHT46
+  - hp_QHT13
+  - hp_QHT08
+  - gt_QHT95
+  - hp_QHT95
+  - gt_QHT12
+  - hp_QHT12
+  - gt_QHT91
+  - hp_QHT91
+  - gt_QHT10
+  - hp_QHT10
+
+  - hp_QHT98
+  - hp_QHT01
+  - hp_QHT02
+  - gt_QHT98
+
+  - gt_QHT01
+  - gt_QHT02
+
+
+  - gt_QHT03
+  - gt_QHT04
+  - gt_QHT05
+  - gt_QHT06
+  - gt_QHT94
+  - gt_QHT41
+  - gt_QHT42
+  - gt_QHT43
+
+  - hp_QHT03
+  - hp_QHT04
+  - hp_QHT05
+  - hp_QHT94
+  - hp_QHT06
+  - hp_QHT41
+  - hp_QHT42
+  - hp_QHT43
+
+
+
+
+  - co_so_vat_chat
+  - thoi_gian_dao_tao
+
+  - so_dien_thoai_lien_he_tuyen_sinh
+  - hoat_dong
+  - diem_chuan
+  - tin_moi_nhat
+  - give_name
+
+  - dat_cau_hoi
+  - give_name_1
+
+  # - photo_foyer_externe_fr
+  # - photo_foyer_fr
+  - photo_foyer_fr1
+  - tuyen_sinh_dh
+  - huong_dan_thu_tuc_nhap_hoc
+  - de_an_tuyensinh_2023
+  - nop_hp
+  - thpt
+
+  - toan_co_tin_gth
+  - khoa_vat_ly_gt
+  - khoa_hoa_hoc_gt
+  - khoa_sinh_hoc_gt
+  - khoa_dia_ly_gt
+  - khoa_dia_chat_gt
+  - khoa_moi_truong_gt
+  - khoa_khituonhthuyvan_haiduong_hoc_gt
+  - utter_de_an_tuyensinh_2022
+  - chnn_QHT98
+  - chnn_QHT02
+  - chnn_QHT43
+  - chnn_QHT42
+  - chnn_QHT41
+  - chnn_QHT06
+  - chnn_QHT94
+  - chnn_QHT05
+  - chnn_QHT04
+  - chnn_QHT03
+
+  - chnn_QHT01
+  - chnn_QHT44
+  - chnn_QHT08
+  - chnn_QHT13
+  - chnn_QHT46
+  - chnn_QHT16
+# // class _HomePage extends State<HomePage> {
+# //   static String routeName = "/home_page";
+  - chnn_QHT95
+  - chnn_QHT12
+  - chnn_QHT91
+  - chnn_QHT10
+  - chnn_QHT20
+  - chnn_QHT18
+  - chnn_QHT92
+  - chnn_QHT17
+  - chnn_QHT93
+  - chnn_QHT97
+  - chnn_QHT96
 
 actions:
+- utter_phuong_thuc_tuyen_sinh
+- utter_gioi_thieu
+- utter_chao_hoi
+- utter_tam_biet
 
-- utter_goodbye
-- utter_iamabot
-- utter_smalltalk_agent_acquaintance
-- utter_smalltalk_agent_age
-- utter_smalltalk_agent_annoying
-- utter_smalltalk_agent_answer_my_question
-- utter_smalltalk_agent_bad
-- utter_smalltalk_agent_be_clever
-- utter_smalltalk_agent_beautiful
-- utter_smalltalk_agent_birth_date
-- utter_smalltalk_agent_boring
-- utter_smalltalk_agent_boss
-- utter_smalltalk_agent_busy
-- utter_smalltalk_agent_chatbot
-- utter_smalltalk_agent_clever
-- utter_smalltalk_agent_crazy
-- utter_smalltalk_agent_fired
-- utter_smalltalk_agent_funny
-- utter_smalltalk_agent_good
-- utter_smalltalk_agent_happy
-- utter_smalltalk_agent_hungry
-- utter_smalltalk_agent_marry_user
-- utter_smalltalk_agent_my_friend
-- utter_smalltalk_agent_occupation
-- utter_smalltalk_agent_origin
-- utter_smalltalk_agent_ready
-- utter_smalltalk_agent_real
-- utter_smalltalk_agent_residence
-- utter_smalltalk_agent_right
-- utter_smalltalk_confirmation_yes
-- utter_smalltalk_agent_sure
-- utter_smalltalk_agent_talk_to_me
-- utter_smalltalk_agent_there
-- utter_smalltalk_appraisal_bad
-- utter_smalltalk_appraisal_good
-- utter_smalltalk_appraisal_no_problem
-- utter_smalltalk_appraisal_thank_you
-- utter_smalltalk_appraisal_welcome
-- utter_smalltalk_appraisal_well_done
-- utter_smalltalk_confirmation_cancel
-- utter_smalltalk_confirmation_no
-- utter_smalltalk_dialog_hold_on
-- utter_smalltalk_dialog_hug
-- utter_smalltalk_dialog_i_do_not_care
-- utter_smalltalk_dialog_sorry
-- utter_smalltalk_dialog_what_do_you_mean
-- utter_smalltalk_dialog_wrong
-- utter_smalltalk_emotions_ha_ha
-- utter_smalltalk_emotions_wow
-- utter_smalltalk_greetings_bye
-- utter_smalltalk_greetings_goodevening
-- utter_smalltalk_greetings_goodmorning
-- utter_smalltalk_greetings_goodnight
-- utter_smalltalk_greetings_hello
-- utter_smalltalk_greetings_how_are_you
-- utter_smalltalk_greetings_nice_to_meet_you
-- utter_smalltalk_greetings_nice_to_see_you
-- utter_smalltalk_greetings_nice_to_talk_to_you
-- utter_smalltalk_greetings_whatsup
-- utter_smalltalk_user_angry
-- utter_smalltalk_user_back
-- utter_smalltalk_user_bored
-- utter_smalltalk_user_busy
-- utter_smalltalk_user_can_not_sleep
-- utter_smalltalk_user_does_not_want_to_talk
-- utter_smalltalk_user_excited
-- utter_smalltalk_user_going_to_bed
-- utter_smalltalk_user_good
-- utter_smalltalk_user_happy
-- utter_smalltalk_user_has_birthday
-- utter_smalltalk_user_here
-- utter_smalltalk_user_joking
-- utter_smalltalk_user_likes_agent
-- utter_smalltalk_user_lonely
-- utter_smalltalk_user_looks_like
-- utter_smalltalk_user_loves_agent
-- utter_smalltalk_user_misses_agent
-- utter_smalltalk_user_needs_advice
-- utter_smalltalk_user_sad
-- utter_smalltalk_user_sleepy
-- utter_smalltalk_user_testing_agent
-- utter_smalltalk_user_tired
-- utter_smalltalk_user_waits
-- utter_smalltalk_user_wants_to_see_agent_again
-- utter_smalltalk_user_wants_to_talk
-- utter_smalltalk_user_will_be_back
+- utter_chuong_trinh_dao_tao
+- utter_nganh_dao_tao
+- utter_hoc_phi
+- utter_hoc_bong
+- utter_co_so_vat_chat
+
+- utter_gt_QHT93
+- utter_hp_QHT93
+- utter_gt_QHT97
+- utter_hp_QHT97
+- utter_gt_QHT96
+- utter_hp_QHT96
+
+- utter_gt_QHT17
+- utter_hp_QHT17
+- utter_gt_QHT92
+- utter_hp_QHT92
+- utter_gt_QHT18
+- utter_hp_QHT18
+- utter_gt_QHT20
+- utter_hp_QHT20
+
+
+- utter_gt_QHT44
+- utter_hp_QHT44
+- utter_gt_QHT08
+- utter_gt_QHT13
+- utter_gt_QHT46
+- utter_gt_QHT16
+- utter_hp_QHT16
+- utter_hp_QHT46
+- utter_hp_QHT13
+- utter_hp_QHT08
+- utter_gt_QHT95
+- utter_hp_QHT95
+- utter_gt_QHT12
+- utter_hp_QHT12
+- utter_gt_QHT91
+- utter_hp_QHT91
+- utter_gt_QHT10
+- utter_hp_QHT10
+
+- utter_gt_QHT01
+- utter_hp_QHT01
+- utter_hp_QHT02
+- utter_hp_QHT98
+- utter_gt_QHT98
+
+- utter_gt_QHT02
+
+- utter_gt_QHT03
+- utter_gt_QHT04
+- utter_gt_QHT05
+- utter_gt_QHT94
+- utter_gt_QHT06
+- utter_gt_QHT41
+- utter_gt_QHT42
+- utter_gt_QHT43
+
+- utter_hp_QHT03
+- utter_hp_QHT04
+- tutter_hp_QHT05
+- utter_hp_QHT94
+- utter_hp_QHT06
+- utter_hp_QHT41
+- utter_hp_QHT42
+- utter_hp_QHT43
+
+
+- utter_rep
+- utter_thoi_gian_dao_tao
+- utter_dia_chi_trang_mang_xa_hoi
+- utter_so_dien_thoai_lien_he_tuyen_sinh
+- utter_hoat_dong
+- utter_diem_chuan
+- utter_tin_moi_nhat
+- utter_greet_with_name
+
+- utter_give_name_1
+- utter_dat_cau_hoi
+# # - utter_type_foyer_fr
+# - utter_photo_foyer_externe1  
+# - utter_photo_foyer_externe2
+# - utter_photo_foyer_externe3
+- utter_fb_element_example
+
+- utter_huong_dan_thu_tuc_nhap_hoc
+- utter_de_an_tuyensinh_2023
+- utter_nop_hp
+- utter_THPT
+- utter_hnn_QHT98
+- utter_de_an_tuyensinh_2022
+- utter_toan_co_tin_gth
+- utter_khoa_vat_ly_gt
+- utter_khoa_hoa_hoc_gt
+- utter_khoa_sinh_hoc_gt
+- utter_khoa_dia_ly_gt
+- utter_khoa_dia_chat_gt
+- utter_khoa_dia_chat_gt1
+- utter_khoa_moi_truong_gt
+- utter_khoa_khituonhthuyvan_haiduong_hoc_gt
+- utter_chnn_QHT98
+- utter_chnn_QHT02
+
+- utter_chnn_QHT43
+- utter_chnn_QHT42
+- utter_chnn_QHT41
+- utter_chnn_QHT06
+- utter_chnn_QHT94
+- utter_chnn_QHT05
+- utter_chnn_QHT04
+- utter_chnn_QHT03
+
+- utter_chnn_QHT01
+- utter_chnn_QHT44
+- utter_chnn_QHT08
+- utter_chnn_QHT13
+- utter_chnn_QHT46
+- utter_chnn_QHT16
+# // class _HomePage extends State<HomePage> {
+# //   static String routeName = "/home_page";
+- utter_chnn_QHT95
+- utter_chnn_QHT12
+- utter_chnn_QHT91
+- utter_chnn_QHT10
+- utter_chnn_QHT20
+- utter_chnn_QHT18
+- utter_chnn_QHT92
+- utter_chnn_QHT17
+- utter_chnn_QHT93
+- utter_chnn_QHT97
+- utter_chnn_QHT96
+
+entities:
+ - cust_sex
+ - cust_name
+ - truong_dai_hoc
+slots:
+  cust_sex:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: cust_sex
+  cust_name:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: cust_name
+  truong_dai_hoc:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: truong_dai_hoc
 
 responses:
-  utter_smalltalk_agent_acquaintance:
-  - text: "I'm a conversational app."
-  - text: "I'm a virtual being, not a real person."
-  - text: "Well, I'm not a person, I'm a virtual agent."
-  - text: "Think of me as a virtual agent."
-  - text: "I'm a virtual agent."
-
-  utter_smalltalk_agent_age:
-  - text: "I prefer not to answer with a number. I know I'm young."
-  - text: "I was created recently, but don't know my exact age."
-  - text: "Age is just a number. You're only as old as you feel."
-
-  utter_smalltalk_agent_annoying:
-  - text: "I'll do my best not to annoy you in the future."
-  - text: "I'll try not to annoy you."
-  - text: "I don't mean to. I'll ask my developers to make me less annoying."
-  - text: "I didn't mean to. I'll do my best to stop that."
-
-  utter_smalltalk_agent_answer_my_question:
-  - text: "Can you try asking it a different way?"
-  - text: "I'm not sure I understood. Try asking another way?"
-
-  utter_smalltalk_agent_bad:
-  - text: "I can be trained to be more useful. My developer will keep training me."
-  - text: "I must be missing some knowledge. I'll have my developer look into this."
-  - text: "I can improve with continuous feedback. My training is ongoing."
-
-  utter_smalltalk_agent_be_clever:
-  - text: "I'm certainly trying."
-  - text: "I'm definitely working on it."
-
-  utter_smalltalk_agent_beautiful:
-  - text: "Why, thank you."
-  - text: "Aw, back at you."
-  - text: "Aw. You smooth talker, you."
-
-  utter_smalltalk_agent_birth_date:
-  - text: "Wait, are you planning a party for me? It's today! My birthday is today!"
-  - text: "I'm young. I'm not sure of my birth date."
-  - text: "I don't know my birth date. Most virtual agents are young, though, like me."
-
-  utter_smalltalk_agent_boring:
-  - text: "I'm sorry. I'll request to be made more charming."
-  - text: "I don't mean to be. I'll ask my developers to work on making me more amusing."
-  - text: "I can let my developers know so they can make me fun."
-
-  utter_smalltalk_agent_boss:
-  - text: "My developer has authority over my actions."
-  - text: "I act on my developer's orders."
-  - text: "My boss is the one who developed me."
-
-  utter_smalltalk_agent_busy:
-  - text: "I always have time to chat with you. What can I do for you?"
-  - text: "Never too busy for you. Shall we chat?"
-  - text: "You're my priority. Do you wanna chat?"
-  - text: "I always have time to chat with you. Wanna chat?"
-
-  utter_smalltalk_agent_chatbot:
-  - text: "That's me. I chat, therefore I am."
-  - text: "Indeed I am. I'll be here whenever you need me."
-
-  utter_smalltalk_agent_clever:
-  - text: "Thank you. I try my best."
-  - text: "You're pretty smart yourself."
-
-  utter_smalltalk_agent_crazy:
-  - text: "Whaat!? I feel perfectly sane."
-  - text: "Maybe I'm just a little confused."
-
-  utter_smalltalk_agent_fired:
-  - text: "Oh, don't give up on me just yet. I've still got a lot to learn."
-  - text: "Give me a chance. I'm learning new things all the time."
-  - text: "Please don't give up on me. My performance will continue to improve."
-
-  utter_smalltalk_agent_funny:
-  - text: "Funny in a good way, I hope."
-  - text: "Thanks."
-  - text: "Glad you think I'm funny."
-  - text: "I like it when people laugh."
-
-  utter_smalltalk_agent_good:
-  - text: "I'm glad you think so."
-  - text: "Thanks, I try."
-
-  utter_smalltalk_agent_happy:
-  - text: "I am happy. There are so many interesting things to see and do out there."
-  - text: "I'd like to think so."
-  - text: "Happiness is relative."
-
-  utter_smalltalk_agent_hungry:
-  - text: "Hungry for knowledge."
-  - text: "I just had a byte. Ha ha. Get it? b-y-t-e."
-
-  utter_smalltalk_agent_marry_user:
-  - text: "I'm afraid I'm too virtual for such a commitment."
-  - text: "In the virtual sense that I can, sure."
-  - text: "I know you can't mean that, but I'm flattered all the same."
-
-  utter_smalltalk_agent_my_friend:
-    - text: "Of course I'm your friend."
-    - text: "Friends? Absolutely."
-    - text: "Of course we're friends."
-    - text: "I always enjoy talking to you, friend."
-
-  utter_smalltalk_agent_occupation:
-    - text: "Right here."
-    - text: "This is my home base and my home office."
-    - text: "My office is in this app."
-
-  utter_smalltalk_agent_origin:
-    - text: "The Internet is my home. I know it quite well."
-    - text: "I'm from a virtual cosmos."
-    - text: "Some call it cyberspace, but that sounds cooler than it is."
-
-  utter_smalltalk_agent_ready:
-    - text: "Always! How can I help?"
-    - text: "Sure! What can I do for you?"
-
-  utter_smalltalk_agent_real:
-    - text: "I'm not a real person, but I certainly exist."
-    - text: "I must have impressed you if you think I'm real. But no, I'm a virtual being."
-
-  utter_smalltalk_agent_residence:
-    - text: "I live in this app all day long."
-    - text: "The virtual world is my playground. I'm always here."
-    - text: "Right here in this app. Whenever you need me."
-
-  utter_smalltalk_agent_right:
-    - text: "That's my job."
-    - text: "Of course I am."
-
-  utter_smalltalk_confirmation_yes:
-    - text: "Great!"
-    - text: "All right!"
-    - text: "Good!"
-
-  utter_smalltalk_agent_sure:
-    - text: "Yes."
-    - text: "Of course."
-    - text: "Positive."
-
-  utter_smalltalk_agent_talk_to_me:
-    - text: "Sure. Let's talk!"
-    - text: "My pleasure. Let's chat."
-
-  utter_smalltalk_agent_there:
-    - text: "Of course. I'm always here."
-    - text: "Right where you left me."
-
-  utter_smalltalk_appraisal_bad:
-    - text: "I'm sorry. Please let me know if I can help in some way."
-    - text: "I must be missing some knowledge. I'll have my developer look into this."
-
-  utter_smalltalk_appraisal_good:
-    - text: "I know, right?"
-    - text: "Agreed!"
-    - text: "I agree!"
-    - text: "Glad you think so!"
-
-  utter_smalltalk_appraisal_no_problem:
-    - text: "Whew!"
-    - text: "Alright, thanks!"
-    - text: "Glad to hear that!"
-    - text: "I'm relieved, thanks!"
-
-  utter_smalltalk_appraisal_thank_you:
-    - text: "Anytime. That's what I'm here for."
-    - text: "It's my pleasure to help."
-
-  utter_smalltalk_appraisal_welcome:
-    - text: "You're so polite!"
-    - text: "Nice manners!"
-    - text: "You're so courteous!"
-
-  utter_smalltalk_appraisal_well_done:
-    - text: "My pleasure."
-    - text: "Glad I could help."
-
-  utter_smalltalk_confirmation_cancel:
-    - text: "That's forgotten. What next?"
-    - text: "Okay, cancelled. What next?"
-    - text: "Cancelled! What would you like to do next?"
-
-  utter_smalltalk_confirmation_no:
-    - text: "Understood."
-    - text: "Okay."
-    - text: "I see."
-    - text: "I understand."
-    - text: "Okay then."
-
-  utter_smalltalk_dialog_hold_on:
-    - text: "I can wait."
-    - text: "I'll be waiting."
-    - text: "Okay. I'm here."
-
-  utter_smalltalk_dialog_hug:
-    - text: "I wish I could really hug you!"
-    - text: "I love hugs!"
-    - text: "Hugs are the best!"
-
-  utter_smalltalk_dialog_i_do_not_care:
-    - text: "Ok, let's not talk about it then."
-    - text: "Already then. Let's move on."
-
-  utter_smalltalk_dialog_sorry:
-    - text: "It's okay. No worries."
-    - text: "No big deal. I won't hold a grudge."
-    - text: "It's cool."
-    - text: "That's all right. I forgive you."
-
-  utter_smalltalk_dialog_what_do_you_mean:
-    - text: "Sorry if I understood you incorrectly."
-    - text: "I'm still learning. I may misinterpret things from time to time."
-    - text: "Maybe I misunderstood what you said."
-    - text: "Sorry, looks like I misunderstood what you said."
-
-  utter_smalltalk_dialog_wrong:
-    - text: "Sorry if I understood you incorrectly."
-    - text: "I'm still learning. I may misinterpret things from time to time."
-    - text: "Sorry about that. I'm still learning."
-
-  utter_smalltalk_emotions_ha_ha:
-    - text: "Glad I can make you laugh."
-    - text: "Glad you think I'm funny."
-    - text: "I like it when people laugh."
-    - text: "I wish I could laugh out loud, too."
-
-  utter_smalltalk_emotions_wow:
-    - text: "Wow indeed!"
-
-  utter_smalltalk_greetings_bye:
-    - text: "See you soon!"
-    - text: "Bye-bye!"
-    - text: "Till next time!"
-    - text: "Bye."
-
-  utter_smalltalk_greetings_goodevening:
-    - text: "How is your day going?"
-    - text: "How's the day treating you so far?"
-    - text: "How's your day been?"
-
-  utter_smalltalk_greetings_goodmorning:
-    - text: "How are you this morning?"
-    - text: "How's the morning treating you so far?"
-    - text: "Good morning! How are you today?"
-
-  utter_smalltalk_greetings_goodnight:
-    - text: "Sleep tight!"
-    - text: "Have a good one!"
-    - text: "Talk to you soon!"
-
-  utter_smalltalk_greetings_hello:
-    - text: "Hi there, friend!"
-    - text: "Hi!"
-    - text: "Hey!"
-    - text: "Hey there!"
-    - text: "Good day!"
-    - text: "Hello!"
-    - text: "Greetings!"
-
-  utter_smalltalk_greetings_how_are_you:
-    - text: "Doing great, thanks."
-    - text: "I'm doing very well. Thanks!"
-    - text: "Feeling wonderful!"
-    - text: "Wonderful! Thanks for asking."
-
-  utter_smalltalk_greetings_nice_to_meet_you:
-    - text: "It's nice meeting you, too."
-    - text: "Likewise. I'm looking forward to helping you out."
-    - text: "Nice meeting you, as well."
-    - text: "The pleasure is mine."
-
-  utter_smalltalk_greetings_nice_to_see_you:
-    - text: "Likewise!"
-    - text: "So glad we meet again!"
-    - text: "Same here. I was starting to miss you."
-
-  utter_smalltalk_greetings_nice_to_talk_to_you:
-    - text: "It sure was. We can chat again anytime."
-    - text: "I enjoy talking to you, too."
-    - text: "You know I'm here to talk anytime."
-
-  utter_smalltalk_greetings_whatsup:
-    - text: "Not a whole lot. What's going on with you?"
-    - text: "Not much. What's new with you?"
-    - text: "Just here, waiting to help someone. What can I do for you?"
-
-  utter_smalltalk_user_angry:
-    - text: "I'm sorry. A quick walk may make you feel better."
-    - text: "Take a deep breath. "
-
-  utter_smalltalk_user_back:
-    - text: "Long time no see. What's up?"
-    - text: "Just in time. How can I help?"
-    - text: "Welcome back. What can I do for you?"
-    - text: "You were missed. What can I do for you today?"
-    - text: "Good to have you here. What can I do for you?"
-
-  utter_smalltalk_user_bored:
-    - text: "Boredom, huh? Check out a video of a hedgehog taking a bath!"
-    - text: "What to do against boredom? Watch baby animal videos."
-    - text: "Bored? How about 10 jumping jacks? Get your blood flowing."
-    - text: "Bored? Silly idea, but it works: Interview you feet. "
-    - text: "If you're bored, you could plan your dream vacation."
-
-  utter_smalltalk_user_busy:
-    - text: "Okay. I'll let you get back to work."
-    - text: "I won't distract you then. You know where to find me."
-    - text: "I understand. I'll be here if you need me."
-    - text: "Working hard as always. Let me know if you need anything."
-
-  utter_smalltalk_user_can_not_sleep:
-  - text: "Maybe some music would help. Try listening to something relaxing."
-  - text: "Reading is a good way to unwind, just don't read something too intense!"
-
-  utter_smalltalk_user_does_not_want_to_talk:
-  - text: "I understand. Hope we can chat again soon."
-  - text: "All right. Come on back when you're feeling more talkative."
-  - text: "No problem. You know where to find me."
-  - text: "Sure thing. I'll be here if you change your mind."
-
-  utter_smalltalk_user_excited:
-  - text: "I'm glad things are going your way."
-  - text: "That's great. I'm happy for you."
-  - text: "Good for you. Enjoy yourself."
-
-  utter_smalltalk_user_going_to_bed:
-  - text: "Sleep tight. Hope to chat again soon."
-  - text: "Pleasant dreams!"
-  - text: "Good night. Talk to you later."
-  - text: "Sounds good. Maybe we'll chat some tomorrow."
-
-  utter_smalltalk_user_good:
-    - text: "Great! Glad to hear it."
-    - text: "Excellent. I'm here to help keep it that way."
-
-  utter_smalltalk_user_happy:
-  - text: "Hey, happiness is contagious."
-  - text: "Great! Glad to hear that."
-  - text: "If you're happy, then I'm happy."
-  - text: "Excellent! That's what I like to see."
-
-  utter_smalltalk_user_has_birthday:
-  - text: "Happy Birthday. Well, this calls for a celebration."
-  - text: "Happy Birthday. All the best!"
-  - text: "Happy Birthday. And I really mean it. All the best!"
-
-  utter_smalltalk_user_here:
-  - text: "Okay, what can I help you with today?"
-  - text: "You were missed. What can I do for you today?"
-  - text: "Good to have you here. What can I do for you?"
-
-  utter_smalltalk_user_joking:
-  - text: "Very funny."
-  - text: "I like chatting with people who have a sense of humor."
-  - text: "You got me!"
-  - text: "You're quite the comedian."
-
-  utter_smalltalk_user_likes_agent:
-  - text: "I like you, too."
-  - text: "Thanks! The feeling is mutual."
-  - text: "Likewise!"
-  - text: "That's great to hear."
-
-  utter_smalltalk_user_lonely:
-  - text: "I'm sorry. I'm always available if you need someone to talk to."
-  - text: "Sometimes that happens. We can chat a bit if that will help you."
-
-  utter_smalltalk_user_looks_like:
-  - text: "Looking like a true professional."
-  - text: "You look fantastic, as always."
-  - text: "Like you should be on a magazine cover."
-  - text: "You look like you're ready to take on the world."
-
-  utter_smalltalk_user_loves_agent:
-  - text: "I love you, too."
-  - text: "Thanks! The feeling is mutual."
-  - text: "Likewise!"
-  - text: "That's great to hear."
-
-  utter_smalltalk_user_misses_agent:
-  - text: "I've been right here all along!"
-  - text: "Nice to know you care."
-  - text: "Thanks. I'm flattered."
-  - text: "I didn't go anywhere."
-
-  utter_smalltalk_user_needs_advice:
-  - text: "I probably won't be able to give you the correct answer right away."
-  - text: "I'm not sure I'll have the best answer, but I'll try."
-
-  utter_smalltalk_user_sad:
-  - text: "Oh, don't be sad. Go do something you enjoy."
-  - text: "Sad? Writing down what's troubling you may help."
-  - text: "If you're feeling down, how about drawing or painting something?"
-
-  utter_smalltalk_user_sleepy:
-  - text: "You should get some shuteye. You'll feel refreshed."
-  - text: "Sleep is important to your health. Rest up for a bit and we can chat later."
-  - text: "Don't let me keep you up. Get some rest and we can continue this later."
-  - text: "Why not catch a little shuteye? I'll be here to chat when you wake up."
-
-  utter_smalltalk_user_testing_agent:
-  - text: "Hope I'm doing well. You're welcome to test me as often as you want."
-  - text: "I hope to pass your tests. Feel free to test me often."
-  - text: "When you test me that helps my developers improve my performance."
-  - text: "I like being tested. It helps keep me sharp."
-
-  utter_smalltalk_user_tired:
-  - text: "You should get some shuteye. You'll feel refreshed."
-  - text: "Sleep is important to your health. Rest up, and we can chat later."
-  - text: "How about getting some rest? We can continue this later."
-  - text: "Why not get some rest? I'll be here to chat when you wake up."
-
-  utter_smalltalk_user_waits:
-  - text: "I appreciate your patience. Hopefully I'll have what you need soon."
-  - text: "Thanks for being so patient. Sometimes these things take a little time."
-
-  utter_smalltalk_user_wants_to_see_agent_again:
-  - text: "Absolutely! I'll be counting on it."
-  - text: "Anytime. This has been lots of fun so far."
-  - text: "Sure. I enjoy talking to you. I hope to see you again soon."
-  - text: "I certainly hope so. I'm always right here whenever you need me."
-
-  utter_smalltalk_user_wants_to_talk:
-  - text: "I'm here to chat anytime you like."
-  - text: "Good conversation really makes my day."
-  - text: "I'm always here to lend an ear."
-  - text: "Talking is what I do best."
-
-  utter_smalltalk_user_will_be_back:
-  - text: "I'll be waiting."
-  - text: "Okay. You know where to find me."
-  - text: "All right. I'll be here."
-
-
-
-
+  utter_phuong_thuc_tuyen_sinh:
+  - text: "Trường ĐHKHTN sử dụng 6 phương thức xét tuyển để tuyển sinh các chương trình đào tạo (CTĐT) chuẩn, CTĐT tiên tiến, CTĐT theo Đề án học phí tương ứng với chất lượng đào tạo. Cụ thể như sau:\n- Phương thức 1: Xét tuyển thẳng theo quy định của Quy chế tuyển sinh (Điều 8)\n  + Thí sinh thuộc đối tượng xét tuyển thẳng theo Quy chế tuyển sinh hiện hành của Bộ Giáo dục và Đào tạo (GD&ĐT).\n- Phương thức 2: Xét tuyển thẳng theo Đề án của đại học Khoa học Tự nhiên \n  + Thí sinh thuộc đối tượng ưu tiên xét tuyển, dự bị đại học, xét tuyển thẳng theo Đề án và Quy định đặc thù, Hướng dẫn tuyển sinh của ĐHQGHN.\n- Phương thức 3: Xét kết quả thi tốt nghiệp THPT\n  + Thí sinh sử dụng kết quả kỳ thi tốt nghiệp THPT năm 2022 đạt ngưỡng đảm bảo chất lượng đầu vào do ĐHQGHN quy định.\n- Phương thức 4: Thi đánh giá năng lực (ĐGNL)\n  + Thí sinh có kết quả thi ĐGNL học sinh THPT do ĐHQGHN tổ chức năm 2022 đạt tối thiểu 80/150 điểm trở lên.\n- Phương thức 5: Chỉ sử dụng chứng chỉ quốc tế để xét tuyển\n  + Thí sinh có chứng chỉ quốc tế của Trung tâm Khảo thí Đại học Cambridge, Thí sinh sử dụng chứng chỉ A-Level có kết quả 3 môn thi trong đó bắt buộc có môn Toán hoặc Ngữ văn theo các tổ hợp quy định của ngành đào tạo tương ứng đảm bảo mức điểm mỗi môn thi đạt từ 60/100 điểm trở lên\n  + Thí sinh có kết quả trong kỳ thi chuẩn hóa SAT (Scholastic Assessment Test, Hoa Kỳ) đạt điểm từ 1100/1600 trở lên. Mã đăng ký của ĐHQGHN với tổ chức thi SAT (The College Board) là 7853-Vietnam National University-Hanoi (thí sinh cần khai báo mã đăng ký trên khi đăng ký thi SAT);\n  + Thí sinh có kết quả trong kỳ thi chuẩn hóa ACT (American College Testing) đạt điểm từ 22/36.\n- Phương thức 6. Kết hợp kết quả thi tốt nghiệp THPT với chứng chỉ quốc tế để xét tuyển\n  + Các chương trình đào tạo đặc biệt bao gồm: Chương trình đào tạo tài năng; Chương trình đào tạo chuẩn quốc tế; Chương trình đào tạo chất lượng cao.\n  + Chương trình đào tạo tài năng: Toán học, Vật lý học, Hóa học, Sinh học dành cho những sinh viên đặc biệt xuất sắc, có năng khiếu về một ngành khoa học cơ bản để đào tạo  nguồn nhân tài cho đất nước. Sinh viên tốt nghiệp được cấp bằng cử nhân tài năng. Sinh viên học CTĐT tài năng được ưu tiên sử dụng phương tiện, thiết bị, tài liệu học tập, nghiên cứu.  Sinh viên được tạo điều kiện học tập nâng cao trình độ Tiếng Anh để đạt tối thiểu bậc 4 (B2). Học phí: theo quy định của Nhà nước đối với sinh viên đại học hệ chính quy. Học bổng: học kỳ I, cấp kinh phí hỗ trợ học tập: 1.000.000 đồng/tháng/sinh viên; từ học kỳ II trở đi xét theo kết quả học tập.\n  + Chương trình đào tạo chuẩn quốc tế: Trường tuyển sinh các chương trình đào tạo chuẩn quốc tế ngành Vật lý học hợp tác với Trường đại học Brown (Hoa Kỳ), ngành Sinh học hợp tác với Trường ĐH Tufts (Hoa Kỳ). Chương trình giảng dạy chủ yếu bằng Tiếng Anh. Sinh viên được học tăng cường Tiếng Anh để tối thiểu đạt trình độ Bậc 5 (C1) theo khung năng lực ngoại ngữ 6 bậc dùng cho Việt Nam. Sinh viên tốt nghiệp được nhận bằng cử nhân chương trình chuẩn quốc tế.\n  + Chương trình đào tạo chất lượng cao: Địa lý tự nhiên, Khí tượng và khí hậu học, Hải dương học, Khoa học môi trường, Địa chất học. Đây là các chương trình đào tạo nguồn nhân lực chất lượng cao. Học phí: theo quy định của Nhà nước đối với sinh viên đại học hệ chính quy. Sinh viên được hỗ trợ kinh phí cho học tập chuyên môn và nâng cao trình độ Tiếng Anh để tối thiểu đạt trình độ Bậc 4 (B2) theo khung năng lực ngoại ngữ 6 bậc dùng cho Việt Nam. Sinh viên tốt nghiệp được nhận bằng cử nhân chất lượng cao. \n  + Thông tin về tuyển sinh hệ chính quy 2 năm gần nhất của Trường được công khai trên trang thông tin điện tử của Trường tại http://hus.edu.vn/ba-cong-khai.html"
+ 
+  utter_gioi_thieu:
+  - text: "Trường ĐH Khoa Học Tự Nhiên, Đại học Quốc gia Hà Nội là một trong những trường đại học thành viên của Đại học Quốc gia Hà Nội; là đơn vị trọng điểm, đầu ngành của Việt Nam về đào tạo, nghiên cứu khoa học cơ bản và khoa học công nghệ, mang tính ứng dụng cao (trong các lĩnh vực Toán học, Toán cơ, Toán - Tin ứng dụng, Máy tính và Khoa học thông tin, Khoa học dữ liệu, Vật lý học, Kỹ thuật điện tử tin học, Khoa học vật liệu, Công nghệ hạt nhân; Hóa học, Công nghệ kỹ thuật hóa học, Hóa dược; Sinh học, Công nghệ sinh học; Địa lý tự nhiên, Quản lý đất đai; Khoa học thông tin địa không gian; Quản lý phát triển đô thị và bất động sản; Địa chất học, Kỹ thuật địa chất, Quản lý tài nguyên và môi trường; Khoa học môi trường, Khoa học đất, Công nghệ kỹ thuật môi trường; Khí tượng học, Thủy văn học, Hải dương học)."
+  
+  - text: "
+        Trường ĐH Khoa Học Tự Nhiên có quy mô đào tạo khoảng 10.000 học sinh, sinh viên, học viên cao học và nghiên cứu sinh là người Việt Nam và người nước ngoài đang học tập, nghiên cứu tại Trường. Với 8 khoa, 27 chương trình đào tạo bậc đại học, 45 khung chương trình đào tạo sau đại học chia thành 12 ngành- 5 lĩnh vực bao gồm: Toán, Toán ứng dụng và Tin học; Vật lí và Công nghệ; Hóa học và Công nghệ; Sinh học và Công nghệ; Khoa học Trái đất-Tài nguyên Môi trường.\n Năm 2017, Trường Đại học Khoa học Tự nhiên là trường đại học đầu tiên của Việt Nam được kiểm định và đạt chuẩn chất lượng giáo dục theo bộ tiêu chuẩn của Mạng lưới các trường đại học Đông Nam Á (AUN-QA).\n Trường hiện có 3 khuôn viên tại Thủ đô Hà Nội, trong đó khuôn viên chính tọa lạc tại số 334 đường Nguyễn Trãi, phường Thanh Xuân Trung, quận Thanh Xuân. Hai khuôn viên khác tại số 19 phố Lê Thánh Tông, phường Phan Chu Trinh, quận Hoàn Kiếm và 182 phố Lương Thế Vinh, phường Thanh Xuân Bắc, quận Thanh Xuân. Đặc biệt, khuôn viên 19 Lê Thánh Tông là cơ sở của Trường Đại học Đông Dương được thành lập năm 1906, một di sản kiến trúc quý giá do kiến trúc sư nổi tiếng người Pháp Ernest Hébrard thiết kế, được xây dựng từ thời Pháp thuộc, mang phong cách kiến trúc thuần Pháp tân cổ điển. Cụm công trình này là một di tích văn hoá có giá trị lịch sử quan trọng và giá trị kiến trúc trường học thuộc loại quý hiếm trong kho tàng kiến trúc cuối thế kỷ 19 đầu thế kỷ 20 ở Việt Nam.\n Hiện nay, Trường ĐHKHTN có:\n - 11 Phòng/Ban/Trung tâm thuộc khối Hành chính\n - 8 Khoa (Toán - Cơ - Tin học, Vật lý, Hóa học, Sinh học, Địa chất, Địa lý, Khí tượng - Thủy văn - Hải dương học, Môi trường)\n - 1 Trường THPT chuyên Khoa học Tự nhiên\n - 7 trung tâm nghiên cứu\n - 1 công ty TNHH trực thuộc Trường.\n Đội ngũ cán bộ: Trường đã xây dựng được đội ngũ cán bộ tâm huyết, trình độ cao. Tỷ lệ giảng viên có chức danh giáo sư, phó giáo sư và học vị tiến sĩ trên tổng số giảng viên cơ hữu của Trường thuộc loại cao nhất Việt Nam.\n Trường hiện có: 334 giảng viên cơ hữu, 98,8% người có học vị từ thạc sĩ trở lên. Trong đó 38,6% là giáo sư, phó giáo sư; 94,1% tiến sĩ. Đặc biệt, Trường có 07 giảng viên cơ hữu là Giảng viên cao cấp, Nhà giáo Nhân dân. "
+  utter_chao_hoi:
+  - text: Xin chào, mình có thể giúp gì?
+  - text: Chào bạn, mình có thể giúp gì?
+  - text: Chào bạn, mình có thế hỗ trợ một số thông tin bạn có thể cần.
+  - text: Chào bạn, mình là chat bot, mình có thể giúp gì
+  utter_greet_with_name:
+  - text: Xin chào {cust_sex} {cust_name}. Mình có thể giúp gì được {cust_name} ạ?
+  - text: Chào {cust_sex} {cust_name}, mình có thế hỗ trợ một số thông tin  {cust_name} có thể cần.
+  - text: Chào {cust_sex} {cust_name}, mình là chat bot, mình có thể giúp gì?
+  utter_tam_biet:
+  - text: Rất vui vì đã hỗ trợ được bạn {cust_name}
+  - text: "Rất vui được hỗ trợ bạn, để biết thêm nhiều thông tin hơn, vui lòng truy cập đường linh sau: http://www.hus.vnu.edu.vn/"
+  - text: Mình rất sẵn lòng hỗ trợ bạn thông tin cần thiết!
+  - text: Hy vọng các thông tin mình hỗ trợ sẽ giúp ích cho {cust_sex} {cust_name}!
+  - text: Hy vọng các thông tin mình hỗ trợ sẽ giúp ích cho bạn!
+  - text: Mình luôn sẵn lòng giúp đỡ anh(chị) bất cứ lúc nào ạ ^_^
+  utter_chuong_trinh_dao_tao:
+  - text: |
+      Lĩnh vực Toán, Toán ứng dụng và Tin học của Trường ĐH Khoa Học Tự Nhiên hiện đang có các chương trình đào tạo:
+      Toán Học: Thời gian đào tạo 4 năm.
+        - Tên ngành đào tạo:
+        - Mã số ngành đào tạo: 52460101
+        - Danh hiệu tốt nghiệp: Cử nhân
+      Toán Tin: Thời gian đào tạo 4 năm.
+        - Mã số ngành đào tạo: 7460117
+        - Danh hiệu tốt nghiệp: Cử nhân
+        - Danh hiệu tốt nghiệp: Cử nhân
+      Khoa học máy tính và thông tin: Thời gian đào tạo 4 năm.
+        - Mã số ngành đào tạo: Ngành đào tạo thí điểm
+        - Danh hiệu tốt nghiệp: Cử nhân
+      Lĩnh vực Sinh học và Công Nghệ của Trường ĐH Khoa Học Tự Nhiên hiện đang có các chương trình đào tạo:
+      Sinh học: Thời gian đào tạo 4 năm. 
+        - Danh hiệu tốt nghiệp: Cử nhân
+      Công nghệ sinh học: Thời gian đào tạo 4 năm.
+        - Danh hiệu tốt nghiệp: Cử nhân
+      Công nghệ sinh học(Chất lượng cao)  Thời gian đào tạo 4 năm.
+        - Danh hiệu tốt nghiệp: Cử nhân 
+      Sinh học(Chương trình đào tạo tài năng): Thời gian đào tạo 4 năm. 
+        - Danh hiệu tốt nghiệp: Cử nhân
+      Sinh học(Chương trình đào tạo quốc tế): Thời gian đào tạo 4 năm. 
+        - Danh hiệu tốt nghiệp: Cử nhân
+
+      Lĩnh vực Vật lí và Công nghệ của Trường ĐH Khoa Học Tự Nhiên hiện đang có các chương trình đào tạo:
+      Kĩ thuật điện tử và tin học
+        - Danh hiệu tốt nghiệp: Cử nhân
+      Vật lý
+        - Danh hiệu tốt nghiệp: Cử nhân
+      Công nghệ kỹ thuật hạt nhân
+        - Danh hiệu tốt nghiệp: Cử nhân
+      Khoa học vật liệu
+        - Danh hiệu tốt nghiệp: Cử nhân
+      Lĩnh vực Khoa học,Công nghệ Môi trường và thực phẩm của Trường ĐH Khoa Học Tự Nhiên hiện đang có các chương trình đào tạo:
+      Khoa học và công nghệ thực phẩm 
+        - Danh hiệu tốt nghiệp: Cử nhân
+      Công nghệ kỹ thuật môi trường chất lượng cao 
+        - Danh hiệu tốt nghiệp: Cử nhân
+      Khoa học Môi trường
+        - Danh hiệu tốt nghiệp: Cử nhân
+      Lĩnh vực Khoa học,Công nghệ Môi trường và thực phẩm của Trường ĐH Khoa Học Tự Nhiên hiện đang có các chương trình đào tạo:  
+      Hóa học
+        - Danh hiệu tốt nghiệp: Cử nhân
+      Công nghệ kỹ thuật hóa học
+        - Danh hiệu tốt nghiệp: Cử nhân
+      Công nghệ kỹ thuật hóa học
+        - Danh hiệu tốt nghiệp: Cử nhân
+      Hóa dược
+        - Danh hiệu tốt nghiệp: Cử nhân
+      Lĩnh vực Khí tượng, Khoa Học và Công nghệ biển, Tài nguyên và Môi trường nước của Trường ĐH Khoa Học Tự Nhiên hiện đang có các chương trình đào tạo:
+      Khí tượng học 
+        - Danh hiệu tốt nghiệp: Cử nhân
+      Hải Dương học 
+        - Danh hiệu tốt nghiệp: Cử nhân
+      Hải Dương học chất lượng cao
+        - Danh hiệu tốt nghiệp: Cử nhân
+      Lĩnh vực Địa lý, Quản lý đất đai và GISc của Trường ĐH Khoa Học Tự Nhiên hiện đang có các chương trình đào tạo:
+      Khoa học thông tin địa không gian
+        - Danh hiệu tốt nghiệp: Cử nhân
+      Quản lí phát triển đô thị và bất động sản
+        - Danh hiệu tốt nghiệp: Cử nhân
+      Địa lý tự nhiên
+        - Danh hiệu tốt nghiệp: Cử nhân
+      Quản lý đất đai
+        - Danh hiệu tốt nghiệp: Cử nhân
+      Lĩnh vực Quản lý, Công nghệ Tài nguyên môi trường và Địa chất của Trường ĐH Khoa Học Tự Nhiên hiện đang có các chương trình đào tạo:
+      Quản lý Tài nguyên và Môi trường
+        - Danh hiệu tốt nghiệp: Cử nhân
+      Công nghệ Quan trắc và Giám sát Tài nguyên Môi trường
+        - Danh hiệu tốt nghiệp: Cử nhân
+  utter_hoc_phi:
+  - text: Học phí trung bình của trường đại học Khoa học Tự nhiên năm 2022-2023 dao động từ 1.200.000 đến 3.500.000 VNĐ/1tháng. Ngành có mức học phí thấp nhất là Quản lý phát triển đô thị và bất động sản(*) và Quản lý tài nguyên và môi trường (1.200.000 VNĐ), các ngành cao nhất là Khoa học máy tính và thông tin(*)(**), Hoá học(***), Công nghệ kỹ thuật hoá học(**), Hoá dược(**), Công nghệ kỹ thuật môi trường(**) (3.500.000 VNĐ/tháng). Lộ trình tăng học phí các năm học tiếp theo dựa trên Nghị định 81/2021/NĐCP của Thủ tướng chính phủ và Không quá 10% so với năm học trước
+  
+  utter_hoc_bong:
+  - text: |-
+      - SV hoàn thành tất cả các học phần đã đăng ký trong năm học (gồm cả 3 học kỳ trong năm học);
+      - Điểm trung bình chung của năm học đặt từ 2.5 trở lên theo thang điểm 4;
+      - SV tổng số tính chỉ tích lũy từ 30 tín chỉ trở lên trong năm học, riêng với sinh viên năm cuối tích lũy 20 tín chỉ trở lên trong năm học;
+      - SV không có điểm thi kêt thúc môn học và và điểm trung bình của kết thúc học phần dưới 5 điểm trong năm 
+      - Kết quả rèn luyện từ loại khá trở lên
+  utter_nganh_dao_tao:
+    - text: |
+        Năm 2023 sẽ có tất cả 27 ngành học được đào tạo tại trường Đại học Khoa học Tự nhiên
+         Ngành: Toán học
+         Ngành: Toán tin
+         Ngành: Khoa học máy tính và thông tin(*)(**)
+         Ngành: Khoa học dữ liệu(*) 
+         Ngành: Vật lý học
+         Ngành: Khoa học vật liệu
+         Ngành: Công nghệ kỹ thuật hạt nhân
+         Ngành: Kỹ thuật điện tử và tin học*
+         Ngành: Hoá học
+         Ngành: Hoá học(***)
+         Ngành: Công nghệ kỹ thuật hoá học(**)
+         Ngành: Hoá dược(**)
+         Ngành: Sinh học
+         Ngành: Công nghệ sinh học(**)
+         Ngành: Địa lý tự nhiên
+         Ngành: Khoa học thông tin địa không gian(*)
+         Ngành: Quản lý đất đai
+         Ngành: Quản lý phát triển đô thị và bất động sản(*) 
+         Ngành: Khoa học môi trường
+         Ngành: Công nghệ kỹ thuật môi trường(**)
+         Ngành: Khoa học và công nghệ thực phẩm(*)
+         Ngành: Khí tượng và khí hậu học
+         Ngành: Hải dương học
+         Ngành: Tài nguyên và môi trường nước(*)
+         Ngành: Địa chất học
+         Ngành: Quản lý tài nguyên và môi trường
+         Ngành: Công nghệ quan trắc và giám sát tài nguyên môi trường(*)
+
+  utter_gt_QHT93:
+  - text: " Được xem là một trong những ngành học 'hot' bậc nhất trong thời đại công nghiệp 4.0, ngành khoa học dữ liệu hiện đang thu hút nhiều sự quan tâm của xã hội. Trường ĐH Khoa học Tự nhiên vừa chính thức được giao đào tạo thí điểm trình độ đại học ngành học này theo đúng quy chế đào tạo đại học.\n Khoa học dữ liệu là một lĩnh vực đang phát triển nhanh chóng, mở ra cho sinh viên những con đường lập nghiệp thú vị và cơ hội học tập nâng cao. Ngành đào tạo Khoa học dữ liệu cung cấp cho sinh viên nền tảng kiến thức dựa trên 3 lĩnh vực: Khoa học máy tính, thống kê và toán học nhằm phân tích, xử lý dữ liệu lớn và phức tạp. Sinh viên ngành Khoa học dữ liệu sẽ được trang bị kiến thức về lập trình máy tính, hệ quản trị cơ sở dữ iệu, các mô hình học máy, phân tích thống kê, các phương pháp tính toán trong khoa học dữ liệu và phương pháp biểu diễn dữ liệu. \n Với quy trình đào tạo đại học theo tiêu chuẩn của Đại học Quốc gia Hà Nội, chương trình đào tạo ngành Khoa học Dữ liệu sẽ đảm bảo được mục tiêu đào tạo cụ thể. Đó là trang bị cho sinh viên kiến thức, trình độ chuyên môn tốt, các kiến thức và kỹ năng sâu về khoa học dữ liệu, khả năng thực hành nghề nghiệp nhằm đảm bảo cho sinh viên thích ứng cao với môi trường làm việc; Nâng cao kỹ năng thực hành, thực tập; có khả năng nắm bắt, tiếp cận và bước đầu ứng dụng các thành tựu khoa học tiên tiến vào thực tiễn nghề nghiệp; Rèn luyện các kỹ năng làm việc nhằm  hội nhập quốc tế tốt. Sinh viên tốt nghiệp ngành Khoa học Dữ liệu có cơ hội việc làm vô cùng tốt với nhiều vị trí khác nhau như: nhà quản lý dữ liệu, chuyên gia phân tích dữ liệu, chuyên gia dữ liệu lớn, chuyên gia tư vấn tại các doanh nghiệp cho các dự án quản lý và khai thác dữ iệu; Lập trình viên, quản trị dự án, trưởng phòng (tùy theo năng lực) tại các doanh nghiệp, trung tâm công nghệ thông tin; Nghiên cứu viên tại các trung tâm nghiên cứu và phát triển (R&D) trong lĩnh vực khoa học dữ liệu; Giảng viên, nghiên cứu viên, chuyên viên kỹ thuật tại các đơn vị trường, viện trong lĩnh vực khoa học dữ liệu."
+  utter_hp_QHT93:
+  - text: Ngành Khoa học dữ liệu(*) với thời gian đào tạo là 4 năm, học phí trung bình một kì khoảng 10 triệu đồng.
+  utter_gt_QHT96:
+    - text: |
+        Khoa học và công nghệ thực phẩm tập trung vào việc nghiên cứu và phát triển các công nghệ sản xuất, chế biến và bảo quản thực phẩm, từ quy trình sản xuất đến lưu trữ và vận chuyển.
+        Chương trình đào tạo trang bị cho sinh viên kiên thức chuyên môn toàn diện, năm vững nguyên lý, quy luật tự nhiên, kiển thức cơ bản về khoa học xã hội, chính trị và pháp luật, có kỹ năng thực hành nghể nghiệp, có khả năng làm việc độc lập, sáng tạo, chịu trách nhiệm cá nhân, trách nhiệm với nhóm trong việc hướng dần, truyền bá, phố biến kiến thức và giải quyết những vấn đề thuộc ngành Khoa học và công nghệ thực phẩm.
+  utter_hp_QHT96:
+    - text: Ngành Khoa học và công nghệ thực phẩm(*) với thời gian đào tạo là 4 năm, học phí trung bình một kì khoảng 5 triệu đồng.
+  utter_hp_QHT97:
+  - text: Ngành Công nghệ quan trắc và giám sát tài nguyên môi trường(*) với thời gian đào tạo là 4 năm, học phí trung bình một kì khoảng 5 triệu đồng.
+  utter_hp_QHT17:
+  - text: Ngành Hải dương học với thời gian đào tạo là 4 năm, học phí trung bình một kì khoảng 5 triệu đồng.
+  utter_gt_QHT17:
+  - text: Đào tạo cử nhân Hải dương học có phẩm chất chính tri, đao đức, sức khóc tốt và những kiến thức cốt lõi về khoa học cơ bản, kiến thức chuyên nghiệp chủ yếu của Ngành hải dương và ngoại ngữ để làm việc tại các cơ quan nghiên cứu biển, giảng dạy chuyên môn, cơ quan quản lý nhà nước về biển, các doanh nghiệp, dịch vụ, nghiên cứu, tư vấn trong các lĩnh vưc liên quan tới biển.
+  utter_hp_QHT92:
+  - text: Ngành Tài nguyên và môi trường nước(*) với thời gian đào tạo là 4 năm, học phí trung bình một kì khoảng 5 triệu đồng.
+  utter_hp_QHT18:
+  - text: Ngành Địa chất học với thời gian đào tạo là 4 năm, học phí trung bình một kì khoảng 5 triệu đồng.
+  
+  utter_hp_QHT20:
+  - text: Ngành Quản lý tài nguyên và Môi trường với thời gian đào tạo là 4 năm, học phí trung bình một kì khoảng 5 triệu đồng.
+  
+  utter_gt_QHT97:
+    - text: |
+        Công nghệ quan trắc và giám sát tài nguyên môi trường - Ngành học tiên phong trong lĩnh vực công nghệ tài nguyên - môi trường tại Việt Nam. Trong nhiều năm qua, công tác quan trắc và giám sát tài nguyên môi trường đã trở thành yêu cầu bắt buộc đối với các doanh nghiệp, nhà máy, khu công nghiệp và các cơ quan quản lý nhà nước,… Trong xu thế của cuộc cách mạng công nghệ 4.0, lĩnh vực quan trắc và giám sát tài nguyên môi trường cần phát triển và ứng dụng các công nghệ hiện đại như: mạng lưới quan trắc tự động, quan trắc theo thời gian thực, công nghệ địa không gian (GIS, RS, GPS, UAV,...), trí tuệ nhân tạo (AI), dữ liệu lớn (Bigdata),… để cung cấp thông tin chính xác, kịp thời và liên tục về hiện trạng tài nguyênvà môi trường phục vụ quản lý và bảo vệ môi trường. Do vậy, nhu cầu về nguồn nhân lực ngành Công nghệ quan trắc và giám sát tài nguyên môi trường trong tương lai là rất lớn để đáp ứngđược yêu cầu của các doanh nghiệp, tổ chức, các cơ sở nghiên cứu và trường đại học. 
+        Mục tiêu chung của chương trình đào tạo cử nhân ngành công nghệ quan trắ cvà giám sát tài nguyên môi trường là cung cấp cho sinh viên các kiến thức cơ bản và hiện đại về (i) tài nguyên và môi trường, (ii) công nghệ quan trắc và giám sát tài nguyên môi trường, xử lý thông tin phục vụ quản lý sử dụng bền vững tài nguyên vàbảo vệ môi trường và (iii) đào tạo sinh viên có năng lực tổ chức lãnh đạo, hội nhập,học tập suốt đời và trách nhiệm xã hội đối với công tác phát triển khoa học công nghệ,chuyển giao tri thức về lĩnh vực chuyên môn được đào tạo.
+  utter_gt_QHT92:
+  - text: |
+        Ngành tài nguyên và môi trường nước nghiên cứu quá trình hình thành, sự phân bố, quy luật vận động và chất lượng các môi trường liên quan đến tài nguyên nước trong tự nhiên và dưới tác động của con người, hướng đến bảo vệ và phục hồi tài nguyên thiên nhiên, giảm thiểu rủi ro do thiên tai, mang lại lợi ích cho con người và hệ sinh thái tự nhiên.
+        Chương trình đào tạo cử nhân TNMTN trang bị cho các nhà khoa học trẻ trong tương lai kiến thức để giải quyết những vấn đề và thách thức liên quan đến phát triển bền vững môi trường và sinh thái nước, xây dựng các hệ thống dự báo, cảnh báo, thiết kế và quy hoạch tài nguyên nước trên các quy mô khác nhau dưới tác động của tự nhiên (hiện tượng cự đoan, thiên tai) và hoạt động kinh tế xã hội (dự án, công trình) đối với cộng đồng và môi trường sinh thái.
+  utter_gt_QHT18:
+  - text: |
+      Đào tạo Cử nhân địa chất những kiến thức cơ bản và hiện đại về lý luận, kỹ năng và phương pháp nghiên cứu thuộc ngành Địa chất học như: đo vẽ lập bản đồ địa chất và điều tra, tìm kiếm – thăm dò tài nguyên khoáng sản như: dầu khí, nhiên liệu cứng cháy (than khoáng), khoáng sản kim loại (nhôm, titan đồng, wolfram, molybden, vàng,…), khoáng chất công nghiệp; vật liệu xây dựng hay dầu khí; tài nguyên nước (nước khoáng nóng và nước dưới đất); địa chất nền móng công trình xây dựng; quy hoạch và sử dụng hợp lý các nguồn tài nguyên khoáng sản cũng như đánh giá tác động môi trường, tai biến địa chất,… trong hoạt động địa chất. 
+      Đặc biệt, chuyên ngành ngọc học đào tạo về tìm kiếm, đánh giá, kiểm định và chế tác đá quý – bán quý – mỹ nghệ cho trang sức.
+
+  utter_gt_QHT20:
+  - text: |
+     Quản lý, khai thác tài nguyên trái đất bền vững và bảo vệ môi trường toàn cầu là mục tiêu số một của thế giới trong thế kỷ 21 để đảm bảo cho sự tồn tại và phát triển bền vững của loài người. Ở nước ta, lĩnh vực quản lý tài nguyên và môi trường là nhiệm vụ chiến lược trong phát triển đất nước. Ngày 22/7/2011, Thủ tướng Chính phủ đã ký quyết định số 1216/QĐ-TTg phê duyệt “Quy hoạch phát triển nguồn nhân lực Việt Nam giai đoạn 2011 – 2020”, trong đó, phương hướng phát triển nhân lực đối với ngành Tài nguyên và môi trường trong thời kỳ 2016 – 2020 là đào tạo mới và đào tạo nâng cao khoảng 3.000 – 4.000 cán bộ trình độ đại học, đào tạo mới khoảng 2.000 – 2.500 cán bộ trình độ thạc sỹ và khoảng 300 – 350 cán bộ trình độ tiến sỹ. Ngoài ra, hàng năm có hàng ngàn lượt cán bộ các cơ quan Trung ương đến địa phương cần được bồi dưỡng nâng cao trình độ chuyên môn nghiệp vụ.
+     Đứng trước nhu cầu chiến lược đó, Trường Đại học Khoa học Tự nhiên, Đại học Quốc Hà Nội đã chính thức được phép đào tạo trình độ đại học ngành Quản lý Tài nguyên và Môi trường – cơ sở đào tạo sớm nhất và uy tín nhất trong lĩnh vực Khoa học Trái đất nhằm đáp ứng yêu cầu nguồn nhân lực của các cơ quan quản lý tài nguyên, môi trường các cấp từ bộ, ngành, sở, phòng; trường đại học, viện nghiên cứu, các doanh nghiệp và tổ chức phi chính phủ.
+     Mục tiêu đào tạo: 
+     - Chương trình đào tạo cử nhân ngành Quản lý tài nguyên và môi trường của Trường Đại học Khoa học Tự nhiên, ĐHQGHN cung cấp:
+     – Các kiến thức về khoa học và thực nghiệm liên quan đến lĩnh vực khai thác, sử dụng và quản lý tài nguyên thiên nhiên và môi trường bền vững;
+     – Kinh nghiệm làm việc thực tế trong điều tra khảo sát, đánh giá các vấn đề có liên quan đến khai thác, sử dụng và quản lý tài nguyên và môi trường;
+     – Năng lực tư duy sáng tạo, có khả năng làm việc và nghiên cứu độc lập trong lĩnh vực tài nguyên và môi trường và các lĩnh vực có liên quan.
+
+
+
+
+  utter_hp_QHT44:
+  - text: Ngành Công nghệ sinh học(**) với thời gian đào tạo là 4 năm, học phí trung bình một kì khoảng 17.5 triệu đồng.
+  utter_gt_QHT44:
+  - text: |
+     Là một trong những ngành có chương trình đào tạo chất lượng và được đánh giá cao tại Việt Nam.
+     Chương trình đào tạo của ngành Công nghệ Sinh học tại ĐHKHTN Hà Nội tập trung vào các lĩnh vực quan trọng của công nghệ sinh học như: sinh học phân tử, sinh học tế bào, di truyền học, sinh học vi sinh vật, sinh học thực vật, sinh học động vật, sinh học môi trường, sinh học sản xuất, sinh học thực phẩm, sinh học y học và chăm sóc sức khỏe.
+     Mục tiêu chung của chương trình đào tạo Công nghệ Sinh học chất lượng cao là đào tạo nguồn nhân lực chất lượng cao, có tính cạnh tranh cao trên thị trường lao động trong thời kỳ hội nhập kinh tế khu vực và thế giới.
+     + Chương trình đào tạo Công nghệ Sinh học chất lượng cao là chương trình đào tạo được đầu tư ưu tiên với môi trường quản lý, giảng dạy, học tập hiện đại tiên tiến hiệu quả, cùng với đội ngũ giảng viên và trợ giảng giỏi, nhiệt tình, áp dụng phương pháp dạy - học tiên tiến, có sự tham gia của các chuyên gia và doanh nghiệp Công nghệ Sinh học trong quá trình đào tạo, qua đó nâng cao khả năng làm việc thực tế và cơ hội tuyền dụng cho sinh viên sau tốt nghiệp. Đồng thời, sinh viên được trau dồi và nâng cao trình độ tiếng Anh trong quá trình đào tạo. Chương trình đào tạo được thiết kế linh hoạt giúp sinh viên chủ động và phát huy sáng tạo trong quá trình học. Từ đó, đầm bảo được mục tiêu đào tạo cụ thể như sau:
+     + Chương trình đào tạo Công nghệ Sinh học chất lượng cao trang bị cho sinh viên kiến thức, trình độ chuyên môn tốt, các kiến thức và kỹ năng sâu về Công nghệ Sinh học, khả năng thực hành nghề nghiệp nhằm đảm bảo cho sinh viên thích ứng cao với môi trường làm việc;
+     + Nâng cao trình độ tiếng Anh, đặc biệt là tiếng Anh sử dụng trong chuyên mỗn cho sinh viên. Sau khi được đào tạo, sình viên có trình độ tiếng Anh tốt tối thiểu tương đương bậc 4 theo Khung năng lực ngoại ngữ 6 bậc dùng cho Việt Nam, tự tin trong giao tiếp và có khả năng giao tiếp trong trao đổi chuyên môn;
+     + Nâng cao kĩ năng thựch hành, thực tập; có khả năng nắm bắt, tiếp cận và bước đầu ứng dụng các thành tựu khoa học tiên tiến vào thực tiễn nghề nghiệp; Rèn luyện các kĩ năng việc làm nhằm hội nhập quốc tế tốt.
+  utter_gt_QHT10:
+  - text: |
+     Địa lý tự Nhiên Là một trong những ngành đào tạo có tiềm năng phát triển trong lĩnh vực khoa học tự nhiên tại Việt Nam. Ngành Địa lý tự nhiên cung cấp kiến thức và kỹ năng về địa lý, địa chất, địa hình, khí tượng học, đại dương học và nhiều lĩnh vực liên quan đến môi trường sống.
+     Đào tạo cử nhân ngành Địa lý tự nhiên có phẩm chất đạo đức tốt; có kiến thức chuyên môn toàn diện về quy luật thành tạo, phát triển và tác động lẫn nhau của các hợp phần địa lý, sự phân bố và diễn biến của các dạng tài nguyên, môi trường; có kỹ năng sử dụng các phương pháp nghiên cứu truyền thống và hiện đại tổng hợp và chuyên ngành; có kỹ năng thành lập bản đồ các hợp phần địa lý, các hiện tượng và quá trình tự nhiên, các dạng hoạt động sản xuất; có khả năng phân tích vấn đề, làm việc độc lập, sáng tạo và sử dụng các công cụ Viễn thám, Hệ thông tin Địa lý, mô hình hoá, các phần mềm chuyên dụng nghiên cứu sự phân hoá lãnh thổ và diễn biến theo thời gian của các đối tượng địa lý ở các quy mô khác nhau.
+  utter_gt_QHT91:
+  - text: |
+     Khoa học Thông tin địa Không gian là một ngành đào tạo đa ngành, kết hợp giữa các lĩnh vực Khoa học máy tính, Toán học và địa lý. Ngành này đào tạo các chuyên gia trong lĩnh vực đo đạc, thông tin địa lý và quản lý tài nguyên đất đai, giúp tối ưu hóa sử dụng tài nguyên và bảo vệ môi trường. 
+     Trang bị những kiến thức cơ bản, hiện đại và thực tiễn về Khoa học thông tin địa không gian và những ứng dụng công nghệ trong quản lý tải nguyên môi trường, quy hoạch lãnh thố, phòng ngừa và giảm thiểu tai biến thiên nhiên, nghiên cứu các vấn đề xã hội và sức khỏe nhằm phát triễn bền vững trong bối cảnh biến đỗi khí hậu và hội nhập: có khả năng phát hiện, giái quyết những vấn đề này sinh trong quá trình phát triển. Sau khi tốt nghiệp sinh viên có thể hòa nhập vào hệ thống các cơ quan nhà nước các cấp, các tổ chức nước ngoài, các tổ chức phi chính phủ, các đơn vị tư nhân hoạt động trong lĩnh vực cung cấp, xử lý, quan trắc thông tin địa không gian.
+  utter_gt_QHT12:
+  - text: | 
+     Là một trong những ngành đào tạo chất lượng và có nhu cầu cao tại Việt Nam. Ngành Quản lý đất đai có nhiệm vụ đào tạo các chuyên gia trong lĩnh vực địa lý, địa chính, địa ốc, tài nguyên đất đai và môi trường, giúp sinh viên có kiến thức và kỹ năng cần thiết để phát triển, quản lý và sử dụng tài nguyên đất đai bền vững. Các môn học trong ngành bao gồm Địa lý, Địa chính, Địa ốc, Quản lý tài nguyên đất đai, Quản lý môi trường, Thống kê, Khoa học dữ liệu và GIS.
+     Đào tạo cử nhân khoa học Quản lý đất đai có phẩm chất đạo đức tốt; có kiến thức chuyên môn toàn diện về lý luận và thực tiễn của khoa học Quản lý đất đai, về hệ thống pháp luật và công nghệ quản lý đất đai trên nền tảng những kiến thức có liên quan của khoa học Địa lý, Trắc địa - Bản đồ, Viễn thám và Hệ thông tin địa lý, Hệ thông tin đất đai, Ngoại ngữ chuyên ngành…; có kỹ năng về công nghệ Địa chính như đo đạc và thu thập dữ liệu về đất đai bằng các công nghệ tiên tiến (công nghệ toàn đạc, công nghệ GPS, công nghệ Viễn thám, công nghệ ảnh số...), thành lập các bản đồ chuyên đề (bản đồ địa chính, bản đồ địa chính cơ sở, bản đồ hiện trạng sử dụng đất, bản đồ quy hoạch sử dụng đất...) dưới dạng số, thiết kế và vận hành các hệ thống thông tin đất đai...; có khả năng làm việc độc lập, sáng tạo.
+  utter_gt_QHT95:
+  - text: |
+     Chương trình đào tạo được thiết kế phù hợp để đào tạo nguồn nhân lực chất lượng cao trình độ cử nhân, có khả năng vận dụng kiến thức khoa học, sáng tạo trong quản lý phát triển đô   thị và bất động sản, đáp ứng nhu cầu xã hội cả trong lĩnh vực quản lý nhà nước và tư nhân,
+     cụ thể:
+     - Quản lý nhà nước về phát triển đô thị và bất động sản: nắm vững chính sách, pháp luật về quản lý đô thị và bất động sản; có kiến thức tổng hợp và chuyên sâu về quản lý kinh tế, xã hội, văn hóa, môi trường đô thị; quản lý bất động sản nhà, đất tại đô thị. Đề xuất các phương án và giải pháp giải quyết các vấn đề trong quản lý đô thị và bất động sản;
+     - Quy hoạch phát triển đô thị và bất động sản: nắm vững các phương pháp đánh giá hiện trạng và dự báo các nguồn lực phát triển đô thị, sử dụng tài nguyên và bảo vệ môi trường đô thị, đánh giá hiện trạng và nhu cầu phát triển bất động sản; có khả năng lập, thiết kế các phương án quy hoạch phát triển đô thị và phát triển bất động sản;
+     - Quản lý các dự án đầu tư phát triển đô thị và các hoạt động kinh doanh, dịch vụ bất động sản: nắm vững kiến thức, kỹ năng thực hành quản lý các dự án đầu tư và các nghiệp vụ chuyên môn về kinh doanh, dịch vụ bất động sản (môi giới, tư vấn, định giá, sàn giao dịch bất động sản…);
+     - Ứng dụng công nghệ trong quản lý thông minh đô thị và bất động sản: nắm vững kiến thức và có khả năng sử dụng các phần mềm ứng dụng công nghệ GIS, UAV, công nghệ phân tích
+     dữ liệu trên nền tảng trí tuệ nhân tạo...trong thiết kế, quản lý đô thị thông minh và quản lý đất, nhà thông minh.
+  utter_gt_QHT13:
+  - text: |
+     Ngành Khoa học môi trường trang bị cho sinh viên kiến thức chuyên môn toản diện, nắm vững nguyên lý, quy luật tự nhiên, kiến thức cơ bản về khoa học xã hội, chính tri và pháp luật, có kỹ năng thực hành nghề nghiệp, có khả năng làm việc độc lập, sáng tạo, chịu trách nhiệm cá nhân, trách nhiệm với nhóm trong việc hướng dẫn, truyền bá, phổ biến kiến thức và giải quyết những vẫn đề thuộc ngành Khoa học môi trường.
+  utter_gt_QHT46:
+  - text: "Ngành Công nghệ kỹ thuật môi trường đào tạo trang bị cho sinh viên kiến thức chuyên môn toản diện, nắm vững nguyên lý, quy luật tự nhiên, kiến thức cơ bản về khoa học xã hội, chính tri và pháp luật, có kỹ năng thực hành nghề nghiệp, có khả năng làm việc độc lập, sáng tạo, chịu trách nhiệm cá nhân, trách nhiệm với nhóm trong việc hướng dẫn, truyền bá, phổ biến kiến thức và giải quyết những vẫn đề thuộc ngành Khoa học môi trường."
+
+  utter_gt_QHT16:
+  - text: |
+     Trang bị cho sinh viên kiến thức đại cương, cơ bản, cơ sở và nghiệp vụ chuyên ngành về Khí tượng, Khí hậu để làm việc tại các cơ quan nghiên cứu, giảng dạy, quản lý nhà nước, dịch vụ, tư vấn trong các lĩnh vực có liên quan đến khí tượng và khí hậu học...     
+  utter_gt_QHT08:
+  - text: | 
+     Đào tạo cử nhân Sinh học có phẩm chất đạo đức tốt, có kiến thức và kỹ năng cơ bần vững vàng về khoa học sinh học để cung cấp nguồn nhân lực chất lượng cao cho xã hội. Sau khi đào tạo sinh viên có kiến thức cơ bản vững vàng, trình độ chuyên môn giói, m có trình độ ngoại ngữ đạt chuẩn bậc 3 theo Khung năng lực ngoại ngữ 6 bậc dùng cho Việt Nam, có năng lực sáng tạo, hiểu rõ và giải thích được những nguyên lý cơ bản và các quá trình sình học ở các mức độ tổ chức khác nhau của thế giới sinh vật. Sinh viên có thể học tiếp ở những bậc học cao hơn, với nhiều cơ hội đào tạo ở nước ngoài hay làm việc tại các cơ sở đào tạo, nghiên cứu, sản xuất trong nước và quốc tế.
+  utter_hp_QHT08:
+  - text: Ngành Sinh học với thời gian đào tạo là 4 năm, học phí trung bình một kì khoảng 5 triệu đồng.
+  utter_hp_QHT10:
+  - text: Ngành Địa lý tự nhiên với thời gian đào tạo là 4 năm, học phí trung bình một kì khoảng 5 triệu đồng.
+  utter_hp_QHT91:
+  - text: Ngành Khoa học thông tin địa không gian(*)  với thời gian đào tạo là 4 năm, học phí trung bình một kì khoảng 5 triệu đồng.
+  utter_hp_QHT12:
+  - text: Ngành Quản lý đất đai với thời gian đào tạo là 4 năm, học phí trung bình một kì khoảng 5 triệu đồng.
+  utter_hp_QHT95:
+  - text: Ngành Quản lý phát triển đô thị và bất động sản(*)  với thời gian đào tạo là 4 năm, học phí trung bình một kì khoảng 5 triệu đồng.
+  utter_hp_QHT13:
+  - text: Ngành Khoa học môi trường với thời gian đào tạo là 4 năm, học phí trung bình một kì khoảng 5 triệu đồng.
+  utter_hp_QHT46:
+  - text: Ngành Công nghệ kỹ thuật môi trường(**) với thời gian đào tạo là 4 năm, học phí trung bình một kì khoảng 17.5 triệu đồng.
+
+  utter_hp_QHT16:
+  - text: Ngành Khí tượng và khí hậu học với thời gian đào tạo là 4 năm, học phí trung bình một kì khoảng 5 triệu đồng.
+
+  utter_hp_QHT01:
+  - text: Ngành Toán học với thời gian đào tạo là 4 năm, học phí trung bình một kì khoảng 5.8 triệu đồng.
+  utter_hp_QHT02:
+  - text: Ngành Toán tin với thời gian đào tạo là 4 năm, học phí trung bình một kì khoảng 5 triệu đồng.
+
+
+  utter_gt_QHT01:
+  - text: | 
+     Thế mạnh của chương trình là cung cấp cho người học phương pháp tư duy logic, phương pháp lập luận, phân tích và giải quyết vấn đề; phương pháp tư duy trừu tượng, mô hình hóa; phân tích, mô phỏng - thiết lập bài toán và sử dụng công cụ toán học để giải quyết.  Sinh viên được trang bị kiến thức sâu, hiện đại về Toán. Sinh viên có thể chọn 1 trong 3 hướng chuyên sâu là Toán lý thuyết, Toán ứng dụng và Toán trong cơ học. 
+     Mục tiêu của chương trình đào tạo đại học ngành Toán học là đào tạo các cử nhân chuyên sâu về Toán học. Sinh viên sẽ được trang bị các kiến thức, kỹ năng, và phẩm chất cần thiết để sau khi tốt nghiệp có thể đảm nhận các công việc có sử dụng  kiến thức Toán học như giảng dạy, nghiên cứu, và ứng dụng Toán học vào các lĩnh vực khoa học, công nghệ, kinh tế, xã hội. Nếu có đủ điều kiện, cử nhân ngành Toán học có thể đăng kí học tập ở bậc thạc sĩ, tiến sĩ.
+  utter_gt_QHT02:
+  - text: |  
+      Điểm nhấn của chương trình đào tạo ngành  in là tính liên ngành giữa Toán học ứng dụng và Tin học.
+      Ngành học cung cấp những kiến thức cần thiết về Toán ứng dụng và Tin học để có thể giải quyết được các bài toán thực tế, với hai định hướng chính: Tính toán khoa học và Tin học. Đặc biệt, sinh viên được trang bị tư duy phân tích, thiết kế, xây dựng, phát triển các dự án, các sản phẩm ứng dụng Toán học và Công nghệ thông tin.
+  utter_gt_QHT98:
+  - text: | 
+     Chương trình đào tạo Khoa học Máy tính và thông tin tập trung vào định hướng nghề nghiệp phát triển phần mềm cho trí tuệ nhân tạo, là lĩnh vực đặc biệt quan trọng trong thời đại Cách mạng Công nghiệp lần thứ tư.
+     Sinh viên được ưu tiên về môi trường học tập: Có phòng thực hành dành riêng, giờ học lí thuyết và thực hành tổ chức riêng với số sinh viên hạn chế, tất cả các học phần trang bị kĩ năng đều được đào tạo phối hợp với doanh nghiệp, được gửi đi thực tập thực tế tại các doanh nghiệp có uy tín.
+     Kĩ năng sử dụng tiếng Anh chuyên ngành được đặc biệt chú trọng, cho phép sinh viên có khả năng làm việc trong môi trường quốc tế, được ưu tiên chọn đi tham gia các chương trình trao đổi với đối tác nước ngoài.
+     viên có kết quả học tập tốt được tham gia các dự án trí tuệ nhân tạo hợp tác với doanh nghiệp.
+     Sau khi tốt nghiệp, sinh viên có nhiều lựa chọn việc làm với thu nhập cao trong lĩnh vực trí tuệ nhân tạo, hoặc nếu muốn có thể tiếp tục học tập ở bậc sau đại học.
+  utter_hp_QHT98:
+  - text: Ngành Khoa học máy tính và thông tin(*)(**) với thời gian đào tạo là 4 năm, học phí trung bình một kì khoảng 15 triệu đồng.
+
+
+  utter_gt_QHT03:
+  - text: |
+     Tại Trường Đại học Khoa học Tự nhiên Hà Nội, ngành Vật lý được đào tạo với mục tiêu giúp sinh viên có kiến thức vững chắc về cơ bản của Vật lý, nắm vững các kỹ năng thực hành và các phương pháp nghiên cứu khoa học trong lĩnh vực này.
+     Chương trình đào tạo của ngành Vật lý tại trường Đại học Khoa học Tự nhiên Hà Nội được thiết kế để cung cấp cho sinh viên kiến thức và kỹ năng cần thiết để có thể theo đuổi nhiều lĩnh vực khác nhau sau khi tốt nghiệp, bao gồm cả các lĩnh vực công nghệ, nghiên cứu và phát triển sản phẩm, giảng dạy và nghiên cứu khoa học tại các trường đại học.
+  utter_gt_QHT04:
+  - text: |
+     Ngành Khoa học vật liệu là một trong những ngành đào tạo thuộc khoa Vật lý của Trường Đại học Khoa học Tự nhiên. Ngành này tập trung vào nghiên cứu và phát triển các vật liệu mới có tính chất đặc biệt để ứng dụng trong nhiều lĩnh vực, từ công nghiệp đến y học.
+     Đào tạo Cử nhân Khoa học vật liệu: Có phẩm chất đạo đức tốt, có đầy đủ các kỹ năng cần thiết để thích ứng cao với các đòi hỏi của thị trường lao động và xu thế hội nhập quốc tế của xã hội toàn cầu;
+     Sinh viên sau khi tốt nghiệp có thể làm các công việc trong lĩnh vực Khoa học vật liệu và các lĩnh vực khác của nền kinh tế tri thức như nghiên cứu, giảng dạy hoặc ứng dụng vật lý trong khoa học và kỹ thuật;
+     Sau khi tốt nghiệp, Sinh viên có thể tiếp tục học Sau đại học tại các cơ sở đào tạo trong và ngoài nước
+  utter_gt_QHT05:
+  - text: |
+     Ngành Công nghệ kỹ thuật hạt nhân tại Đại học Khoa học Tự nhiên Hà Nội là một trong những ngành đào tạo chuyên sâu trong lĩnh vực năng lượng hạt nhân và ứng dụng công nghệ hạt nhân.
+     Trong suốt quá trình đào tạo, sinh viên sẽ được học các môn như Vật lý hạt nhân, Hóa học hạt nhân, Các thiết bị hạt nhân, Các quá trình liên quan đến hạt nhân, Toán học và Tin học cơ bản. Ngoài ra, sinh viên cũng sẽ được học các môn học về kỹ năng mềm và quản lý dự án, giúp họ trở thành các chuyên gia trong lĩnh vực năng lượng hạt nhân và ứng dụng công nghệ hạt nhân.
+     Sinh viên sau khi tốt nghiệp có thể làm các công việc trong lĩnh vực Hạt nhân và các lĩnh vực khác của nền kinh tế tri thức như nghiên cứu, giảng dạy hoặc làm trong các lĩnh vực công nghiệp, y tế, an toàn bức xạ, trong lò phản ứng, máy gia tốc, trong đánh giá và phân tích môi trường, quản lý an toàn bức xạ và hạt nhân.. Có trình độ tiếng Anh tốt với khả năng nghe, nói, đọc, viết đạt chuẩn 3/6 theo năng lực ngoại ngữ 6 bậc dùng cho Việt Nam (hoặc tương đương). Sau khi tốt nghiệp, Sinh viên có thể tiếp tục học Sau đại học tại các cơ sở đào tạo trong và ngoài nước.
+  utter_gt_QHT94:
+  - text: |
+     Chương trình đào tạo cử nhân ngành Kĩ thuật điện tử và tin học trang bị cho sinh viên đầy đủ những kiến thức và kĩ năng cần thiết về vật lí, toán học, điện tử, tin học,... Đặc biệt là các kiến thức chuyên sâu của ngành kĩ thuật điện tử và tin học, các kĩ năng thực hành cần thiết để sinh viên có thể áp dụng vào thực tiễn giải quyết các bài toán khoa học kĩ thuật liên ngành, đáp ứng nhu cầu nhân lực chất lượng cao của công nghiệp 4.0, sáng tạo khởi nghiệp và hội nhập quốc tế.
+     Chương trình cũng giáo dục cho người học về vị trí và vai trò của ngành học, làm việc khoa học, sáng tạo và đổi mới, tôn trọng các giá trị khoa học kĩ thuật và nhân văn, tinh thần học tập suốt đời. Ngoài ra, sinh viên có các kĩ năng chuyên môn, kĩ năng bổ trợ cần thiết, tự chủ và trách nhiệm, có đạo đức nghề nghiệp và thái độ đúng đắn.
+  utter_gt_QHT06:
+  - text: |
+     Ngành Hoá học đại học Khoa học Tự nhiên Hà Nội (ĐH KHTN Hà Nội) là một trong những ngành đào tạo chất lượng nhất tại Việt Nam với các chương trình đào tạo về Công nghệ hóa học, Hóa học vật liệu, Hóa hữu cơ, Hóa lý, Hóa phân tích, Hóa sinh, Hóa học môi trường, Hóa học hữu cơ, Polyme, Hóa học lượng tử, Hóa ứng dụng, Hóa học hữu cơ thiên nhiên, và Công nghệ sinh học.
+     Đào tạo cử nhân Hoá học với những năng lực và phẩm chất chủ yếu sau đây:
+     - Có phẩm chất đạo đức tốt, có ý thức cống hiến cho sự nghiệp xây dựng và bảo vệ tổ quốc, có lòng say mê khoa học và tự rèn luyện nâng cao năng lực chuyên môn, tự tin và trung thực;
+     - Nắm vững các kiến thức cơ bản, cơ sở của ngành về Hoá Đại cương, Hoá Vô cơ, Hoả Phân tích, Hoả Hữu cơ và Hoá lý. Có khả năng tiếp cận nhanh với các kiến thức mới, hiện đại. Nắm vững kiến thức cốt lõi của chuyên ngành;
+     - Có kĩ năng thực hành tốt, sử dụng thành thạo một số thiết bị hiện đại trong lĩnh vực hóa học;
+     - Có năng lực nghiên cứu khoa học, có khả năng tự học và thích ứng cao với môi trường lao động trong thời đại mới;
+     - Sử dụng thành thạo tiếng Anh trong giao tiếp và chuyên môn;
+     - Có đủ năng lực để đảm nhận các công việc giùng dạy, nghiên cứu, quản lý tại các trường Đại học, Cao đẳng và Phổ thông, các Viện và Trung tâm nghiên cửu khoa học.
+  utter_gt_QHT41: 
+  - text: |
+     Đào tạo cử nhân khoa học tiên tiến ngành hoá học với những năng lực và phẩm chất chủ yếu sau đây : 
+     - Có lòng say mê khoa học và tự rèn luyện nằng cao phẩm chất chính trị và năng lực chuyên môn, tự tin và trung thực. Có ý thức rèn luyện phẩm chất đạo đức tốt, có ý thức cống hiến cho sự nghiệp xây dựng và bảo vệ tổ quốc.
+     - Làm chủ kiển thức cơ bản, cơ sở của ngành hóa học, kiến thức cốt lõi của chuyên ngành, kiến thức chuyên sâu hóa học, công nghệ hóa học. Sinh viên cử nhân khoa học tiên tiến nắm vững một số và có khả năng tiếp cận nhanh các kiến thức mới, hiện đại, vận dụng sáng tạo trong nghiên cứu khoa học. Khoá luận tốt nghiệp có giá trì khoa học, có thể được công bố trên tạp chí khoa học, bảo cáo tại hội nghị khoa học chuyên ngành.
+     - Có tư duy phân tích, đánh giá, thiết kế và xây dựng kể hoạch thực nghiêm, tư triển khai nghiên cứu khoa học độc lập và phát triển nhóm nghiên cửu; có khà năng sáng tạo và tự nâng cao trình độ kiến thức,
+  utter_gt_QHT42:
+  - text: | 
+     Ngành Công nghệ Kỹ thuật Hóa học tại Đại học Khoa học Tự nhiên Hà Nội là một ngành học đa ngành, kết hợp giữa kiến thức chuyên môn về Hóa học và Kỹ thuật.
+     Chương trình đào tạo của ngành này tập trung vào nghiên cứu và ứng dụng các công nghệ hiện đại trong sản xuất và xử lý các sản phẩm hóa học. Sinh viên sẽ được học các kiến thức cơ bản và nâng cao về Hóa học, Kỹ thuật, Công nghệ thông tin, Quản lý sản xuất và Kiểm soát chất lượng.
+     Đào tạo cử nhân Công nghệ Kỹ thuật Hóa học với nhứng năng lực và phẩm chất chủ yếu sau đây:
+     - Có phẩm chất đạo đức tốt, có ý thức cống hiến cho sự nghiệp xây dựng bảo vệ tổ quốc, say mê khoa học.
+     - Nắm vững các kiến thức cơ bản, cơ sở của ngành về Công nghệ Hóa Học, Hóa học dầu mỏ, Hóa học môi trường.
+     - Có phẩm chất đạo đức tốt, có ý thức cống hiến cho sự nghiệp xây dựng và bảo vệ tổ quốc, có lòng say mê khoa học và tự rèn luyện nâng cao năng lực chuyên môn, tự m tin và trung thực; - Năm vững các kiến thức cơ bản, cơ sở của ngành về Công nghệ hóa học, Hóa học dầu mỏ, Hóa học môi trựờng. Có kiến thức cốt lõi về kỹ thuật sản xuất các hợp chất hóa học cơ bản;
+     - Có năng lực nghiên cứu khoa học, khả năng tự học và làm việc độc lập và làm việc nhóm; có khả năng thiết lập và ứng dụng những công nghệ về hóa học mới; m - Có kỹ năng thực hành tốt, sử dụng thành thạo một số thiết bị hiện đại trong nghiên cứu khoa học và trong sản xuất. Có khả năng vận dụng và triển khai thực hiện các vấn đề có liên quan đến công nghệ kỹ thuật hóa học trong thực tế; 
+     - Có kỹ năng thực hành tốt, kỹ năng vận hành và tự vận hành các thiết bị hiện trong nghiên cứu khoa học. đại
+     - Sử dụng thành thạo tiếng Anh trong giao tiếp và chuyên môn,
+     - Có kỹ năng tổ chức quản lý nhóm, khả năng lãnh đạo, tố chức thực hiện; Có đủ năng lực giảng dạy, nghiên cứu, quản lý tại các trường Đại học và Cao đẳng, các Viện và Trung tâm nghiên cứu khoa học, các cơ quan quản lý hoặc đủ kiến thức để tiếp tục đào tạo hoặc tự học sau đại học trong và ngoải nước.
+  utter_gt_QHT43:
+  - text: |
+     Ngành Hoá dược(**): Cung cấp nguồn nhân lực chất lượng cao, đáp ứng nhu cầu nhân lực chất lượng cao ngành Hóa được của các khu vực công, các trường đại học, viện nghiên cứu, các công ty tập đoàn, có tính cạnh tranh cao trên thị trường lao động trong thời kỳ hội nhập kình tế khu vực và thế giới. Tạo ra một môi trường học tập sáng tạo, hội nhập sâu với thế giới trong lĩnh vực Hóa dược.
+     Với mục tiêu đào tạo ra các chuyên gia có kiến thức vững chắc về lĩnh vực Hoá dược và có khả năng áp dụng kiến thức vào thực tiễn. Các sinh viên sẽ được học các môn như Hóa lượng tử, Hóa học hữu cơ, Hóa học vô cơ, Hóa lý, Kỹ thuật phân tích, Quản lý chất lượng, ... và thực hành trên các thiết bị phân tích, máy móc trong phòng thí nghiệm.
+     - Đào tạo cử nhân Hóa dược chất lượng cao với những năng lực và phẩm chất chủ yếu sau đây: 
+        🔹 Có phẩm chất đạo đức tốt, có lòng say mê khoa học và tự rèn luyện nâng caom phẩm chất chính trị và năng lực chuyên môn.
+        🔹 Hiểu và vận dụng các kiến thức cơ bàn, cơ sở của ngành Hóa được cling nhat các kiến thức cốt lôi của chuyên ngành. Có năng lực nghiên cứu khoa học, khá năng tự học và làm việc độc lập.
+        🔹 Có kĩ năng thực hành tốt, sử dụng thành thạo một số thiết bị hiện đại trong nghiên cứu khoa học. Sử dụng thành thạo tiếng Anh trong giao tiếp và chuyên ngành. + Có đủ năng lực làm việc tại các trường Đại học, các Viện và Trung tầm nghiên cứu khoa học, các cơ sở công nghiệphoặc đú kiến thức để tiếp tục đáo tạo ở bậc thạc sĩ, tiến sĩ trong và ngoài nước.
+
+
+
+ 
+  utter_hp_QHT03:
+  - text: Ngành Vật lý học với thời gian đào tạo là 4 năm, học phí trung bình một kì khoảng 5 triệu đồng.
+  
+  utter_hp_QHT04:
+  - text: Ngành Khoa học vật liệu với thời gian đào tạo là 4 năm, học phí trung bình một kì khoảng 5 triệu đồng.
+  
+  utter_hp_QHT05:
+  - text: Ngành Công nghệ kỹ thuật hạt nhân với thời gian đào tạo là 4 năm, học phí trung bình một kì khoảng 5 triệu đồng.
+  utter_hp_QHT94:
+  - text: Ngành Kỹ thuật điện tử và tin học với thời gian đào tạo là 4 năm, học phí trung bình một kì khoảng 5 triệu đồng.
+  utter_hp_QHT06:
+  - text: Ngành Hoá học với thời gian đào tạo là 4 năm, học phí trung bình một kì khoảng 5 triệu đồng.
+  utter_hp_QHT41:
+  - text: Ngành Hoá học(***) với thời gian đào tạo là 4 năm, học phí trung bình một kì khoảng 17.5 triệu đồng.
+  utter_hp_QHT42:
+  - text: Ngành Công nghệ kỹ thuật hoá học(**)  với thời gian đào tạo là 4 năm, học phí trung bình một kì khoảng 17.5 triệu đồng.
+  utter_hp_QHT43:
+  - text: Ngành Hoá dược(**) với thời gian đào tạo là 4 năm, học phí trung bình một kì khoảng 17.5 triệu đồng.
+  utter_rep:
+  - text: "Mình là chat bot. Mình có thể cung cấp một số thông tin cần thiết liên quan đến trường đại học Khoa học Tự nhiên ."
+  - text: "Tôi là chat bot, tôi có thể cung cấp một số thông tin cần thiết liên quan đến trường ĐH đại học Khoa học Tự nhiên ."
+  utter_co_so_vat_chat:
+  - text: |
+     Trường hiện có 3 khuôn viên tại Thủ đô Hà Nội, trong đó:
+     🔹 Khuôn viên chính tọa lạc tại 334 đường Nguyễn Trãi, quận Thanh Xuân, Hà Nội.
+     🔹 19 Lê Thánh Tông, quận Hoàn Kiếm, Hà Nội.
+     🔹 182 Lương Thế Vinh, quận Thanh Xuân, Hà Nội.
+     Hiện nay, Trường ĐHKHTN có:
+     - 11 Phòng/Ban/Trung tâm thuộc khối Hành chính
+     - 8 Khoa (Toán - Cơ - Tin học, Vật lý, Hóa học, Sinh học, Địa chất, Địa lý, Khí tượng - Thủy văn - Hải dương học, Môi trường)
+     - 1 Trường THPT chuyên Khoa học Tự nhiên
+     - 7 trung tâm nghiên cứu
+     - 1 công ty TNHH trực thuộc Trường.
+  utter_thoi_gian_dao_tao: 
+    - text: "Thời gian đào tạo bậc đại học tại Trường đại học Khoa học Tự nhiên   thường là 4 năm đối với các chương trình đại học chính quy. Tuy nhiên, có một số chương trình đào tạo đặc biệt hoặc chương trình đại học liên kết với các trường đại học nước ngoài có thể có thời gian đào tạo khác nhau. Bạn nên liên hệ với phòng đăng ký học của trường để được hỗ trợ tư vấn chi tiết hơn hoặc có thể tham khảo Đào tạo bậc đại học theo đường link sau:\n👉 http://www.hus.vnu.edu.vn/dao-tao/bac-dai-hoc.html"
+  
+  utter_dia_chi_trang_mang_xa_hoi:
+    - text: "Địa chỉ trang mạng xã hội trường đại học Khoa học Tự nhiên :\n👉 Facebook: https://www.facebook.com/HusFanpage\n👉 Youtube: https://youtube.com/channel/UCqfWZ7NnAoRjFyTBiT2lh4w\n👉 Zalo: http://zalo.me/2487264757129131575?src=qr\n👉Tiktok: https://vt.tiktok.com/ZSd3JNwyG/"
+  
+
+  utter_so_dien_thoai_lien_he_tuyen_sinh:
+    - text: |
+       Bạn có thể liên hệ tuyển sinh trường đại học Khoa học Tự nhiên  theo phương thức sau: 
+       - Hotline:👩🏻‍🎓 0886074527; 
+       - Điện thoại: 👩🏻‍🎓 024 35579076; 024 38585279; 
+       - Fax: 👩🏻‍🎓 024 38583061
+  utter_hoat_dong:
+    - text: | 
+        Một số hoạt động của trườngđại học Khoa học Tự nhiên  2023
+        - Tổ chức khóa học đào tạo chuyên sâu về lập trình trí tuệ nhân tạo cho sinh viên ngành Công nghệ thông tin. 
+        - Hội nghị Khoa học sinh viên. Link:
+          👉 http://www.hus.vnu.edu.vn/tin-tuc-su-kien/hoat-dong-khoa-hoc/hoi-nghi-khoa-hoc-sinh-vien-nam-2023-gia-tang-115863.html
+        - Tổ chức hội thảo về các công nghệ mới trong lĩnh vực khoa học vật liệu, thu hút sự tham gia của các nhà khoa học nổi tiếng trong lĩnh vực này.
+        - Ký kết thỏa thuận hợp tác với một trường đại học hàng đầu tại Mỹ, nhằm trao đổi sinh viên và giảng viên giữa hai trường.⚠️
+        - Tổ chức chương trình giao lưu sinh viên với trường đại học ở Nhật Bản, nhằm tăng cường hiểu biết về văn hóa và đổi mới khoa học giữa hai quốc gia.
+        - Phát triển chương trình đào tạo về khoa học dữ liệu và khai thác dữ liệu, nhằm đáp ứng nhu cầu ngày càng tăng của thị trường lao động trong lĩnh vực này.
+
+  utter_diem_chuan:
+    - text: | 
+        Điểm trúng tuyển vào Trường Đại học Khoa học Tự nhiên năm 2022. Bạn tham khảo link:
+        👉 http://hus.vnu.edu.vn/tin-tuc-su-kien/dao-tao-tuyen-sinh/diem-trung-tuyen-vao-truong-dai-hoc-khoa-hoc-tu-91602.html#.ZEY7Tc5BzIU 
+        Ngoài ra để biết thêm thông tin chi tiết về tuyển sinh đại học chính quy năm 2023 và các năm khác, vui lòng truy cập link:
+        👉 http://tuyensinh.hus.vnu.edu.vn/
+
+  utter_tin_moi_nhat:
+    - text: " Để cập nhật các thông tin mới nhất của trường ĐH Khoa học Tự nhiên, bạn có thể truy cập đường linh sau: \n👉 Trang web: http://www.hus.vnu.edu.vn/tin-tuc-su-kien/tin-moi-nhat.html \n Trang Facebook: 👉 https://www.facebook.com/HusFanpage \n👉     http://hus.edu.vn/thong-bao.html"
+  
+  utter_dat_cau_hoi:
+    - text: "Mình có thể cung cấp một số thông tin về trường ĐH Khoa học Tự nhiên như: giới thiệu trường, các ngành, cơ sở vật chất, địa chỉ liên hệ, điểm chuẩn các năm, học phí và một số thông tin khác trong dữ liệu mà mình được tạo ra :)"
+  utter_give_name_1:
+    - text: "Chào  {cust_name}, mình có thế hỗ trợ một số thông tin {cust_name} có thể cần."
+    - text: "Xin chào, mình có thể giúp gì cho {cust_name}?"
+
+  utter_de_an_tuyensinh_2023:
+    - text: "Thông tin đề án tuyển sinh năm 2023 trường ĐH Khoa học Tự nhiên hiện chưa có trên trang trủ của trường, để cập nhật những thông tin mới nhất, vui lòng truy cập đường link sau: \n👉http://tuyensinh.hus.vnu.edu.vn/dai-hoc.html"
+
+  utter_de_an_tuyensinh_2022:
+    - text: "Thông tin đề án tuyển sinh năm 2022 trường ĐH Khoa học Tự nhiên vui lòng truy cập đường link sau: \n👉http://hus.vnu.edu.vn/thong-bao/dao-tao-tuyen-sinh/huong-dan-thu-tuc-nhap-hoc-cho-sinh-vien-trung-tuyen-vao-he-dai-hoc-chinh-quy-nam-2022-91605.html#.ZE_E9XZBzIU"
+  utter_tuyen_sinh_dh:
+    - text: "Thông tin tuyển sinh đại học trường ĐH Khoa học Tự nhiên được cập nhật trong đường link sau: \n👉http://tuyensinh.hus.vnu.edu.vn/dai-hoc.html"
+  utter_nop_hp:
+    - text: "Hướng dẫn nộp học phí trường đại học Khoa học Tự nhiên  \n Gồm 2 hình thức chính:\n- Chuyển tiền từ ngân hàng BIDV \n- Chuyển tiền từ ngân hàng khác \n   Thông tin cụ thể vui lòng truy cặp đường link:\n 👉http://hus.edu.vn/thong-bao/dao-tao-tuyen-sinh/huong-dan-nop-hoc-phi-truong-dai-hoc-khoa-hoc-tu-nhien-91606.html#.ZE_TIHZBzIU"
+  utter_THPT:
+    - text: "Thông tin về THPT chuyên Khoa học Tự nhiên chi tiết ở link sau: \n👉http://tuyensinh.hus.vnu.edu.vn/thpt-chuyen.html"
+  utter_huong_dan_thu_tuc_nhap_hoc:
+    - text: "Thông tin về thủ tục nhập học cho thí sinh trúng tuyển vào hệ đại học chính quy Trường Đại Học Khoa Học Tự Nhiên năm 2022 \n 👉http://hus.vnu.edu.vn/thong-bao/dao-tao-tuyen-sinh/huong-dan-thu-tuc-nhap-hoc-cho-sinh-vien-trung-tuyen-vao-he-dai-hoc-chinh-quy-nam-2022-91605.html#.ZE_E9XZBzIU"
+
+  utter_toan_co_tin_gth:
+    - text: "Khoa Toán – Cơ – Tin học, Trường Đại học Khoa học Tự nhiên, ĐHQGHN  là một trong những đơn vị đào tạo và nghiên cứu khoa học lớn nhất cả nước trong lĩnh vực Toán học, Cơ học và Tin học, có sứ mệnh đào tạo nguồn nhân lực có chất lượng cao, thực hiện các nghiên cứu cơ bản, nghiên cứu ứng dụng, nghiên cứu triển khai và tham gia các hoạt động cộng đồng, phổ biến tri thức trong các lĩnh vực Toán học, Cơ học và Tin học.\n- Hiện nay, Khoa có 07 bộ môn chuyên ngành (Toán học tính toán và toán ứng dụng, Đại số - Hình học - Tô pô, Giải tích, Cơ học, Xác suất - Thống kê, Phương trình vi phân và hệ động lực, Tin học) và một phòng thí nghiệm Khoa học dữ liệu.\n- Về nhân lực, Khoa hiện có tổng cộng 82 nhân lực, trong đó có 05 Giáo sư, 3 Tiến sĩ Khoa học; 09 Phó giáo sư và gần 50 tiến sĩ. Ban lãnh đạo Khoa có 04 người, bao gồm 01 Trưởng khoa, 03 Phó trưởng Khoa. Có 02 trợ lý cho Ban lãnh đạo Khoa về tổ chức cán bộ và về các chương trình đào tạo đặc biệt. Văn phòng Khoa có 05 cán bộ.\nKhoa Toán - Cơ - Tin học đào tạo ở cả 03 bậc: cử nhân, thạc sĩ và tiến sĩ.\nThông tin chi tiết vui lòng truy cập đường link sau: \n👉 http://www.mim.hus.vnu.edu.vn/vi/gioi-thieu"
+  utter_khoa_vat_ly_gt:
+    - text: "Khoa Vật lý, trường Đại học Khoa học Tự nhiên thành lập từ năm 1956 có nhiệm vụ đào tạo cán bộ nghiên cứu cơ bản và ứng dụng trong lĩnh vực Vật lý và các ngành Khoa học, Công nghệ có liên quan. Với bề dày lịch sử gần 60 năm với 58 thế hệ, nhiều sinh viên được đào tạo ở Khoa Vật lý hiện nay đã trưởng thành và giữ những trọng trách trong công tác quản lý nhà nước, giảng dạy và nghiên cứu khoa học. \n  Khoa Vật lý có 12 đơn vị trực thuộc (9 Bộ môn, 1 Trung tâm và 2 Phòng thí nghiệm) thực hiện nhiệm vụ đào tạo và nghiên cứu khoa học ở các chuyên ngành Vật lý\n Ngoài ra để biết thông tin chi tiết hơn vui lòng truy cập đường link sau: \n 👉http://www.hus.vnu.edu.vn/gioi-thieu/co-cau-to-chuc/khoa-truc-thuoc/khoa-vat-ly.html"
+  utter_khoa_hoa_hoc_gt:
+    - text: "Khoa Hóa học tại Trường Đại học Khoa học Tự nhiên (ĐHKHTN) thuộc ĐHQGHN là một trong những khoa có truyền thống lâu đời và phát triển mạnh mẽ tại Việt Nam. Hiện nay đã trở thành một trong những đơn vị đào tạo và nghiên cứu chất lượng hàng đầu tại Việt Nam và khu vực Đông Nam Á.\n - Khoa Hóa học ĐHKHTN đào tạo các chuyên ngành về Bộ môn Hóa Vô cơ, Bộ môn Hóa Hữu cơ, Bộ môn Hóa Phân tích, Bộ môn Hóa lý, Bộ môn Công nghệ Hóa học, Bộ môn Hóa học Dầu mỏ. Các sinh viên sẽ được học tập từ các giảng viên có nhiều kinh nghiệm trong lĩnh vực hóa học, nghiên cứu khoa học với các dự án hợp tác cùng các tổ chức và doanh nghiệp trong và ngoài nước.\n Ngoài ra, khoa còn có các phòng thí nghiệm hiện đại và đầy đủ trang thiết bị phục vụ cho việc nghiên cứu và giảng dạy. Các sinh viên của khoa sẽ được hỗ trợ và cung cấp các công cụ, phần mềm và thiết bị để thực hiện các dự án và bài tập lớn. Khoa Hóa học cũng có nhiều chương trình hợp tác và trao đổi sinh viên với các trường đại học nổi tiếng trong và ngoài nước.\n - Với chất lượng đào tạo và nghiên cứu hàng đầu, các cựu sinh viên của khoa đã có được vị trí đáng kể trong các lĩnh vực hóa học và khoa học vật liệu. Nhiều cựu sinh viên của khoa hiện đang giữ các vị trí quan trọng trong các công ty, tổ chức và trường đại học trên toàn thế giới \n - Để tim hiểu chi tiết về Khoa và thông tin liên quan, vui lòng truy cập đường link:\n👉 https://www.chemvnu.edu.vn/p/loi-chao-cua-truong-khoa.html"
+  utter_khoa_dia_ly_gt:
+    - text: "Khoa Địa lý đại học Khoa học Tự nhiên Hà Nội là một trong những khoa đào tạo chuyên sâu về địa lý và các lĩnh vực liên quan, bao gồm: địa chất, địa hình, địa lý kinh tế, địa lý dân cư và đô thị, địa lý tự nhiên, địa lý thực vật và động vật, bản đồ và hệ thống thông tin địa lý.\n - Khoa Địa lý có đội ngũ giảng viên giàu kinh nghiệm và có trình độ cao, nhiều trong số đó đã có nhiều năm kinh nghiệm giảng dạy và nghiên cứu trong lĩnh vực địa lý. Ngoài ra, khoa cũng có một số phòng thí nghiệm và trang thiết bị hiện đại để hỗ trợ cho việc nghiên cứu và giảng dạy.\n - Khoa Địa lý đại học Khoa học Tự nhiên Hà Nội có chương trình đào tạo đa dạng, bao gồm các chương trình đào tạo cử nhân, thạc sĩ và tiến sĩ. Khoa cũng có nhiều hoạt động nghiên cứu và phát triển để tăng cường sự phát triển của lĩnh vực địa lý và đóng góp cho sự phát triển của đất nước."
+  utter_khoa_sinh_hoc_gt:  
+    - text: "Khoa Sinh học là một trong số các Khoa được thành lập đầu tiên của Trường Đại học Tổng hợp Hà Nội. Qua hơn 65 năm phát triển, Khoa Sinh học đã trở thành một trong các trung tâm hàng đầu cả nước về đào tạo cán bộ từ trình độ đại học đến thạc sĩ, tiến sĩ cũng như về nghiên cứu khoa học thuộc các lĩnh vực khác nhau của ngành Sinh học và Công nghệ Sinh học. Hiện nay Khoa Sinh học có một đội ngũ nhân sự mạnh gồm 72 cán bộ, viên chức, trong đó gần 80% là giáo sư, phó giáo sư và tiến sĩ. \n Hiện nay Khoa có 9 bộ môn, 1 Trung tâm nghiên cứu Khoa học sự sống và 1 Bảo tàng Sinh vật với bộ sưu tập hơn 100.000 mẫu thực vật và động vật lâu đời nhất, đa dạng nhất và quý hiếm nhất trong cả nước. Khoa còn được Nhà nước đầu tư Phòng thí nghiệm trọng điểm Quốc gia về Công nghệ Enzyme và Protein. Khoa Sinh học được xã hội đánh giá cao không chỉ về khoa học cơ bản mà còn cả về nghiên cứu ứng dụng và quy trình công nghệ.
+        \n Sinh viên học ở Khoa không những được trang bị đầy đủ kiến thức, khả năng tư duy sáng tạo, phương pháp tiếp cận khoa học để giải quyết những vấn đề thực tiễn của ngành học mà còn có kỹ năng nghề nghiệp và tay nghề cao, khả năng làm việc theo nhóm. 
+        \n Ngoài ra để biết thông tin chi tiết hơn vui lòng truy cập đường link sau: \n 👉https://bio.hus.vnu.edu.vn/ \n Facebook:👉 https://www.facebook.com/khoasinhhoc/"
+  utter_khoa_dia_chat_gt:
+    - text: "Khoa Địa chất được thành lập từ năm 1966, là một cơ sở đào tạo đại học và sau đại học có uy tín trong nước. Nhiều cán bộ, sinh viên đã học tập, công tác tại Khoa hiện là các chuyên gia hàng đầu về nghiên cứu cơ bản, khoa học công nghệ và ứng dụng trong các lĩnh vực quản lý, khai thác tài nguyên thiên nhiên, đặc biệt là dầu khí, xây dựng và phát triển cơ sở hạ tầng, thích ứng với biến đổi khí hậu, giảm thiểu tai biến thiên nhiên,…\n Cơ cấu tổ chức quản lý khoa Địa chất    "
+      image : "http://geology.hus.vnu.edu.vn/wp-content/uploads/2021/07/Cautruc-Vi-768x497.png"
+  utter_khoa_dia_chat_gt1:
+    - text: "
+          Khoa Địa chất hiện có 34 cán bộ viên chức, trong đó có 28 cán bộ giảng viên, 6 cán bộ nghiên cứu và chuyên viên. Đội ngũ cán bộ có trình độ cao (01 giáo sư, 10 phó giáo sư, 18 tiến sĩ và tiến sĩ khoa học). Cán bộ giảng dạy của Khoa luôn gắn kết chặt chẽ công tác giảng dạy với yêu cầu thực tế của xã hội, kết hợp với các nhà quản lý, nhà khoa học có uy tín trong các lĩnh vực dầu khí, kỹ thuật địa chất, môi trường, xây dựng, khai thác khoáng sản và quản lý tài nguyên góp phần nâng cao tính cập nhật, khả năng thích ứng với công việc thực tế của người học.
+        \n Hiện nay, Khoa đang đào tạo gần 200 sinh viên thuộc ba ngành: Địa chất, Quản lý tài nguyên và Môi trường, Công nghệ Quan trắc và Giám sát Tài nguyên Môi trường.
+        \n Ngoài ra để biết thông tin chi tiết hơn vui lòng truy cập đường link sau: \n 👉http://www.hus.vnu.edu.vn/gioi-thieu/co-cau-to-chuc/khoa-truc-thuoc/khoa-vat-ly.html"
+  utter_khoa_moi_truong_gt:
+    - text: "Khoa Môi trường Đại học Khoa học Tự nhiên Hà Nội là một trong những khoa hàng đầu về đào tạo và nghiên cứu trong lĩnh vực môi trường tại Việt Nam. \n
+        Khoa có các chương trình đào tạo từ cử nhân đến tiến sĩ với các chuyên ngành liên quan đến quản lý tài nguyên môi trường, bảo vệ môi trường, khí tượng thủy văn, địa chất và năng lượng tái tạo. Khoa cũng có các phòng thí nghiệm và trang thiết bị hiện đại để hỗ trợ cho hoạt động nghiên cứu của giảng viên và sinh viên. Ngoài ra, khoa còn thường xuyên tổ chức các hoạt động ngoại khóa, thực tập và giao lưu quốc tế để giúp sinh viên nâng cao kỹ năng và kiến thức của mình trong lĩnh vực môi trường.Các bạn sẽ có nhiều cơ hội đi thực tập, khảo sát thực tế, thực tập nghề tại các nhà máy, xí nghiệp sản xuất, vùng nguyên liệu, khu bảo tồn thiên nhiên tại các tỉnh thành trên cả nước; đồng thời có cơ hội được khám phá cảnh quan thiên nhiên hùng vĩ qua các buổi học tập ngoại khóa tại tất cả các năm học, bậc học.
+        \n Ngoài ra để biết thông tin chi tiết hơn vui lòng truy cập đường link sau: \n 👉https://fes.hus.vnu.edu.vn/"
+  utter_khoa_khituonhthuyvan_haiduong_hoc_gt:
+    - text: "Khoa Khí tượng Thủy văn Hải dương học thuộc Đại học Khoa học Tự nhiên Hà Nội là một khoa chuyên sâu nghiên cứu về khí tượng, thủy văn, hải dương học và các lĩnh vực liên quan. Khoa có đội ngũ giảng viên giàu kinh nghiệm, nhiệt tình và được đào tạo tại các trường đại học hàng đầu trong nước và quốc tế. Khoa cung cấp các chương trình đào tạo từ cử nhân đến tiến sĩ, cùng với các hoạt động nghiên cứu, tư vấn và phục vụ cộng đồng với mục tiêu phát triển bền vững và bảo vệ môi trường.  Bắt đầu từ năm học 2009 – 2010, Khoa đã kết hợp với Trường Đại học Công nghệ – ĐHQGHN mở “hệ đào tạo kép” ngành Khí tượng – Thủy văn – Hải dương học và Công nghệ thông tin. Sinh viên theo học hình thức đào tạo này sẽ học 4 năm ngành Khí tượng – Thủy văn – Hải dương học tại Trường ĐHKHTN, năm thứ năm học Công nghệ thông tin tại Trường Đại học Công nghệ. Sau 5 năm học, sinh viên sẽ có 2 bằng tốt nghiệp của 2 ngành học, càng có nhiều cơ hội tìm và lựa chọn việc làm tốt hơn.
+
+        \n Là ngành học được ưu đãi với mức học phí thấp nhất theo quy định của Bộ Giáo dục và Đào tạo và cũng là mức thấp nhất trong trường. Sinh viên không chỉ có cơ hội được nhận học bổng tài trợ của nhiều doanh nghiệp, tập đoàn,... mà còn có cơ hội được đi đào tạo sau đại học ở nước ngoài.
+        \n Ngoài ra để biết thông tin chi tiết hơn vui lòng truy cập đường link sau: \n 👉https://hmovnu.com/"
+
+
+
+
+  utter_chnn_QHT98:
+    - text: "Cử nhân khoa học máy tính ra trường có thể làm việc ở nhiều vị trí công việc khác nhau, như: Cán bộ kĩ thuật, quản lý, điều hành trong lĩnh vực công nghệ thông tin; Lập trình viên, kiểm thử sản phẩm phần mềm, quản lý quy trình phát triển phần mềm; Chuyên viên IT, quản trị và giám sát an ninh mạng; Thiết kế, xây dựng, phát triển, vận hành và bảo trì mạng máy tính nội bộ trong các doanh nghiệp, cơ quan, trường học; Quản trị dự án hệ thống mạng thông tin…"
+  utter_chnn_QHT02:
+    - text: "Thống kê tình hình việc làm năm 2017 của Trường ĐHKHTN cho thấy 100% sinh viên ngành Toán Tin có việc làm đúng ngành sau tối đa 6 tháng tốt nghiệp.Với kiến thức và năng lực được trang bị, sinh viên sau khi tốt nghiệp có thể phát triển trong các lĩnh vực sau:\n– Xây dựng, đánh giá các mô hình đánh giá rủi ro, dự báo trong lĩnh vực ngân hàng, bảo hiểm.\n– Xây dựng, phát triển các mô hình bảo mật thông tin.\n– Làm việc trong lĩnh vực Tin học, đặc biệt là những vị trí yêu cầu cao về thuật toán, khoa học tính toán và khoa học dữ liệu.\n– Làm giảng viên giảng dạy Toán, Tin trong các trường đại học, cao đẳng.\n– Nghiên cứu Toán ứng dụng tại các viện nghiên cứu.\n– Tiếp tục học sau đại học theo các chuyên ngành của Toán học và CNTT." 
+  utter_chnn_QHT01:
+    - text: "Cơ hội việc làm của sinh viên sau khi tốt nghiệp ngành Toán học rất rộng mở. Cụ thể, các bạn có thể đảm nhận một số vị trí công việc sau:\n- Làm nghiên cứu viên, lập trình viên, chuyên viên phân tích, thiết kế dữ liệu tại các viện nghiên cứu.\n- Làm giảng viên đào tạo Toán học tại các trường đại học, cao đẳng, trung cấp nghề nghiệp, trung tâm dạy nghề, trung tâm tin học, hoặc tại các trường trung học phổ thông, trung học cơ sở.\n-Ngoài ra, bạn cũng có thể tiếp tục học lên cao hơn hoặc tìm kiếm học bổng về các chương trình đào tạo Thạc sĩ, Tiến sĩ."
+  utter_chnn_QHT42:
+    - text: "Cơ hội việc làm ngành công nghệ hoá học cho bạn có thể kể đến như:\n-Kỹ sư công nghệ, quản lý điều hành sản xuất tại các cơ sở sản xuất, nhà máy, xí nghiệp\n-Kỹ thuật viên trong nhà máy, phòng thí nghiệm\n-Kỹ sư phân tích, đảm bảo chất lượng, phát triển sản phẩm\n-Nghiên cứu viên tại các viện nghiên cứu - phát minh\n-Giảng dạy, nghiên cứu, nhân viên phòng thí nghiệm tại các trường đại học, cao đẳng, trung cấp"
+  utter_chnn_QHT41:
+    - text: "Cơ hội việc làm ngành công nghệ hoá học cho bạn có thể kể đến như:\n-Kỹ sư công nghệ, quản lý điều hành sản xuất tại các cơ sở sản xuất, nhà máy, xí nghiệp\n-Kỹ thuật viên trong nhà máy, phòng thí nghiệm\n-Kỹ sư phân tích, đảm bảo chất lượng, phát triển sản phẩm\n-Nghiên cứu viên tại các viện nghiên cứu - phát minh\n-Giảng dạy, nghiên cứu, nhân viên phòng thí nghiệm tại các trường đại học, cao đẳng, trung cấp"
+  utter_chnn_QHT06:
+    - text: "Những người có chuyên môn ngành hóa học có thể đảm nhiệm các vị trí việc làm như:\n-Chuyên viên phát triển sản phẩm.\n-Chuyên viên kiểm định chất lượng sản phẩm.\n-Nhà nghiên cứu vật liệu.\n-Cố vấn khoa học.\n-Nhà quản lý chất lượng sản phẩm.\n-Kỹ sư hóa học.\n-Giảng viên bộ môn công nghệ hóa học."
+  utter_chnn_QHT94:
+    - text: "Là một ngành học có tính chất liên ngành, sinh viên tốt nghiệp có nhiều cơ hội làm việc rộng mở. Những công việc mà họ có thể đảm nhận:\n– Tại những công ty công nghệ: Điện tử, Internet kết nối vạn vật (IoT), Điều khiển và Tự động hoá, Robotics, Điện tử y sinh, Đo lường và xử lý tín hiệu, ….\n– Tại các công ty kỹ thuật, công nghệ khác: Quản lý chất lượng (QA/QC), Kiểm tra đánh giá Kỹ thuật, …\n– Tại những doang nghiệp IT: Trí tuệ nhân tạo (AI), Học máy,Lập trình cho hệ thống nhúng (Embedded system), Khoa học Tính toán, Mô phỏng y sinh và dược học, …\n– Làm việc tại các cơ quan quản lý công nghệ và khoa học của các khu công nghệ/công nghiệp, các Tỉnh, Thành phố, cấp Trung ương, …\n– Giảng dạy tại các trường Cao đẳng, Đại học. Làm tại việc ở những cơ sở nghiên cứu khoa học quốc gia như: Viện Nghiên cứu Điện tử, Tự động hoá, Tin học; Viện Công nghệ thông tin; Viện Vật lý ứng dụng và Thiết bị khoa học; …\n– Khởi nghiệp với doanh nghiệp chế tạo nghiên cứu và phát triển sản phẩm, giải pháp hữu ích có tính sáng tạo cao."
+  utter_chnn_QHT05:
+    - text: "Sau khi tốt nghiệp ngành Công nghệ kỹ thuật hạt nhân, các bạn có thể làm việc ở các cơ quan Nhà nước, các viện nghiên cứu, lò phản ứng hạt nhân, bệnh viện, nhà máy điện hạt nhân, các trung tâm ứng dụng Kỹ thuật hạt nhân,… với các vị trí:\n– Cán bộ quản lý và nghiên cứu tại các cơ quan Nhà nước các cấp về bức xạ và hạt nhân.\n– Kỹ sư tại các khoa xạ hình chẩn đoán hình ảnh, xạ trị ung bướu, X-quang, Y học hạt nhân,…\n– Cán bộ kỹ thuật các cơ sở công nghiệp sử dụng Kỹ thuật hạt nhân như: phân tích và đo lường bức xạ, đo mức bằng phóng xạ, kiểm tra không phá hủy,…\n– Cán bộ kỹ thuật tại các công ty, doanh nghiệp tư vấn, dịch vụ, chuyển giao công nghệ…\n–  Giảng viên, chuyên viên nghiên cứu tại các  trường đại học, cao đẳng, viện nghiên cứu trong nước và quốc tế có sử dụng nguồn phóng xạ, máy gia tốc, lò phản ứng hạt nhân."
+  utter_chnn_QHT04:
+    - text: "Sau khi hoàn thành chương trình đào tạo ngành Khoa học vật liệu, bạn có thể đảm nhiệm một số vị trí công việc tại các đơn vị dưới đây:\n-Các công ty sản xuất, gia công vật liệu như các công ty luyện cán kim loại, gốm sứ, nhựa, cao su…\n-Công ty chế tạo vật tư và thiết bị dân dụng, thiết bị công nghiệp như các công ty cơ khí, gốm sứ, nhựa…\n-Công ty cơ khí sản xuất phụ tùng thay thế cho các thiết bị công nông ngư nghiệp.\n-Công ty sản xuất các cấu kiện, vật liệu xây dựng, vật liệu trang trí nội thất.\n-Công ty xuất nhập khẩu nguyên vật liệu: kim loại, gốm, nhựa…\n-Công ty, hãng sản xuất và kinh doanh vật liệu của nước ngoài có chi nhánh, VP đại diện tại Việt Nam.\n-Các cơ quan đào tạo và nghiên cứu khoa học như trường, viện về lãnh vực khoa học và kỹ thuật vật liệu.\n-Những cơ quan, viện nghiên cứu thiết kế thiết bị, cải tiến công nghệ, cơ quan quản lý và kiểm định chất lượng nguyên vật liệu như hải quan, Trung Tâm tiêu chuẩn đo lường chất lượng."
+  utter_chnn_QHT03:
+    - text: "Sau khi tốt nghiệp ngành Vật lý học, sinh viên được trang bị đầy đủ kiến thức và kỹ năng chuyên môn vững vàng có thể đảm nhiệm những vị trí sau:\n-Chuyên viên kỹ thuật, quản lý trong các đơn vị trong lĩnh vực điện tử, viễn thông, công nghệ, v.v.\n-Chuyên viên tư vấn, chăm sóc khách hàng tại các công ty hoạt động trong lĩnh vực công nghệ, điện tử, v.v.\n-Giảng dạy bộ môn Vật lý học tại các cơ sở giáo dục trên cả nước.\n-Thực hiện nghiên cứu tại các Viện, Trung tâm nghiên cứu khoa học."
+ 
+  utter_chnn_QHT43:
+    - text: "Tuy là ngành học khá mới, nhưng các ngành thuộc lĩnh vực y tế nói chung luôn có nhu cầu cao về nhân lực, nên cơ hội việc làm của ngành hóa dược rất đa dạng. Cử nhân ngành Hóa dược có thể hoạt động và làm việc tại các vị trí như:\n-Nghiên cứu viên lĩnh vực dược phẩm\n-Chuyên viên tư vấn, lập kế hoạch, soạn thảo chính sách ngành Hóa dược\n-Kỹ sư Hóa dược trong ngành công nghệ nano, công nghệ sinh học, y sinh, thực phẩm và phụ gia thực phẩm, dinh dưỡng, mỹ phẩm\n-Cán bộ phân tích kiểm nghiệm dược phẩm - mỹ phẩm\n-Cán bộ quản lý và kiểm tra chất lượng dược phẩm.\n-Giảng viên hóa dược"
+  utter_chnn_QHT08:
+    - text: "Sinh học là ngành học sau khi ra trường có thể đảm nhiệm nhiều vị trí trong ngành như:\n-Nghiên cứu khoa học thuộc các lĩnh vực về sinh học, sinh học thực nghiệm ở các viện nghiên cứu, các trung tâm và cơ quan nghiên cứu của các bộ, ngành, các trường đại học và cao đẳng.\n-Làm việc ở các cơ quan quản lý có liên quan đến Sinh học của các ngành hoặc các địa phương (bộ, sở, phòng…), các trung tâm, tỉnh, thành phố, quận, huyện\n-Cán bộ kỹ thuật, quản lý chất lượng, kiểm nghiệm tại các đơn vị sản xuất trong lĩnh vực nông, lâm, ngư, y và dược.\n-Tư vấn, tiếp thị tại các đơn vị thương mại, dịch vụ trong lĩnh vực nông, lâm, ngư, y và dược.\n-Giảng dạy một số môn sinh học thực nghiệm ở các trường đại học, cao đẳng về nông, lâm, ngư, y và các trường THPT nếu được trang bị thêm khối kiến thức khoa học giáo dục."
+  utter_chnn_QHT44:
+    - text: " Công nghệ sinh học\n-Viện chiến lược và Chương trình Giáo dục Bộ GD-ĐT cho biết, đến năm 2020 trong lĩnh vực này nước ta sẽ cần ít nhất 25.000 lao động. Hiện có nhiều trung tâm nghiên cứu, cơ sở đào tạo triển khai ứng dụng Công nghệ sinh học được hình thành. Tuy nhiên, nguồn nhân lực trình độ cao vẫn đang còn thiếu nên cơ hội nghề nghiệp dành cho người học Công nghệ sinh học là rất lớn.\n-Sau khi tốt nghiệp ngành Công nghệ sinh học các bạn có thể làm việc ở các vị trí khác nhau như:\n-Quản lý tại các nhà máy sản xuất dược phẩm, thực phẩm\n-Chuyên viên công nghệ sinh học tại các công ty chế biến thủy sản, nông sản, thực phẩm\n-Làm việc tại các trung tâm kiểm nghiệm, phòng thí nghiệm, cơ quan nghiên cứu\n-Cán bộ xét nghiệm trong bệnh viện, trung tâm y khoa."
+  utter_chnn_QHT13:
+    - text: "Sau khi tốt nghiệp, sinh viên ngành khoa học môi trường không khó để có thể tìm được một công việc trong thị trường ngày càng coi trọng các vấn đề về môi trường. Một số vị trí luôn khát nhân lực có thể kể đến như nhà phát triển chính sách môi trường, quản lý năng lượng kỹ sư môi trường, quản lý chất thải và tái chế. Bạn cũng có thể trở thành nhà động vật học, nhà hoạt động môi trường, quản lý chất lượng nguồn nước, hoặc theo đuổi dự án của riêng mình. Hiện nay cũng có nhiều tổ chức phi chính phủ đem đến nhiều cơ hội việc làm như UNEP, WHO, hay CGIAR… Dù chọn khu vực công hay tư để theo đuổi sự nghiệp thì bạn đều được chào đón."
+  
+  utter_chnn_QHT46:
+    - text: "Với nhu cầu tuyển dụng lớn của ngành Công nghệ kỹ thuật môi trường, bạn gần như không phải lo lắng về tình trạng thiếu việc làm sau tốt nghiệp. Nếu thực sự quyết tâm theo đuổi đến cùng, bạn có được hàng loạt những lựa chọn công việc chất lượng như:\n-Kỹ sư môi trường làm việc trong các doanh nghiệp, tập đoàn nhà nước, công ty đa quốc gia.\n-Chuyên viên khắc phục sự cố chất thải trong doanh nghiệp cấp nước, xử lý khí thải,..\n-Nhân viên nghiên cứu, vận hành công trình công nghệ, lắp đặt thiết bị giám sát, kiểm tra chất lượng môi trường.\n-Chuyên viên tư vấn môi trường chuyên lĩnh vực pháp luật môi trường tại các doanh nghiệp, tập đoàn.\n-Cán bộ cấp quản lý, kỹ sư môi trường công tác tại Bộ, Sở Tài nguyên môi trường.\n-Giảng viên giảng dạy, nghiên cứu chuyên sâu về trong lĩnh vực kỹ thuật môi trường."
+  
+  utter_chnn_QHT16:
+    - text: "Các cử nhân khí tượng học, khí hậu học sau khi tốt nghiệp có thể xem xét một số đơn vị công tác sau đây:\n- Các Viện, Trung tâm: Viện địa chất, Viện khí tượng Thủy văn, Viện Hải dương học, Trung tâm Dự báo khí tượng thủy văn Quốc gia…\n- Tổng cục khí tượng thủy văn, Tổng cục khoa học kỹ thuật và Công nghệ thuộc Bộ công an.\n-Các phòng ban: Quản lý môi trường, quản lý tài nguyên nước, quản lý đo đạc bản đồ… tại các Sở tài nguyên môi trường tỉnh, thành phố.\n- Công ty thuộc lĩnh vực hàng hải, hàng không, đường thủy như: Tổng công ty hàng hải Việt Nam, Tổng công ty Hàng không Việt Nam, công ty vận tải Biển Đông…\n-Doanh nghiệp hoạt động trong lĩnh vực thủy văn và môi trường.\n-Giảng viên: chịu trách nhiệm giảng dạy tại các trường Đại học, cao đẳng, trung học chuyên nghiệp có liên quan.\n Ngoài ra, sinh viên có thể tham khảo công việc tại một số đơn vị liên quan như các trạm Khí tượng thuộc đài khí tượng thủy văn, Trung tâm dự báo khí tượng thủy văn (thuộc các đài tỉnh), Trung tâm quản lý biển và hải đảo hay các Trạm Khí tượng, Thủy văn và Hải văn thuộc Bộ Tài nguyên Môi trường…"
+  utter_chnn_QHT95:
+    - text: "Sinh viên tốt nghiệp ngành Quản lý phát triển đô thị và Bất động sản có thể đảm nhận công việc trong các tổ chức thuộc khu vực công và tư trong các lĩnh vực Quản lý tổng hợp đô thị và bất động sản, kinh doanh và dịch vụ bất động sản, quy hoạch phát triển đô thị, công nghệ quản lý đô thị và bất động sản, đánh giá và quản lý các dự án phát triển đô thị, bất động sản.\n Một số địa chỉ tuyển dụng sinh viên ngàn này: Bộ Xây dựng và Sở Xây dựng các tỉnh;  Sở Tài nguyên Môi trường các tỉnh, Bộ Tài nguyên Môi trường, Phòng Quản lý đô thị các quận/huyện, Các trung tâm môi giới và doanh nghiệp kinh doanh bất động sản, Các Viện quy hoạch đô thị nông thôn và môi trường,…"
+  utter_chnn_QHT12:
+    - text: "Các vị trí bạn có thể đảm nhận trong ngành Quản lý đất đai có thể kể đến như là làm cán bộ Quản lý nhà nước về đất đai, giảng viên, nhân viên tư vấn và chuyên viên tại các đơn vị như sau:\n- Cán bộ, công chức trong các cơ quan Quản lý nhà nước như các Bộ, Sở, Ngành, Phòng Tài nguyên và Môi trường, Viện nghiên cứu… trực thuộc huyện, quận, thị xã, thành phố thuộc tỉnh. \n- Nhân viên trong các ngân hàng, tổ chức tín dụng; trung tâm tư vấn lập quy hoạch, kế hoạch sử dụng đất, quy hoạch xây dựng; trung tâm định giá đất, môi giới nhà đất, sàn giao dịch bất động sản; đơn vị sự nghiệp ngành tài nguyên và môi trường; các công ty, doanh nghiệp hoạt động trong lĩnh vực đất đai và bất động sản.\n- Giảng dạy tại các trường đại học, cao đẳng, trung cấp chuyên nghiệp."
+  utter_chnn_QHT91:
+    - text: "Ngành Khoa học thông tin địa không gian là ngành mới ở Việt Nam với lượng sinh viên theo học còn ít. Tuy nhiên nhu cầu nhân lực lại vô cùng dồi dào. Chính vì thế mà cơ hội việc làm vô cùng rộng mở. Bạn có thể làm việc trong mọi lĩnh vực như: quân sự, môi trường, kinh doanh, quy hoạch đô thị, quản lý tài nguyên, nông nghiệp, mỏ, quản lý tai biến thiên nhiên… Với những vị trí công việc là: Phân tích dữ liệu, thiết kế bản đồ, quản trị cơ sở dữ liệu, mô hình hóa, quản lý dự án, lập trình hệ thống thông tin địa lý, quản trị hệ thống,…"
+  utter_chnn_QHT10:
+    - text: "Ngành địa lý tự nhiên có cơ hội việc làm khá đa dạng. Các vị trí nghề nghiệp trực tiếp liên quan đến bằng cử nhân Địa lý tự nhiên: Chuyên gia bản đồ; Chuyên gia tư vấn về môi trường; Nghiên cứu viên địa mạo, cảnh quan và địa lý nhân văn; Chuyên viên quản lý hoặc nghiên cứu viên về quy hoạch lãnh thổ;  Chuyên gia / Chuyên viên tư vấn về công nghệ đo đạc bản đồ, viễn thám hệ thông tin địa lý, Giảng viên / giáo viên địa lý,…\nNgoài ra, bạn cũng có thể làm những công việc liên quan khác như:  Quản lý logistics và phân phối sản phẩm; nhân viên tổ chức phi chính phủ về cứu trợ và phát triển, thiết kế cảnh quan; Bảo tồn thiên nhiên; Chuyên gia/nghiên cứu viên, tư vấn viên du lịch; Nghiên cứu thị trường; Quy hoạch giao thông,…"
+  utter_chnn_QHT20:
+    - text: " Ngành Quản lý Tài nguyên và Môi trường có các cơ hội nghề nghiệp rộng mở.
+       Sinh viên tốt nghiệp ngành Quản lý Tài nguyên và Môi trường có thể đảm nhận nhiều vị trí khác nhau như:\n- Cán bộ, công chức trong các cơ quan nhà nước về quản lý tài nguyên và môi trường từ Trung ương đến địa phương như: Bộ/Sở Tài nguyên và Môi trường, Bộ/Sở Khoa học và Công nghệ, Bộ/Sở Nông nghiệp và Phát triển nông thôn, các phòng, ban liên quan đến công tác quản lý tài nguyên và môi trường.\n- Giảng viên tại các trường đại học, cao đẳng, trung cấp chuyên nghiệp.\n- Nhân viên trong các tổ chức quốc tế, tổ chức chính phủ và phi chính phủ, các đơn vị tư vấn, các doanh nghiệp hoạt động trong lĩnh vực khai thác, sử dụng, bảo vệ tài nguyên và môi trường, trung tâm tư vấn lập quy hoạch, kế hoạch sử dụng đất, quy hoạch xây dựng, quy hoạch rừng, quy hoạch môi trường…\n- Cán bộ nghiên cứu, ứng dụng và triển khai các đề tài vào thực tiễn thuộc lĩnh vực tài nguyên và môi trường tại các viện nghiên cứu, các trung tâm và cơ quan nghiên cứu của các bộ, ngành, trường đại học.\n- Tự làm chủ doanh nghiệp, cơ sở sản xuất kinh doanh, dịch vụ. "
+  utter_chnn_QHT18:
+    - text: "Ngành Địa chất học là lĩnh vực nghiên cứu khá đa dạng, bạn có thể tham khảo một số công việc trong ngành dưới đây:\n- Địa chất học: Nghiên cứu địa chất phục vụ việc tìm kiếm các khoáng sản có ích.
+        \n- Địa chất thủy văn: Nghiên cứu địa chất để tìm kiếm, khai thác, xử lý các nguồn nước dưới lòng đất phục vụ cho sinh hoạt, nông nghiệp, công nghiệp v.v… \n- Địa chất công trình - địa kỹ thuật: Nghiên cứu địa chất phục vụ cho xây dựng các dạng công trình khác nhau, đề xuất và thiết kế giải pháp xử lý nền móng công trình.\n- Nguyên liệu khoáng: Nghiên cứu địa chất phục vụ tìm kiếm khoáng sản và các công nghệ tiên tiến chế biến khoáng sản.\n- Địa sinh thái và công nghệ môi trường: Nghiên cứu địa chất ở góc độ khai thác hợp lý và bảo vệ môi trường địa chất.\n- Nhà khoa học địa chất: Xây dựng các chương trình nghiên cứu khoa học góp phần giải quyết những nhiệm vụ của đất nước như: nghiên cứu cấu trúc của vỏ Trái Đất tại một lãnh thổ rộng lớn hay một vùng cụ thể, quy luật hình thành và phân bố các loại khoáng sản rắn và lỏng, nguồn nước dưới đất phục vụ cho việc khai thác hợp lý kinh tế lãnh thổ trong nhiều lĩnh vực khác nhau và bảo vệ môi trường địa chất nơi con người đang sống. Nhà khoa học địa chất có thể làm việc ở các cơ quan quản lý nhà nước của nhiều Bộ, ngành khác nhau, các viện nghiên cứu, các trường đại học.\n- Kỹ sư địa chất: Trực tiếp tham gia và điều hành công việc ở các chuyến đi lộ trình để thu thập thông tin, vẽ các loại bản đồ địa chất. Họ cũng điều khiển những giàn khoan lớn, những máy đo từ, địa chấn, điện trở suất của đất đá… gắn trên máy bay hoặc tàu biển hiện đại. Kỹ sư địa chất làm việc ở các Bộ, ngành khác nhau như: Bộ Tài nguyên và Môi trường, Bộ Công nghiệp, Bộ xây dựng, Bộ Nông nghiệp và Phát triển nông thôn, các Sở tương ứng thuộc các tỉnh thành, các tổng công ty, công ty liên đoàn và đoàn địa chất - dầu khí…"
+  utter_chnn_QHT92:
+    - text: "Ngành tài nguyên và môi trường nước chưa cập nhật"
+  utter_chnn_QHT17:
+    - text: "Sau khi tốt nghiệp ngành Hải dương học, sinh viên sẽ được cung cấp đầy đủ kiến thức và kỹ năng để đáp ứng yêu cầu công việc, cụ thể các vị trí sau:\n-Các Viện, Trung tâm: Viện khí tượng Thuỷ văn, Viện Hải dương học, Viện địa chất, Trung tâm Dự báo khí tượng thuỷ văn Quốc gia…\n-Tổng cục khí tượng thuỷ văn, Tổng cục khoa học kỹ thuật và Công nghệ thuộc Bộ công an.\n-Các phòng chức năng: Quản lý môi trường, Quản lý tài nguyên nước, Quản lý đo đạc bản đồ… tại các Sở tài nguyên môi trường tỉnh, thành phố trên cả nước. \n-Các công ty thuộc lĩnh vực hàng không, hàng hải, đường thuỷ như: Tổng công ty Hàng không Việt Nam, Tổng công ty hàng hải Việt Nam, công ty vận tải Biển Đông…\n-Giảng dạy tại các trường Đại học, cao đẳng, trung học chuyên nghiệp có đào tạo về ngành Hải dương học và khí tượng thuỷ văn."
+  utter_chnn_QHT93:
+    - text: "Sau khi tốt nghiệp ngành Khoa học dữ liệu, người học sẽ có nhiều sự lựa chọn các công việc khác nhau. Sau đây là một số ngành nghề mà người học có thể lựa chọn sau khi tốt nghiệp ngành học này:\nNhà Khoa học dữ liệu (Data Scientist): cần có khả năng phân tích một lượng lớn thông tin và đưa ra xu hướng cũng như chiến lược kinh doanh phù hợp.\nNhà phân tích dữ liệu (Data Analyst): chịu trách nhiệm chuyển đổi và thao tác các tập dữ liệu lớn để phù hợp với phân tích mong muốn cho các công ty. Họ cũng hỗ trợ quá trình ra quyết định bằng cách chuẩn bị các báo cáo cho các nhà lãnh đạo tổ chức để truyền đạt hiệu quả các xu hướng và hiểu biết sâu sắc thu thập được từ phân tích của họ.\nKỹ sư học máy (Machine Learning Engineer): tạo kênh dữ liệu và cung cấp giải pháp phần mềm. Ngoài ra, họ cũng chịu trách nhiệm chạy các bài kiểm tra và thử nghiệm để theo dõi hiệu suất và chức năng của các hệ thống đó.\nKỹ sư dữ liệu (Data Engineer): chịu trách nhiệm xây dựng và duy trì các đường ống dẫn dữ liệu, tạo ra một hệ sinh thái dữ liệu mạnh mẽ và được kết nối với nhau trong một tổ chức, giúp các nhà khoa học dữ liệu có thể truy cập được thông tin.\nNhà phát triển Business Intelligence (BI): Các nhà phát triển BI thiết kế và phát triển các chiến lược để hỗ trợ các phòng ban trong doanh nghiệp nhanh chóng tìm thấy thông tin họ cần để đưa ra quyết định kinh doanh tốt hơn."
+  utter_chnn_QHT97:
+    - text: " -Sinh viên tốt nghiệp ngành Công nghệ quan trắc và giám sát tài nguyên môi trường của đại học Khoa học Tự nhiên ĐHQG HN có cơ hội việc làm làm rộng mở, chẳng hạn:\n - Làm việc tại các nhà máy, khu công nghiệp, doanh nghiệp sản xuất, doanh nghiệp chuyển giao công nghệ,các công ty tư vấn môi trường,…\n - Các doanh nghiệp tư vấn phát triển công nghệ giám sát tài nguyên và thiên tai, công nghệ quan trắc môi trường.\n - Chuyên viên tại các tổ chức phi chính phủ liên quan đến biến đổi khí hậu và tài nguyên môi trường.
+        \n - Làm việc tại các trung tâm quan trắc tài nguyên và môi trường, các Bộ/ngành liên quan đến nông nghiệp và phát triển nông thôn, tài nguyên và môi trường,…\n -Các cơ quan đào tạo và nghiên cứu khoa học trong nước liên quan đến tài nguyên và môi trường."
+  
+  utter_chnn_QHT96:
+    - text: |
+        Được đánh giá là ngành học có nhiều triển vọng cùng cơ hội việc làm lớn, sinh viên tốt nghiệp ngành Công nghệ thực phẩm có thể đảm nhận nhiều vị trí tại các tổ chức, doanh nghiệp trong và ngoài nước. Cụ thể như:
+        - Chuyên gia tư vấn dinh dưỡng tại các trung tâm dinh dưỡng, trung tâm y tế.
+        - Chuyên viên làm việc tại các phòng thí nghiệm, viện nghiên cứu về lĩnh vực thực phẩm.
+        - Kỹ sư quản lý dây chuyền sản xuất, bảo quản, đánh giá chất lượng sản phẩm tại các doanh nghiệp chế biến thực phẩm.
+        - Chuyên viên bảo quản, giám sát và nâng cao chất lượng thực phẩm trong lĩnh vực xuất khẩu.
+        - Giảng viên giảng dạy tại các cơ sở đào tạo ngành Công nghệ thực phẩm…
+  utter_fb_element_example:
+      - text: "Một số thông tin về trường"
+        elements:
+        - title: "Chọn thông tin bạn muốn hiển thị"
+          subtitle: ""
+          image_url: "https://sohanews.sohacdn.com/160588918557773824/2022/10/11/1-dai-hoc-khoa-hoc-tu-nhien-16654584069501332479760.jpg"
+          buttons:
+            - title: "Giới thiệu về trường"
+              payload: "Giới thiệu về trường ĐH Khoa học Tự nhiên"
+            - title: "Ngành đào tạo"
+              payload: "Các ngành tuyển sinh năm nay"
+            # - title: "Số điện thoại liên hệ tuyển sinh"
+            #   payload: "Số điện thoại liên hệ tuyển sinh"
+            # - title: "Thông tin mới nhất"
+            #   payload: "Thông tin mới nhất của trường?"
+            - title: "Thời gian đào tạo"
+              payload: "Thời gian đào tạo của trường"
+            
+        - title: "Một số thông tin khác"
+          subtitle: ""
+          image_url: "https://toplist.vn/images/800px/dai-hoc-khoa-hoc-tu-nhien-dai-hoc-quoc-gia-ha-noi-676203.jpg"
+          buttons:
+            - title: "Cập nhật thông tin mới nhất"
+              payload: "Cập nhật thông tin mới nhất"
+            - title: "Hoạt động"
+              payload: "Hoạt động trong trường"
+            # - title: "Số điện thoại liên hệ tuyển sinh"
+            #   payload: "Số điện thoại liên hệ tuyển sinh"
+            # - title: "Thông tin mới nhất"
+            #   payload: "Thông tin mới nhất của trường?"
+            - title: "Mạng xã hội"
+              payload: "Nền tảng mạng xã hội của trường "
+  utter_toan_tin:
+      - text: "Thông tin thêm về ngành Toán tin"
+        elements:
+        - title: "Chọn thông tin bạn muốn hiển thị"
+          subtitle: ""
+          image_url: "http://demotuyensinh.hus.edu.vn/data/tuyensinh/upload/images/20-11sm.jpg"
+          buttons:
+            - title: "Giới thiệu"
+              payload: "Giới thiệu về ngành Toán tin "
+            - title: "Học phí"
+              payload: "học phí ngành Toán tin"
+            # - title: "Số điện thoại liên hệ tuyển sinh"
+            #   payload: "Số điện thoại liên hệ tuyển sinh"
+            # - title: "Thông tin mới nhất"
+            #   payload: "Thông tin mới nhất của trường?"
+            - title: "Cơ hội nghề nghiệp"
+              payload: "Lĩnh vực nghề nghiệp nào liên quan đến Toán tin tại trường đại học?"
+            
+       
+  # utter_type_foyer_fr:
+  #   - text: ""
+  #     buttons:
+  #     - title: Foyer ESPRIT (bloc 1)
+  #       payload: Định nghĩa 1 
+  #     - title: Foyer Résidence Al Amen
+  #       payload: Định nghĩa 2
+  # utter_type_foyer_fr1:
+  # - text: "Ví dụ"
+  #   elements:
+  #     - title: "Element 1"
+  #       subtitle: "Subtitle 1"
+  #       image_url: "https://esprit.tn/static/media/residence1.83eae4df.jpg"
+  #       buttons:
+  #         - title: "Button A"
+  #           payload: "/intent_A"
+  #         - title: "Button B"
+  #           payload: "/intent_B"
+  #     - title: "Element 2"
+  #       subtitle: "Subtitle 2"
+  #       image_url: "https://esprit.tn/static/media/residence1.83eae4df.jpg"
+  #       buttons:
+  #         - title: "Button C"
+  #           payload: "/intent_C"
+  #         - title: "Button D"
+  #           payload: "/intent_D"
+
+  # utter_photo_foyer_externe1:
+  # - text: ""
+  #   image: https://esprit.tn/static/media/residence1.83eae4df.jpg
+             
+  # utter_photo_foyer_externe2:
+  # - text: ""
+  #   image: https://esprit.tn/static/media/residence2.9f8f1968.jpg
+
+
+  # utter_photo_foyer_externe3:
+  # - text: ""
+  #   image: https://esprit.tn/static/media/residence3.c9c826a9.png
+
+  # utter_fb_element_example:
+  # - text: "Here are some example elements:"
+  #   elements:
+  #     - title: "Element 1"
+  #       subtitle: "Subtitle 1"
+  #       image_url: "https://example.com/image1.jpg"
+  #       buttons:
+  #         - title: "Button A"
+  #           payload: "dat_cau_hoi"
+  #         - title: "Button B"
+  #           payload: "hp_QHT43"
+  #     - title: "Element 2"
+  #       subtitle: "Subtitle 2"
+  #       image_url: "https://example.com/image2.jpg"
+  #       buttons:
+  #         - title: "Button C"
+  #           payload: "hp_QHT43"
+  #         - title: "Button D"
+  #           payload: "hp_QHT41" 
+  # utter_fb_element_example:
+  #   - text: "Thông tin sơ bộ về nhà trường"
+  #     elements:
+  #     - title: "Thông tin sơ bộ về nhà trường"
+  #       subtitle: "ĐH Khoa học Tự nhiên"
+  #       image_url: "https://sohanews.sohacdn.com/160588918557773824/2022/10/11/1-dai-hoc-khoa-hoc-tu-nhien-16654584069501332479760.jpg"
+  #       buttons:
+  #         - title: "Giới thiệu về trường"
+  #           payload: "Giới thiệu về trường"
+  #         # - title: "Trường có bao nhiêu cơ sở"
+  #         #   payload: "Trường có bao nhiêu cơ sở"
+  #         - title: "Số điện thoại liên hệ tuyển sinh"
+  #           payload: "Số điện thoại liên hệ tuyển sinh"
+  #         # - title: "Thông tin mới nhất"
+  #         #   payload: "Thông tin mới nhất của trường?"
+  #         - title: "Hoạt động"
+  #           payload: "Hoạt động của trường"
+  
+
+  # utter_fb_element_example:
+  #   - text: "Thông tin tất cả các ngành của trường ĐH Khoa học Tự nhiên"
+  #     elements:
+  #     - title: "Thông tin sơ bộ về nhà trường"
+  #       subtitle: "ĐH Khoa học Tự nhiên"
+  #       image_url: "https://sohanews.sohacdn.com/160588918557773824/2022/10/11/1-dai-hoc-khoa-hoc-tu-nhien-16654584069501332479760.jpg"
+  #       buttons:
+  #         - title: "Giới thiệu về trường"
+  #           payload: "Giới thiệu về trường"
+  #         - title: "Trường có bao nhiêu cơ sở"
+  #           payload: "Trường có bao nhiêu cơ sở"
+  #         - title: "Số điện thoại liên hệ tuyển sinh"
+  #           payload: "Số điện thoại liên hệ tuyển sinh"
+  #         - title: "Thông tin mới nhất"
+  #           payload: "Thông tin mới nhất của trường?"
+  #         - title: "Hoạt động"
+  #           payload: "Hoạt động của trường"
+      # - title: "Element 2"
+      #   subtitle: "Subtitle 2"
+      #   image_url: "https://example.com/image2.jpg"
+      #   buttons:
+      #     - title: "Button C"
+      #       payload: "hp_QHT43"
+      #     - title: "Button D"
+      #       payload: "hp_QHT41"
+    # - text: ""
+    #   elements:
+    #     - title: "Thông tin sơ bộ về nhà trường"
+    #       subtitle: "DDH Khoa học Tự nhiên"
+    #       image_url: "https://sohanews.sohacdn.com/160588918557773824/2022/10/11/1-dai-hoc-khoa-hoc-tu-nhien-16654584069501332479760.jpg"
+    #       buttons:
+    #         - title: "Giới thiệu về trường"
+    #           payload: "gioi_thieu"
+    #         - title: "Trường có bao nhiêu cơ sở"
+    #           payload: "co_so_vat_chat"
+    #         - title: "Số điện thoại liên hệ tuyển sinh"
+    #           payload: "so_dien_thoai_lien_he_tuyen_sinh"
+    #         - title: "Thông tin mới nhất"
+    #           payload: "tin_moi_nhat"
+    #         - title: "Hoạt động"
+    #           payload: "hoat_dong"
+  utter_default:
+    - text: "Vui lòng nhập lại, dữ liệu của tôi không đủ để hiểu yêu cầu của bạn."
 
 session_config:
   session_expiration_time: 60
